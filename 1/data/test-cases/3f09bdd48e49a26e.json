@@ -1,0 +1,72 @@
+{
+  "uid" : "3f09bdd48e49a26e",
+  "name" : "calls onERC721Received from approved",
+  "fullName" : "Contract: ERC721Enumerable with minted tokens transfers via safeTransferFrom with data to a valid receiver contract.calls onERC721Received from approved",
+  "historyId" : "71ff9fbb117a0ba817415dbb7901e308",
+  "time" : {
+    "start" : 1636741559482,
+    "stop" : 1636741577118,
+    "duration" : 17636
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1\n                    at Context.safeTransferFromWithData (test/token/ERC721/ERC721.behavior.js:227:87)\n                    at Context.<anonymous> (test/token/ERC721/ERC721.behavior.js:259:49)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC721Enumerable with minted tokens transfers via safeTransferFrom with data to a valid receiver contract"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC721Enumerable with minted tokens transfers via safeTransferFrom with data to a valid receiver contract"
+  }, {
+    "name" : "testMethod",
+    "value" : "calls onERC721Received from approved"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC721Enumerable with minted tokens transfers via safeTransferFrom with data to a valid receiver contract"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "2f7f9f972de11e05",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/2f7f9f972de11e05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636687502053,
+          "stop" : 1636687520024,
+          "duration" : 17971
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3f09bdd48e49a26e.json",
+  "parameterValues" : [ ]
+}

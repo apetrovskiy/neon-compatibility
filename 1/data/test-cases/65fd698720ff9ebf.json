@@ -1,0 +1,72 @@
+{
+  "uid" : "65fd698720ff9ebf",
+  "name" : "debits transferred balance from sender",
+  "fullName" : "Contract: ERC1155 like an ERC1155 safeTransferFrom when sending to a valid receiver without data.debits transferred balance from sender",
+  "historyId" : "a47f2bdc9ef72bc4163b7211dc408533",
+  "time" : {
+    "start" : 1636735480082,
+    "stop" : 1636735494846,
+    "duration" : 14764
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1\n                    at Context.<anonymous> (test/token/ERC1155/ERC1155.behavior.js:339:53)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC1155 like an ERC1155 safeTransferFrom when sending to a valid receiver without data"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1155 like an ERC1155 safeTransferFrom when sending to a valid receiver without data"
+  }, {
+    "name" : "testMethod",
+    "value" : "debits transferred balance from sender"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1155 like an ERC1155 safeTransferFrom when sending to a valid receiver without data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "826df226c0d24b7",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/826df226c0d24b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636680953041,
+          "stop" : 1636680968991,
+          "duration" : 15950
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "65fd698720ff9ebf.json",
+  "parameterValues" : [ ]
+}

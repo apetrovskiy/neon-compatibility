@@ -1,0 +1,52 @@
+{
+  "uid" : "484f7c9280019319",
+  "name" : "reverts if block number >= current block",
+  "fullName" : "Contract: ERC20Votes Compound test suite getPastVotes.reverts if block number >= current block",
+  "historyId" : "7d978a0931b75440573eb79846d55ed9",
+  "time" : {
+    "start" : 1636737580430,
+    "stop" : 1636737588124,
+    "duration" : 7694
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1\n                    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Votes.test.js:361:24)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC20Votes Compound test suite getPastVotes"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Votes Compound test suite getPastVotes"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts if block number >= current block"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Votes Compound test suite getPastVotes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "484f7c9280019319.json",
+  "parameterValues" : [ ]
+}
