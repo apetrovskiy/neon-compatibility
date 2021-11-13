@@ -1,0 +1,153 @@
+{
+  "uid" : "c2f0be5ab8885351",
+  "name" : "requires a non-null beneficiary",
+  "fullName" : "Contract: RefundEscrow.requires a non-null beneficiary",
+  "historyId" : "439919e6556edccd55d384843e614e42",
+  "time" : {
+    "start" : 1636827849313,
+    "stop" : 1636827851854,
+    "duration" : 2541
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+  "statusTrace" : "AssertionError: Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:20:30)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (test/utils/escrow/RefundEscrow.test.js:15:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: RefundEscrow"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: RefundEscrow"
+  }, {
+    "name" : "testMethod",
+    "value" : "requires a non-null beneficiary"
+  }, {
+    "name" : "package",
+    "value" : "Contract: RefundEscrow"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 8,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "fb70d0d08b2fb9f0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/fb70d0d08b2fb9f0",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804370253,
+          "stop" : 1636804370732,
+          "duration" : 479
+        }
+      }, {
+        "uid" : "b3ce2351d2ecbb01",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/b3ce2351d2ecbb01",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798863542,
+          "stop" : 1636798863817,
+          "duration" : 275
+        }
+      }, {
+        "uid" : "f583001a37c3346b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/f583001a37c3346b",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636767914047,
+          "stop" : 1636767915582,
+          "duration" : 1535
+        }
+      }, {
+        "uid" : "f0a85975cd7951c9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/f0a85975cd7951c9",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636744304424,
+          "stop" : 1636744305976,
+          "duration" : 1552
+        }
+      }, {
+        "uid" : "c2b324749912785e",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/c2b324749912785e",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636691013859,
+          "stop" : 1636691015372,
+          "duration" : 1513
+        }
+      }, {
+        "uid" : "9adb8f2fad89127b",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/9adb8f2fad89127b",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636666619199,
+          "stop" : 1636666619536,
+          "duration" : 337
+        }
+      }, {
+        "uid" : "1dcc0892cae31d60",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/1dcc0892cae31d60",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636666268976,
+          "stop" : 1636666269297,
+          "duration" : 321
+        }
+      }, {
+        "uid" : "48b91a6de366153d",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/48b91a6de366153d",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636665258318,
+          "stop" : 1636665259461,
+          "duration" : 1143
+        }
+      }, {
+        "uid" : "8dffd4b0fce7e59e",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/8dffd4b0fce7e59e",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1636642450079,
+          "stop" : 1636642451277,
+          "duration" : 1198
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c2f0be5ab8885351.json",
+  "parameterValues" : [ ]
+}

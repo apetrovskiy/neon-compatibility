@@ -1,0 +1,152 @@
+{
+  "uid" : "7f3dd0026d166ad",
+  "name" : "deployment check",
+  "fullName" : "Contract: Governor.deployment check",
+  "historyId" : "64de6cb237ab3357c6c477904c5db175",
+  "time" : {
+    "start" : 1636827642032,
+    "stop" : 1636827645712,
+    "duration" : 3680
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1\n                    at Context.<anonymous> (test/governance/Governor.test.js:31:33)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: Governor"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Governor"
+  }, {
+    "name" : "testMethod",
+    "value" : "deployment check"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Governor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 9,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "53646ef23d346fb8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/53646ef23d346fb8",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804338482,
+          "stop" : 1636804338965,
+          "duration" : 483
+        }
+      }, {
+        "uid" : "ad76e59d219e43a6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/ad76e59d219e43a6",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798845100,
+          "stop" : 1636798845382,
+          "duration" : 282
+        }
+      }, {
+        "uid" : "f843adb516e59fb6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/f843adb516e59fb6",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636762804040,
+          "stop" : 1636762817859,
+          "duration" : 13819
+        }
+      }, {
+        "uid" : "71881d10db51f845",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/71881d10db51f845",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636733045220,
+          "stop" : 1636733059446,
+          "duration" : 14226
+        }
+      }, {
+        "uid" : "44c3e6f126f44107",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/44c3e6f126f44107",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636678357584,
+          "stop" : 1636678384238,
+          "duration" : 26654
+        }
+      }, {
+        "uid" : "7bd8c51788f6ced8",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/7bd8c51788f6ced8",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666530179,
+          "stop" : 1636666531549,
+          "duration" : 1370
+        }
+      }, {
+        "uid" : "a2fb21662b427026",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/a2fb21662b427026",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666158304,
+          "stop" : 1636666159855,
+          "duration" : 1551
+        }
+      }, {
+        "uid" : "477b177dc2c25f16",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/477b177dc2c25f16",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636665077165,
+          "stop" : 1636665079805,
+          "duration" : 2640
+        }
+      }, {
+        "uid" : "247d9852351dc0dd",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/247d9852351dc0dd",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636642287173,
+          "stop" : 1636642290196,
+          "duration" : 3023
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7f3dd0026d166ad.json",
+  "parameterValues" : [ ]
+}
