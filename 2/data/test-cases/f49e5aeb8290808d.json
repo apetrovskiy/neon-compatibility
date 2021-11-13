@@ -1,0 +1,83 @@
+{
+  "uid" : "f49e5aeb8290808d",
+  "name" : "has expected balance",
+  "fullName" : "Contract: TransparentUpgradeableProxy without initialization when sending some balance.has expected balance",
+  "historyId" : "e4431ab6f1c984c5083d41a1c06cc2ac",
+  "time" : {
+    "start" : 1636764286693,
+    "stop" : 1636764294383,
+    "duration" : 7690
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '0' to equal '1000000'",
+  "statusTrace" : "AssertionError: expected '0' to equal '1000000'\n                    at Context.<anonymous> (test/proxy/Proxy.behaviour.js:42:69)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: TransparentUpgradeableProxy without initialization when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: TransparentUpgradeableProxy without initialization when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "has expected balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: TransparentUpgradeableProxy without initialization when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "54fd3fd9ac83bffd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/54fd3fd9ac83bffd",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636734527847,
+          "stop" : 1636734535616,
+          "duration" : 7769
+        }
+      }, {
+        "uid" : "1ec869e8dde90be4",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/1ec869e8dde90be4",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636679975864,
+          "stop" : 1636679983680,
+          "duration" : 7816
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f49e5aeb8290808d.json",
+  "parameterValues" : [ ]
+}

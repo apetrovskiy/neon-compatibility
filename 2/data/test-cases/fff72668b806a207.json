@@ -1,0 +1,83 @@
+{
+  "uid" : "fff72668b806a207",
+  "name" : "delegation with balance",
+  "fullName" : "Contract: ERC20Votes set delegation call.delegation with balance",
+  "historyId" : "156f8a4b2016b091f109973d075e321",
+  "time" : {
+    "start" : 1636765847547,
+    "stop" : 1636765860880,
+    "duration" : 13333
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '10000000000000000000000000' to equal '0'",
+  "statusTrace" : "AssertionError: expected '10000000000000000000000000' to equal '0'\n                    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Votes.test.js:113:96)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC20Votes set delegation call"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Votes set delegation call"
+  }, {
+    "name" : "testMethod",
+    "value" : "delegation with balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Votes set delegation call"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "d3a77e603ea83a31",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/d3a77e603ea83a31",
+        "status" : "failed",
+        "statusDetails" : "expected '10000000000000000000000000' to equal '0'",
+        "time" : {
+          "start" : 1636737447519,
+          "stop" : 1636737460768,
+          "duration" : 13249
+        }
+      }, {
+        "uid" : "321fad6977f276ca",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/321fad6977f276ca",
+        "status" : "failed",
+        "statusDetails" : "expected '10000000000000000000000000' to equal '0'",
+        "time" : {
+          "start" : 1636682976517,
+          "stop" : 1636682990020,
+          "duration" : 13503
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fff72668b806a207.json",
+  "parameterValues" : [ ]
+}

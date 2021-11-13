@@ -1,0 +1,81 @@
+{
+  "uid" : "5bc99e2fa4b4949f",
+  "name" : "returns approved address",
+  "fullName" : "Contract: ERC721Pausable when token is paused getApproved.returns approved address",
+  "historyId" : "771c7771c1fac7b1d667d8bbb7ec78cc",
+  "time" : {
+    "start" : 1636767296530,
+    "stop" : 1636767299710,
+    "duration" : 3180
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument\n                    at Context.<anonymous> (test/token/ERC721/extensions/ERC721Pausable.test.js:15:46)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC721Pausable when token is paused getApproved"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC721Pausable when token is paused getApproved"
+  }, {
+    "name" : "testMethod",
+    "value" : "returns approved address"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC721Pausable when token is paused getApproved"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "e334a9cfb595e428",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/e334a9cfb595e428",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636743233461,
+          "stop" : 1636743241613,
+          "duration" : 8152
+        }
+      }, {
+        "uid" : "3015f31c3e280907",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/3015f31c3e280907",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636689146703,
+          "stop" : 1636689154798,
+          "duration" : 8095
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5bc99e2fa4b4949f.json",
+  "parameterValues" : [ ]
+}

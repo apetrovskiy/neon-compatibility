@@ -1,0 +1,81 @@
+{
+  "uid" : "b270993b6c44faa",
+  "name" : "does not support mock interface via supportsInterface",
+  "fullName" : "Contract: ERC165Checker account address does not support ERC165.does not support mock interface via supportsInterface",
+  "historyId" : "98a1aa64e9445921c760c8449295cbff",
+  "time" : {
+    "start" : 1636768164449,
+    "stop" : 1636768166778,
+    "duration" : 2329
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument\n                    at Context.<anonymous> (test/utils/introspection/ERC165Checker.test.js:19:44)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC165Checker account address does not support ERC165"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC165Checker account address does not support ERC165"
+  }, {
+    "name" : "testMethod",
+    "value" : "does not support mock interface via supportsInterface"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC165Checker account address does not support ERC165"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9d6192692a37bf2a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/9d6192692a37bf2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636744552403,
+          "stop" : 1636744556644,
+          "duration" : 4241
+        }
+      }, {
+        "uid" : "81c66e5c26ebc137",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/81c66e5c26ebc137",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636691261580,
+          "stop" : 1636691265685,
+          "duration" : 4105
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b270993b6c44faa.json",
+  "parameterValues" : [ ]
+}

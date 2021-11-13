@@ -1,0 +1,84 @@
+{
+  "uid" : "18fe39559084b86a",
+  "name" : "a role can be revoked multiple times",
+  "fullName" : "Contract: AccessControl revoking with granted role.a role can be revoked multiple times",
+  "historyId" : "556e3b350031fc5593fec8f3bf4ad503",
+  "time" : {
+    "start" : 1636762250026,
+    "stop" : 1636762260145,
+    "duration" : 10119
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: AccessControl revoking with granted role"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: AccessControl revoking with granted role"
+  }, {
+    "name" : "testMethod",
+    "value" : "a role can be revoked multiple times"
+  }, {
+    "name" : "package",
+    "value" : "Contract: AccessControl revoking with granted role"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7a0eb611bb377702",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636762063187,
+        "stop" : 1636762072506,
+        "duration" : 9319
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "96b0222ca427fdb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/96b0222ca427fdb",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636732531913,
+          "stop" : 1636732540149,
+          "duration" : 8236
+        }
+      }, {
+        "uid" : "4c07d334c766c6b1",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/4c07d334c766c6b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636677734107,
+          "stop" : 1636677743451,
+          "duration" : 9344
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "18fe39559084b86a.json",
+  "parameterValues" : [ ]
+}

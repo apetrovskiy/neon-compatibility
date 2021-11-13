@@ -1,0 +1,81 @@
+{
+  "uid" : "29ea9c3886a10f27",
+  "name" : "upgrade to upgradeable implementation with call",
+  "fullName" : "Contract: UUPSUpgradeable.upgrade to upgradeable implementation with call",
+  "historyId" : "2c97f81fd5822fce225d4a3cdc40d2a3",
+  "time" : {
+    "start" : 1636764626733,
+    "stop" : 1636764629315,
+    "duration" : 2582
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument\n                    at Context.<anonymous> (test/proxy/utils/UUPSUpgradeable.test.js:19:47)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: UUPSUpgradeable"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: UUPSUpgradeable"
+  }, {
+    "name" : "testMethod",
+    "value" : "upgrade to upgradeable implementation with call"
+  }, {
+    "name" : "package",
+    "value" : "Contract: UUPSUpgradeable"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9b320696c912607e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/9b320696c912607e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636735061206,
+          "stop" : 1636735070193,
+          "duration" : 8987
+        }
+      }, {
+        "uid" : "eb2b1ba07a04e8c3",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/eb2b1ba07a04e8c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636680534447,
+          "stop" : 1636680542803,
+          "duration" : 8356
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "29ea9c3886a10f27.json",
+  "parameterValues" : [ ]
+}

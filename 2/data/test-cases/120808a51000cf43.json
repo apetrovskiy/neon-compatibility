@@ -1,0 +1,81 @@
+{
+  "uid" : "120808a51000cf43",
+  "name" : "has expected balance",
+  "fullName" : "Contract: TransparentUpgradeableProxy initialization without parameters non payable when not sending balance.has expected balance",
+  "historyId" : "3e524f8e795c16547109cae3ba9599e0",
+  "time" : {
+    "start" : 1636764303207,
+    "stop" : 1636764309350,
+    "duration" : 6143
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument\n                    at createProxy (test/proxy/transparent/TransparentUpgradeableProxy.test.js:10:43)\n                    at Context.<anonymous> (test/proxy/Proxy.behaviour.js:85:19)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: TransparentUpgradeableProxy initialization without parameters non payable when not sending balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: TransparentUpgradeableProxy initialization without parameters non payable when not sending balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "has expected balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: TransparentUpgradeableProxy initialization without parameters non payable when not sending balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "4e4789da9ede8efb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/4e4789da9ede8efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636734543812,
+          "stop" : 1636734551609,
+          "duration" : 7797
+        }
+      }, {
+        "uid" : "ded05299b123aa47",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/ded05299b123aa47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636679991798,
+          "stop" : 1636679999579,
+          "duration" : 7781
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "120808a51000cf43.json",
+  "parameterValues" : [ ]
+}
