@@ -1,0 +1,93 @@
+{
+  "uid" : "eb7e06847c5222eb",
+  "name" : "has expected balance",
+  "fullName" : "Contract: Clones clone initialization without parameters payable when sending some balance.has expected balance",
+  "historyId" : "bf7e4a387a16eaa511f986e45b43c514",
+  "time" : {
+    "start" : 1636884763459,
+    "stop" : 1636884773760,
+    "duration" : 10301
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '0' to equal '1000000'",
+  "statusTrace" : "AssertionError: expected '0' to equal '1000000'\n                    at Context.<anonymous> (test/proxy/Clones.behaviour.js:19:69)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: Clones clone initialization without parameters payable when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Clones clone initialization without parameters payable when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "has expected balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Clones clone initialization without parameters payable when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "3a2f454b39518e13",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/3a2f454b39518e13",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636763880586,
+          "stop" : 1636763887512,
+          "duration" : 6926
+        }
+      }, {
+        "uid" : "3993a044f27c0ded",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/3993a044f27c0ded",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636734121893,
+          "stop" : 1636734129528,
+          "duration" : 7635
+        }
+      }, {
+        "uid" : "dcecbaae9a6173d4",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/dcecbaae9a6173d4",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636679568401,
+          "stop" : 1636679575827,
+          "duration" : 7426
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eb7e06847c5222eb.json",
+  "parameterValues" : [ ]
+}

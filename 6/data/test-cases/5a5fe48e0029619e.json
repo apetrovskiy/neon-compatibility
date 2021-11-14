@@ -1,0 +1,67 @@
+{
+  "uid" : "5a5fe48e0029619e",
+  "name" : "rejects reused signature",
+  "fullName" : "Contract: ERC20VotesComp set delegation with signature.rejects reused signature",
+  "historyId" : "54a7d9a0043bb21cac39e384bff7bf93",
+  "time" : {
+    "start" : 1636891703330,
+    "stop" : 1636891725132,
+    "duration" : 21802
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC20VotesComp set delegation with signature"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20VotesComp set delegation with signature"
+  }, {
+    "name" : "testMethod",
+    "value" : "rejects reused signature"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20VotesComp set delegation with signature"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "456282439e92b03f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/456282439e92b03f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636766033881,
+          "stop" : 1636766040817,
+          "duration" : 6936
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5a5fe48e0029619e.json",
+  "parameterValues" : [ ]
+}

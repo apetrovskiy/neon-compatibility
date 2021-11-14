@@ -1,0 +1,93 @@
+{
+  "uid" : "82df8d799e36291e",
+  "name" : "can add balances on multiple accounts",
+  "fullName" : "Contract: PullPayment payments.can add balances on multiple accounts",
+  "historyId" : "365394de99e700fd3cce3946a309b287",
+  "time" : {
+    "start" : 1636886531021,
+    "stop" : 1636886543163,
+    "duration" : 12142
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '0' to equal '200'",
+  "statusTrace" : "AssertionError: expected '0' to equal '200'\n                    at Context.<anonymous> (test/security/PullPayment.test.js:32:68)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: PullPayment payments"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: PullPayment payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "can add balances on multiple accounts"
+  }, {
+    "name" : "package",
+    "value" : "Contract: PullPayment payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "129334f62f9ae921",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/129334f62f9ae921",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '200'",
+        "time" : {
+          "start" : 1636764737294,
+          "stop" : 1636764745698,
+          "duration" : 8404
+        }
+      }, {
+        "uid" : "6110a488d7f39001",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/6110a488d7f39001",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '200'",
+        "time" : {
+          "start" : 1636735205518,
+          "stop" : 1636735213916,
+          "duration" : 8398
+        }
+      }, {
+        "uid" : "56e745f3b279899f",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/56e745f3b279899f",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '200'",
+        "time" : {
+          "start" : 1636680678954,
+          "stop" : 1636680686926,
+          "duration" : 7972
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "82df8d799e36291e.json",
+  "parameterValues" : [ ]
+}

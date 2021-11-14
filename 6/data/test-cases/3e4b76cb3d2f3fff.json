@@ -1,0 +1,87 @@
+{
+  "uid" : "3e4b76cb3d2f3fff",
+  "name" : "doesn't revert when approving a zero allowance",
+  "fullName" : "Contract: SafeERC20 with token that returns true on all calls approvals with zero allowance.doesn't revert when approving a zero allowance",
+  "historyId" : "fe2235c066d6257fdccc471b45c231b",
+  "time" : {
+    "start" : 1636893674414,
+    "stop" : 1636893691156,
+    "duration" : 16742
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: SafeERC20 with token that returns true on all calls approvals with zero allowance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: SafeERC20 with token that returns true on all calls approvals with zero allowance"
+  }, {
+    "name" : "testMethod",
+    "value" : "doesn't revert when approving a zero allowance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: SafeERC20 with token that returns true on all calls approvals with zero allowance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "a9e97510823d939",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/a9e97510823d939",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636766392657,
+          "stop" : 1636766403582,
+          "duration" : 10925
+        }
+      }, {
+        "uid" : "6049892de24efa99",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/6049892de24efa99",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636738146648,
+          "stop" : 1636738158001,
+          "duration" : 11353
+        }
+      }, {
+        "uid" : "5e13d684178e7793",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/5e13d684178e7793",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636683756770,
+          "stop" : 1636683767667,
+          "duration" : 10897
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3e4b76cb3d2f3fff.json",
+  "parameterValues" : [ ]
+}

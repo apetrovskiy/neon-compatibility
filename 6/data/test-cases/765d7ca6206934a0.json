@@ -1,0 +1,93 @@
+{
+  "uid" : "765d7ca6206934a0",
+  "name" : "reverts",
+  "fullName" : "Contract: Clones clone initialization with parameters non payable when sending some balance.reverts",
+  "historyId" : "1e1928a213e7045b4b3f1a2a8a35ffd3",
+  "time" : {
+    "start" : 1636884796302,
+    "stop" : 1636884806227,
+    "duration" : 9925
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at Context.<anonymous> (test/proxy/Clones.behaviour.js:109:11)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: Clones clone initialization with parameters non payable when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Clones clone initialization with parameters non payable when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Clones clone initialization with parameters non payable when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2a9a39246f6fcdb7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/2a9a39246f6fcdb7",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1636763902353,
+          "stop" : 1636763909198,
+          "duration" : 6845
+        }
+      }, {
+        "uid" : "abc00111fec39959",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/abc00111fec39959",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1636734143760,
+          "stop" : 1636734150174,
+          "duration" : 6414
+        }
+      }, {
+        "uid" : "82dba9cd229dd1ab",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/82dba9cd229dd1ab",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1636679590510,
+          "stop" : 1636679597281,
+          "duration" : 6771
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "765d7ca6206934a0.json",
+  "parameterValues" : [ ]
+}

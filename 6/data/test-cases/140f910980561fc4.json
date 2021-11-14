@@ -1,0 +1,93 @@
+{
+  "uid" : "140f910980561fc4",
+  "name" : "has expected balance",
+  "fullName" : "Contract: ERC1967Proxy initialization with parameters payable when sending some balance.has expected balance",
+  "historyId" : "a7bfe443c58d0e68f361dcd00b9ed27a",
+  "time" : {
+    "start" : 1636885152962,
+    "stop" : 1636885159899,
+    "duration" : 6937
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '0' to equal '1000000'",
+  "statusTrace" : "AssertionError: expected '0' to equal '1000000'\n                    at Context.<anonymous> (test/proxy/Proxy.behaviour.js:42:69)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC1967Proxy initialization with parameters payable when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1967Proxy initialization with parameters payable when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "has expected balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1967Proxy initialization with parameters payable when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "9daa14ef4545b074",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/9daa14ef4545b074",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636764129312,
+          "stop" : 1636764133306,
+          "duration" : 3994
+        }
+      }, {
+        "uid" : "b408f4715a76c30d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/b408f4715a76c30d",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636734370325,
+          "stop" : 1636734374312,
+          "duration" : 3987
+        }
+      }, {
+        "uid" : "9d2b85e9c54ad659",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/9d2b85e9c54ad659",
+        "status" : "failed",
+        "statusDetails" : "expected '0' to equal '1000000'",
+        "time" : {
+          "start" : 1636679819455,
+          "stop" : 1636679823482,
+          "duration" : 4027
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "140f910980561fc4.json",
+  "parameterValues" : [ ]
+}

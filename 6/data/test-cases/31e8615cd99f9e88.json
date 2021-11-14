@@ -1,0 +1,94 @@
+{
+  "uid" : "31e8615cd99f9e88",
+  "name" : "the new admin can revoke roles",
+  "fullName" : "Contract: AccessControl setting role admin.the new admin can revoke roles",
+  "historyId" : "397cb240e2e8399f172a634b19772af6",
+  "time" : {
+    "start" : 1636879135218,
+    "stop" : 1636879153238,
+    "duration" : 18020
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: AccessControl setting role admin"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: AccessControl setting role admin"
+  }, {
+    "name" : "testMethod",
+    "value" : "the new admin can revoke roles"
+  }, {
+    "name" : "package",
+    "value" : "Contract: AccessControl setting role admin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "85dca6805c5eb284",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636878859340,
+        "stop" : 1636878875561,
+        "duration" : 16221
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "babd1cc36721913",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/babd1cc36721913",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: Computational budget exceeded",
+        "time" : {
+          "start" : 1636762308005,
+          "stop" : 1636762318775,
+          "duration" : 10770
+        }
+      }, {
+        "uid" : "1d89a2c6d975d3c6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/1d89a2c6d975d3c6",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636732587219,
+          "stop" : 1636732598509,
+          "duration" : 11290
+        }
+      }, {
+        "uid" : "bad5d7413adbf532",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/bad5d7413adbf532",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636677797813,
+          "stop" : 1636677809309,
+          "duration" : 11496
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "31e8615cd99f9e88.json",
+  "parameterValues" : [ ]
+}
