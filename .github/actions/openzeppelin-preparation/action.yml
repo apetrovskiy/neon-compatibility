@@ -4,23 +4,40 @@ runs:
   using: "composite"
   steps:
     - run: |
-        rm -rf openzeppelin-contracts
+        # mkdir openzeppelin-contracts
+        # rm -rf openzeppelin-contracts
         git submodule update --init --recursive
         cd openzeppelin-contracts
+        git pull origin master
         echo "$ pwd"
         pwd
         cp ../hardhat.config.js .
+      shell: bash
+    - run: |
+        cd openzeppelin-contracts
         # categories.json
-        mkdir allure-results
-        cp ../categories.json allure-results
-        echo "$ ls allure-results"
-        ls allure-results
+        ALLURE_RESULTS="allure-results"
+        # ENV_PROP_FILE="environment.properties"
+        # EXECUTOR_FILE="executor.json"
+        mkdir $ALLURE_RESULTS
+        cp ../categories.json "./$ALLURE_RESULTS"
+        # cp ../environment.json $ALLURE_RESULTS
+        # cp "../$ENV_PROP_FILE" $ALLURE_RESULTS
+        # cp "../$ENV_PROP_FILE" ../report
+        # # cp ../environment.properties "../report/$ALLURE_RESULTS"
+        # cp "../$ENV_PROP_FILE" ../report
+        echo "$ ls $ALLURE_RESULTS"
+        ls $ALLURE_RESULTS
         echo "============================================================================================="
         echo "==================== the openzeppelin-contracts repo is downloaded =========================="
         echo "============================= and hardhat.config.js is here ================================="
         echo "============================================================================================="
         echo "$ ls -la"
         ls -la
+
+        # echo "copying $EXECUTOR_FILE"
+        # cp "../$EXECUTOR_FILE" "./$ALLURE_RESULTS"
+
       shell: bash
 
 
