@@ -1,0 +1,180 @@
+{
+  "uid" : "2f99ebaceff0b99f",
+  "name" : "rejects zero address for beneficiary",
+  "fullName" : "Contract: VestingWallet.rejects zero address for beneficiary",
+  "historyId" : "bef7a5330168f359aa261f5b27a742ca",
+  "time" : {
+    "start" : 1637191760502,
+    "stop" : 1637191760780,
+    "duration" : 278
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+  "statusTrace" : "HardhatError: HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                \n                    at Object.parseJsonResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/util/jsonrpc.ts:47:11)\n                    at HttpProvider._fetchJsonRpcResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:173:14)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at HttpProvider.request (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:55:29)\n                    at Web3HTTPProviderAdapter._sendJsonRpcRequest (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-web3/src/web3-provider-adapter.ts:80:22)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testMethod",
+    "value" : "rejects zero address for beneficiary"
+  }, {
+    "name" : "package",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "57c03f5f041d1459",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/57c03f5f041d1459",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1636879587934,
+          "stop" : 1636879596070,
+          "duration" : 8136
+        }
+      }, {
+        "uid" : "4ac2f21244410d96",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/4ac2f21244410d96",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1",
+        "time" : {
+          "start" : 1636827619331,
+          "stop" : 1636827622899,
+          "duration" : 3568
+        }
+      }, {
+        "uid" : "c53126a12c52c1e0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/c53126a12c52c1e0",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804335558,
+          "stop" : 1636804336042,
+          "duration" : 484
+        }
+      }, {
+        "uid" : "d8e9b37ec2207ef",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/d8e9b37ec2207ef",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798843400,
+          "stop" : 1636798843684,
+          "duration" : 284
+        }
+      }, {
+        "uid" : "ecd79dae3e7a614f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/ecd79dae3e7a614f",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1636762572102,
+          "stop" : 1636762577731,
+          "duration" : 5629
+        }
+      }, {
+        "uid" : "319ab87e46be7798",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/319ab87e46be7798",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1636732838250,
+          "stop" : 1636732843423,
+          "duration" : 5173
+        }
+      }, {
+        "uid" : "b3de2a76b1e3f162",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/b3de2a76b1e3f162",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1636678056824,
+          "stop" : 1636678061987,
+          "duration" : 5163
+        }
+      }, {
+        "uid" : "544fcbe442a81829",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/544fcbe442a81829",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666518556,
+          "stop" : 1636666520265,
+          "duration" : 1709
+        }
+      }, {
+        "uid" : "96349061a6b7d114",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/96349061a6b7d114",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666147099,
+          "stop" : 1636666148328,
+          "duration" : 1229
+        }
+      }, {
+        "uid" : "2e1b1c714bc37ef3",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/2e1b1c714bc37ef3",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636665059566,
+          "stop" : 1636665062020,
+          "duration" : 2454
+        }
+      }, {
+        "uid" : "607b3f9c7c9e4006",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/607b3f9c7c9e4006",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636642268439,
+          "stop" : 1636642270921,
+          "duration" : 2482
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2f99ebaceff0b99f.json",
+  "parameterValues" : [ ]
+}
