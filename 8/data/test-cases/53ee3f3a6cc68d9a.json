@@ -1,0 +1,190 @@
+{
+  "uid" : "53ee3f3a6cc68d9a",
+  "name" : "rejects zero-valued shares",
+  "fullName" : "Contract: PaymentSplitter.rejects zero-valued shares",
+  "historyId" : "7cf8b902045686da85b30aa4aa8bac13",
+  "time" : {
+    "start" : 1637229693368,
+    "stop" : 1637229693647,
+    "duration" : 279
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+  "statusTrace" : "HardhatError: HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                \n                    at Object.parseJsonResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/util/jsonrpc.ts:47:11)\n                    at HttpProvider._fetchJsonRpcResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:173:14)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at HttpProvider.request (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:55:29)\n                    at Web3HTTPProviderAdapter._sendJsonRpcRequest (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-web3/src/web3-provider-adapter.ts:80:22)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: PaymentSplitter"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: PaymentSplitter"
+  }, {
+    "name" : "testMethod",
+    "value" : "rejects zero-valued shares"
+  }, {
+    "name" : "package",
+    "value" : "Contract: PaymentSplitter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 9,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "363969c100214c46",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/363969c100214c46",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637191759432,
+          "stop" : 1637191759941,
+          "duration" : 509
+        }
+      }, {
+        "uid" : "d7e86eeee2ca884c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/d7e86eeee2ca884c",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636879330409,
+          "stop" : 1636879333302,
+          "duration" : 2893
+        }
+      }, {
+        "uid" : "7c74c1e706c9da1f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/7c74c1e706c9da1f",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636827609898,
+          "stop" : 1636827612758,
+          "duration" : 2860
+        }
+      }, {
+        "uid" : "9e6ec30acd9f0fe2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/9e6ec30acd9f0fe2",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804334117,
+          "stop" : 1636804334585,
+          "duration" : 468
+        }
+      }, {
+        "uid" : "19a6b3dba5e29400",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/19a6b3dba5e29400",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798842559,
+          "stop" : 1636798842837,
+          "duration" : 278
+        }
+      }, {
+        "uid" : "926c5794f0157af1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/926c5794f0157af1",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636762439248,
+          "stop" : 1636762440974,
+          "duration" : 1726
+        }
+      }, {
+        "uid" : "5f74df92e34b31a8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/5f74df92e34b31a8",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636732713870,
+          "stop" : 1636732715615,
+          "duration" : 1745
+        }
+      }, {
+        "uid" : "84d1bc3a56129e1e",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/84d1bc3a56129e1e",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636677929051,
+          "stop" : 1636677930735,
+          "duration" : 1684
+        }
+      }, {
+        "uid" : "27982c22efe81f33",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/27982c22efe81f33",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636666513110,
+          "stop" : 1636666513467,
+          "duration" : 357
+        }
+      }, {
+        "uid" : "e0f64f6d3ea1c88a",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/e0f64f6d3ea1c88a",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636666143332,
+          "stop" : 1636666143716,
+          "duration" : 384
+        }
+      }, {
+        "uid" : "fb5673bd5aeae0ec",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/fb5673bd5aeae0ec",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636665053563,
+          "stop" : 1636665054856,
+          "duration" : 1293
+        }
+      }, {
+        "uid" : "792de18825a7c7a5",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/792de18825a7c7a5",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'PaymentSplitter: shares are 0'",
+        "time" : {
+          "start" : 1636642261094,
+          "stop" : 1636642262437,
+          "duration" : 1343
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "53ee3f3a6cc68d9a.json",
+  "parameterValues" : [ ]
+}
