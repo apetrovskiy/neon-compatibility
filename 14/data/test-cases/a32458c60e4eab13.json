@@ -1,0 +1,90 @@
+{
+  "uid" : "a32458c60e4eab13",
+  "name" : "returns index of first element in next filled range",
+  "fullName" : "Contract: Arrays findUpperBound Array with gap.returns index of first element in next filled range",
+  "historyId" : "7826e5a66487325b014dfeef6ad64dc6",
+  "time" : {
+    "start" : 1637329598427,
+    "stop" : 1637329601300,
+    "duration" : 2873
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/utils/Arrays.test.js:69:43)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Arrays findUpperBound Array with gap"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Arrays findUpperBound Array with gap"
+  }, {
+    "name" : "testMethod",
+    "value" : "returns index of first element in next filled range"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Arrays findUpperBound Array with gap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "a43c0fb04186d167",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/a43c0fb04186d167",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320996951,
+          "stop" : 1637320999850,
+          "duration" : 2899
+        }
+      }, {
+        "uid" : "ce6b3955abf25eec",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/ce6b3955abf25eec",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318875134,
+          "stop" : 1637318877257,
+          "duration" : 2123
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a32458c60e4eab13.json",
+  "parameterValues" : [ ]
+}
