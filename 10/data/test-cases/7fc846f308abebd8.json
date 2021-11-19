@@ -1,0 +1,207 @@
+{
+  "uid" : "7fc846f308abebd8",
+  "name" : "burns the requested amount",
+  "fullName" : "Contract: ERC20Burnable burn when the given amount is not greater than balance of the sender for a zero amount.burns the requested amount",
+  "historyId" : "caff3806dc32fc2c45d891955d1d6c89",
+  "time" : {
+    "start" : 1637314667281,
+    "stop" : 1637314669989,
+    "duration" : 2708
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Burnable.test.js:15:45)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20Burnable burn when the given amount is not greater than balance of the sender for a zero amount"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Burnable burn when the given amount is not greater than balance of the sender for a zero amount"
+  }, {
+    "name" : "testMethod",
+    "value" : "burns the requested amount"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Burnable burn when the given amount is not greater than balance of the sender for a zero amount"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 12,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "9ca3c154d0730165",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/9//#testresult/9ca3c154d0730165",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637313230347,
+          "stop" : 1637313233420,
+          "duration" : 3073
+        }
+      }, {
+        "uid" : "ce69aab1a92b135b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/8//#testresult/ce69aab1a92b135b",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637229703158,
+          "stop" : 1637229703438,
+          "duration" : 280
+        }
+      }, {
+        "uid" : "dd0eb73705282ebb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/dd0eb73705282ebb",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637191770294,
+          "stop" : 1637191770576,
+          "duration" : 282
+        }
+      }, {
+        "uid" : "16de17fee20af0c7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/16de17fee20af0c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636890204298,
+          "stop" : 1636890215402,
+          "duration" : 11104
+        }
+      }, {
+        "uid" : "82906f71f31d7dcc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/82906f71f31d7dcc",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Insufficient funds for fee",
+        "time" : {
+          "start" : 1636827722572,
+          "stop" : 1636827725538,
+          "duration" : 2966
+        }
+      }, {
+        "uid" : "bd7c009b5e992e94",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/bd7c009b5e992e94",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804351034,
+          "stop" : 1636804351520,
+          "duration" : 486
+        }
+      }, {
+        "uid" : "d5fc3dd3e927c5c5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/d5fc3dd3e927c5c5",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798852484,
+          "stop" : 1636798852760,
+          "duration" : 276
+        }
+      }, {
+        "uid" : "30af6e88c4b07a23",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/30af6e88c4b07a23",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid program argument",
+        "time" : {
+          "start" : 1636765531176,
+          "stop" : 1636765533703,
+          "duration" : 2527
+        }
+      }, {
+        "uid" : "7b6c40190a997ece",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/7b6c40190a997ece",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636737028206,
+          "stop" : 1636737034811,
+          "duration" : 6605
+        }
+      }, {
+        "uid" : "82cf1358a2b4f807",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/82cf1358a2b4f807",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636682565637,
+          "stop" : 1636682571876,
+          "duration" : 6239
+        }
+      }, {
+        "uid" : "7d1ef8fb3e7a20",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/7d1ef8fb3e7a20",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666565349,
+          "stop" : 1636666566829,
+          "duration" : 1480
+        }
+      }, {
+        "uid" : "b3785d4e0998b203",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/b3785d4e0998b203",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636666200259,
+          "stop" : 1636666202807,
+          "duration" : 2548
+        }
+      }, {
+        "uid" : "b10aa9bb90cd93e9",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/b10aa9bb90cd93e9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636665149315,
+          "stop" : 1636665152554,
+          "duration" : 3239
+        }
+      }, {
+        "uid" : "613c80e7ff1df74f",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/613c80e7ff1df74f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+        "time" : {
+          "start" : 1636642352872,
+          "stop" : 1636642355177,
+          "duration" : 2305
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7fc846f308abebd8.json",
+  "parameterValues" : [ ]
+}
