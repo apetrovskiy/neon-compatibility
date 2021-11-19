@@ -1,0 +1,80 @@
+{
+  "uid" : "b299238236cb9673",
+  "name" : "initial nonce is 0",
+  "fullName" : "Contract: ERC20Permit.initial nonce is 0",
+  "historyId" : "b600771187b9bd1409e33af66a33880d",
+  "time" : {
+    "start" : 1637320784143,
+    "stop" : 1637320788749,
+    "duration" : 4606
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/token/ERC20/extensions/draft-ERC20Permit.test.js:33:43)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20Permit"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Permit"
+  }, {
+    "name" : "testMethod",
+    "value" : "initial nonce is 0"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Permit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "347e08225708031",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/347e08225708031",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318705896,
+          "stop" : 1637318709001,
+          "duration" : 3105
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b299238236cb9673.json",
+  "parameterValues" : [ ]
+}

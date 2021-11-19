@@ -1,0 +1,80 @@
+{
+  "uid" : "b567e623973caa57",
+  "name" : "returns the transaction sender when called from an EOA",
+  "fullName" : "Contract: Context msgSender.returns the transaction sender when called from an EOA",
+  "historyId" : "a21577e26a37035be90b52e61eb3e09",
+  "time" : {
+    "start" : 1637320929498,
+    "stop" : 1637320933287,
+    "duration" : 3789
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1\n                    at Context.<anonymous> (test/utils/Context.test.js:12:41)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Context msgSender"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Context msgSender"
+  }, {
+    "name" : "testMethod",
+    "value" : "returns the transaction sender when called from an EOA"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Context msgSender"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a5d1bafb324909ba",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/a5d1bafb324909ba",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318814474,
+          "stop" : 1637318816904,
+          "duration" : 2430
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b567e623973caa57.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,80 @@
+{
+  "uid" : "9d260285d81856b0",
+  "name" : "\"before all\" hook: deploy implementation in \"clone\"",
+  "fullName" : "Contract: Clones clone.\"before all\" hook: deploy implementation in \"clone\"",
+  "historyId" : "d4da88e2fd1eef0a496793e28cefb1d1",
+  "time" : {
+    "start" : 1637320865886,
+    "stop" : 1637320865886,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1\n                    at Context.<anonymous> (test/proxy/Clones.behaviour.js:9:86)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Clones clone"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Clones clone"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: deploy implementation in \"clone\""
+  }, {
+    "name" : "package",
+    "value" : "Contract: Clones clone"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "99887910655e1bb4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/99887910655e1bb4",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318765700,
+          "stop" : 1637318765700,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9d260285d81856b0.json",
+  "parameterValues" : [ ]
+}
