@@ -1,0 +1,87 @@
+{
+  "uid" : "216f6a4faf03a488",
+  "name" : "run",
+  "fullName" : "Contract: GovernorCompatibilityBravo nominal.run",
+  "historyId" : "ac3e6e20ee9c6b21219f8f712bd19774",
+  "time" : {
+    "start" : 1637313282869,
+    "stop" : 1637313286065,
+    "duration" : 3196
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/governance/compatibility/GovernorCompatibilityBravo.test.js:49:33)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: GovernorCompatibilityBravo nominal"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: GovernorCompatibilityBravo nominal"
+  }, {
+    "name" : "testMethod",
+    "value" : "run"
+  }, {
+    "name" : "package",
+    "value" : "Contract: GovernorCompatibilityBravo nominal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "1e25ffb7b494fdc3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/8//#testresult/1e25ffb7b494fdc3",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637229694544,
+          "stop" : 1637229694829,
+          "duration" : 285
+        }
+      }, {
+        "uid" : "93bad49e79431f97",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/93bad49e79431f97",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637191760783,
+          "stop" : 1637191761066,
+          "duration" : 283
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "216f6a4faf03a488.json",
+  "parameterValues" : [ ]
+}

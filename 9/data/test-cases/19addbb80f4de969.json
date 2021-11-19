@@ -1,0 +1,197 @@
+{
+  "uid" : "19addbb80f4de969",
+  "name" : "requires a non-zero cap",
+  "fullName" : "Contract: ERC20Capped.requires a non-zero cap",
+  "historyId" : "c564acaf81a3aaccfe32753b55fdf2e6",
+  "time" : {
+    "start" : 1637313238411,
+    "stop" : 1637313241035,
+    "duration" : 2624
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+  "statusTrace" : "AssertionError: Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'\n                    at expectException (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:20:30)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Capped.test.js:15:5)",
+  "flaky" : false,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contract: ERC20Capped"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Capped"
+  }, {
+    "name" : "testMethod",
+    "value" : "requires a non-zero cap"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Capped"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 10,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "c3da59ecc785dfc3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/8//#testresult/c3da59ecc785dfc3",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637229703441,
+          "stop" : 1637229703718,
+          "duration" : 277
+        }
+      }, {
+        "uid" : "ea3bdfb1eee54f3b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/ea3bdfb1eee54f3b",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637191770579,
+          "stop" : 1637191770858,
+          "duration" : 279
+        }
+      }, {
+        "uid" : "b58002f198d78d34",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/b58002f198d78d34",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636890358918,
+          "stop" : 1636890361777,
+          "duration" : 2859
+        }
+      }, {
+        "uid" : "8c6a572c9376257",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/8c6a572c9376257",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636827725542,
+          "stop" : 1636827728418,
+          "duration" : 2876
+        }
+      }, {
+        "uid" : "ae4144046bc9ea9d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/ae4144046bc9ea9d",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636804351524,
+          "stop" : 1636804352014,
+          "duration" : 490
+        }
+      }, {
+        "uid" : "7332f83fc8b8501b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/7332f83fc8b8501b",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1636798852764,
+          "stop" : 1636798853041,
+          "duration" : 277
+        }
+      }, {
+        "uid" : "f13f2aace60a692d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/f13f2aace60a692d",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636765533707,
+          "stop" : 1636765535407,
+          "duration" : 1700
+        }
+      }, {
+        "uid" : "dffd174d8acf1eb2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/dffd174d8acf1eb2",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636737121785,
+          "stop" : 1636737123511,
+          "duration" : 1726
+        }
+      }, {
+        "uid" : "35b1f0ac5d83a51f",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/65//#testresult/35b1f0ac5d83a51f",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636682655725,
+          "stop" : 1636682657398,
+          "duration" : 1673
+        }
+      }, {
+        "uid" : "60cafa5246264805",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/64//#testresult/60cafa5246264805",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636666566833,
+          "stop" : 1636666567211,
+          "duration" : 378
+        }
+      }, {
+        "uid" : "2fc015bb76967632",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/63//#testresult/2fc015bb76967632",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636666202812,
+          "stop" : 1636666203171,
+          "duration" : 359
+        }
+      }, {
+        "uid" : "605f40dc7f502742",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/62//#testresult/605f40dc7f502742",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636665152925,
+          "stop" : 1636665154125,
+          "duration" : 1200
+        }
+      }, {
+        "uid" : "f2896cc053f2059e",
+        "reportUrl" : "https://neonlabsorg.github.io/neon-compatibility/61//#testresult/f2896cc053f2059e",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'",
+        "time" : {
+          "start" : 1636642355182,
+          "stop" : 1636642356504,
+          "duration" : 1322
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "19addbb80f4de969.json",
+  "parameterValues" : [ ]
+}
