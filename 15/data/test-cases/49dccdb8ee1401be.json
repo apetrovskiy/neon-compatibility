@@ -1,0 +1,100 @@
+{
+  "uid" : "49dccdb8ee1401be",
+  "name" : "does not support ERC165",
+  "fullName" : "Contract: ERC165Checker ERC165 missing return data.does not support ERC165",
+  "historyId" : "ad954a0e781255817d83eaa5ed4166f6",
+  "time" : {
+    "start" : 1637330213830,
+    "stop" : 1637330216313,
+    "duration" : 2483
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/utils/introspection/ERC165Checker.test.js:19:44)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC165Checker ERC165 missing return data"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC165Checker ERC165 missing return data"
+  }, {
+    "name" : "testMethod",
+    "value" : "does not support ERC165"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC165Checker ERC165 missing return data"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2d612a3ff13b3697",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/2d612a3ff13b3697",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329555819,
+          "stop" : 1637329559452,
+          "duration" : 3633
+        }
+      }, {
+        "uid" : "bdc218230b7c07a1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/bdc218230b7c07a1",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320947525,
+          "stop" : 1637320951747,
+          "duration" : 4222
+        }
+      }, {
+        "uid" : "932901d86d57d3e8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/932901d86d57d3e8",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318834561,
+          "stop" : 1637318836967,
+          "duration" : 2406
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "49dccdb8ee1401be.json",
+  "parameterValues" : [ ]
+}
