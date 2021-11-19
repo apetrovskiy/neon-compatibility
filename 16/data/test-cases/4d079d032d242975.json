@@ -1,0 +1,110 @@
+{
+  "uid" : "4d079d032d242975",
+  "name" : "only the owner can enter closed state",
+  "fullName" : "Contract: RefundEscrow once deployed.only the owner can enter closed state",
+  "historyId" : "4e7f510ff32d7ec259449b864f86d67a",
+  "time" : {
+    "start" : 1637335577829,
+    "stop" : 1637335579959,
+    "duration" : 2130
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1\n                    at Context.<anonymous> (test/utils/escrow/RefundEscrow.test.js:22:43)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: RefundEscrow once deployed"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: RefundEscrow once deployed"
+  }, {
+    "name" : "testMethod",
+    "value" : "only the owner can enter closed state"
+  }, {
+    "name" : "package",
+    "value" : "Contract: RefundEscrow once deployed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "24981df63814a72f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/15//#testresult/24981df63814a72f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637330262236,
+          "stop" : 1637330264559,
+          "duration" : 2323
+        }
+      }, {
+        "uid" : "904cf8a012034b71",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/904cf8a012034b71",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329596570,
+          "stop" : 1637329599743,
+          "duration" : 3173
+        }
+      }, {
+        "uid" : "1e7137328006676a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/1e7137328006676a",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320996440,
+          "stop" : 1637320999585,
+          "duration" : 3145
+        }
+      }, {
+        "uid" : "e50650b2a7a9fc95",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/e50650b2a7a9fc95",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318873706,
+          "stop" : 1637318876075,
+          "duration" : 2369
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4d079d032d242975.json",
+  "parameterValues" : [ ]
+}
