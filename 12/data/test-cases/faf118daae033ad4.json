@@ -1,0 +1,59 @@
+{
+  "uid" : "faf118daae033ad4",
+  "name" : "adds correctly if it does not overflow and the result is positive",
+  "fullName" : "Contract: SignedSafeMath add.adds correctly if it does not overflow and the result is positive",
+  "historyId" : "db4ec3f137ce67cb3d8e8eb3319a6208",
+  "time" : {
+    "start" : 1637318851649,
+    "stop" : 1637318854207,
+    "duration" : 2558
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1\n                    at Context.<anonymous> (test/utils/math/SignedSafeMath.test.js:10:49)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: SignedSafeMath add"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: SignedSafeMath add"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds correctly if it does not overflow and the result is positive"
+  }, {
+    "name" : "package",
+    "value" : "Contract: SignedSafeMath add"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "faf118daae033ad4.json",
+  "parameterValues" : [ ]
+}
