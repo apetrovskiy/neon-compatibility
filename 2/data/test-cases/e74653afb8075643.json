@@ -1,0 +1,86 @@
+{
+  "uid" : "e74653afb8075643",
+  "name" : "uses less than 30k gas [skip-on-coverage]",
+  "fullName" : "Contract: AccessControl Contract interface AccessControlEnumerable ERC165's supportsInterface(bytes4).uses less than 30k gas [skip-on-coverage]",
+  "historyId" : "5b6b051ee9826e6247ac8c75991e37d0",
+  "time" : {
+    "start" : 1637676552775,
+    "stop" : 1637676558257,
+    "duration" : 5482
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 121897 to be at most 30000",
+  "statusTrace" : "AssertionError: expected 121897 to be at most 30000\n                    at Context.<anonymous> (test/utils/introspection/SupportsInterface.behavior.js:100:99)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: AccessControl Contract interface AccessControlEnumerable ERC165's supportsInterface(bytes4)"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: AccessControl Contract interface AccessControlEnumerable ERC165's supportsInterface(bytes4)"
+  }, {
+    "name" : "testMethod",
+    "value" : "uses less than 30k gas [skip-on-coverage]"
+  }, {
+    "name" : "package",
+    "value" : "Contract: AccessControl Contract interface AccessControlEnumerable ERC165's supportsInterface(bytes4)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "1ab949c515cda866",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/1ab949c515cda866",
+        "status" : "failed",
+        "statusDetails" : "expected 121897 to be at most 30000",
+        "time" : {
+          "start" : 1637664754512,
+          "stop" : 1637664759505,
+          "duration" : 4993
+        }
+      }, {
+        "uid" : "4c8b8edf5a41ced1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/4c8b8edf5a41ced1",
+        "status" : "failed",
+        "statusDetails" : "expected 121897 to be at most 30000",
+        "time" : {
+          "start" : 1637335437480,
+          "stop" : 1637335442586,
+          "duration" : 5106
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e74653afb8075643.json",
+  "parameterValues" : [ ]
+}

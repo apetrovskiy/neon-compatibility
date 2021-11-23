@@ -1,0 +1,176 @@
+{
+  "uid" : "6976ae89a61f2f01",
+  "name" : "rejects zero address for beneficiary",
+  "fullName" : "Contract: VestingWallet.rejects zero address for beneficiary",
+  "historyId" : "bef7a5330168f359aa261f5b27a742ca",
+  "time" : {
+    "start" : 1637676325940,
+    "stop" : 1637676334889,
+    "duration" : 8949
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+  "statusTrace" : "AssertionError: Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:20:30)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (test/finance/VestingWallet.test.js:24:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testMethod",
+    "value" : "rejects zero address for beneficiary"
+  }, {
+    "name" : "package",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 9,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "839bab5d3a6c9ffe",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/839bab5d3a6c9ffe",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1637664857186,
+          "stop" : 1637664879950,
+          "duration" : 22764
+        }
+      }, {
+        "uid" : "2aca21e5c78c6be8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/2aca21e5c78c6be8",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'VestingWallet: beneficiary is zero address'",
+        "time" : {
+          "start" : 1637664813747,
+          "stop" : 1637664820212,
+          "duration" : 6465
+        }
+      }, {
+        "uid" : "1dd92a715ccd6ab",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/1dd92a715ccd6ab",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637662313735,
+          "stop" : 1637662314045,
+          "duration" : 310
+        }
+      }, {
+        "uid" : "75c1087be6835d46",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/19//#testresult/75c1087be6835d46",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637517917683,
+          "stop" : 1637517922212,
+          "duration" : 4529
+        }
+      }, {
+        "uid" : "322ed384c51b0e22",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/18//#testresult/322ed384c51b0e22",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637514281530,
+          "stop" : 1637514285956,
+          "duration" : 4426
+        }
+      }, {
+        "uid" : "6d1a7141845df3df",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/17//#testresult/6d1a7141845df3df",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637337019481,
+          "stop" : 1637337024083,
+          "duration" : 4602
+        }
+      }, {
+        "uid" : "69fc3dab43d4fed6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/69fc3dab43d4fed6",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637335618945,
+          "stop" : 1637335622220,
+          "duration" : 3275
+        }
+      }, {
+        "uid" : "6b343a85766f8bc9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/15//#testresult/6b343a85766f8bc9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637330307904,
+          "stop" : 1637330311015,
+          "duration" : 3111
+        }
+      }, {
+        "uid" : "de21ad5a41c90e52",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/de21ad5a41c90e52",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329641430,
+          "stop" : 1637329645776,
+          "duration" : 4346
+        }
+      }, {
+        "uid" : "a7014cfde7eea6cd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/a7014cfde7eea6cd",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637321042774,
+          "stop" : 1637321047199,
+          "duration" : 4425
+        }
+      }, {
+        "uid" : "3b490286802afa29",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/3b490286802afa29",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318916645,
+          "stop" : 1637318919701,
+          "duration" : 3056
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6976ae89a61f2f01.json",
+  "parameterValues" : [ ]
+}

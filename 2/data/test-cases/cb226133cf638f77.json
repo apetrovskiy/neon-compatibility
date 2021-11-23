@@ -1,0 +1,102 @@
+{
+  "uid" : "cb226133cf638f77",
+  "name" : "non-compliant beacon",
+  "fullName" : "Contract: BeaconProxy bad beacon is not accepted.non-compliant beacon",
+  "historyId" : "5332c7a1339950f1818986af6789d29",
+  "time" : {
+    "start" : 1637676738165,
+    "stop" : 1637676741240,
+    "duration" : 3075
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction\n                    at Context.<anonymous> (test/proxy/beacon/BeaconProxy.test.js:33:47)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: BeaconProxy bad beacon is not accepted"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: BeaconProxy bad beacon is not accepted"
+  }, {
+    "name" : "testMethod",
+    "value" : "non-compliant beacon"
+  }, {
+    "name" : "package",
+    "value" : "Contract: BeaconProxy bad beacon is not accepted"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "c235e69ab6953ff7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/c235e69ab6953ff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637668080142,
+          "stop" : 1637668095381,
+          "duration" : 15239
+        }
+      }, {
+        "uid" : "85126da14d011e44",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/85126da14d011e44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637667028437,
+          "stop" : 1637667033336,
+          "duration" : 4899
+        }
+      }, {
+        "uid" : "38c1420732eae34a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/38c1420732eae34a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637662552998,
+          "stop" : 1637662558099,
+          "duration" : 5101
+        }
+      }, {
+        "uid" : "68c5828e05a2eafe",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/68c5828e05a2eafe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637335209079,
+          "stop" : 1637335214369,
+          "duration" : 5290
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cb226133cf638f77.json",
+  "parameterValues" : [ ]
+}
