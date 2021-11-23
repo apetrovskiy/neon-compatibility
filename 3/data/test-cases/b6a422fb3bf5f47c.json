@@ -1,0 +1,84 @@
+{
+  "uid" : "b6a422fb3bf5f47c",
+  "name" : "deploys a ERC1820Implementer from inline assembly code",
+  "fullName" : "Contract: Create2 deploy.deploys a ERC1820Implementer from inline assembly code",
+  "historyId" : "15b9e7410afa9187197a8d9b090e676",
+  "time" : {
+    "start" : 1637682790053,
+    "stop" : 1637682792800,
+    "duration" : 2747
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f437ff11e80>: Failed to establish a new connection: [Errno 99] Cannot assign requested address'))",
+  "statusTrace" : "Error: Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f437ff11e80>: Failed to establish a new connection: [Errno 99] Cannot assign requested address'))\n                    at Context.<anonymous> (test/utils/Create2.test.js:23:41)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testMethod",
+    "value" : "deploys a ERC1820Implementer from inline assembly code"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9ff7989e4349989a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/9ff7989e4349989a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676759597,
+          "stop" : 1637676766045,
+          "duration" : 6448
+        }
+      }, {
+        "uid" : "a349c0e074429fe9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/a349c0e074429fe9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637669818627,
+          "stop" : 1637669824076,
+          "duration" : 5449
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b6a422fb3bf5f47c.json",
+  "parameterValues" : [ ]
+}

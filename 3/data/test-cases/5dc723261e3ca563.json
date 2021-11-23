@@ -1,0 +1,282 @@
+{
+  "uid" : "5dc723261e3ca563",
+  "name" : "test_truffle_migration",
+  "fullName" : "tests.truffle.test_truffle#test_truffle_migration",
+  "historyId" : "e63c5a1b531c2472845045a6f65cedaf",
+  "time" : {
+    "start" : 1637682541631,
+    "stop" : 1637682573755,
+    "duration" : 32124
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "prepare_truffle_config",
+    "time" : {
+      "start" : 1637682541619,
+      "stop" : 1637682541630,
+      "duration" : 11
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preset variables",
+      "time" : {
+        "start" : 1637682541619,
+        "stop" : 1637682541630,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Clean up folder \"'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'\"",
+      "time" : {
+        "start" : 1637682541630,
+        "stop" : 1637682541630,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "folder",
+        "value" : "'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Run command: \"'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'\"",
+      "time" : {
+        "start" : 1637682541631,
+        "stop" : 1637682573754,
+        "duration" : 32123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "command",
+        "value" : "'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "511fae35e631fcfd",
+      "name" : "stdout",
+      "source" : "511fae35e631fcfd.txt",
+      "type" : "text/plain",
+      "size" : 3980
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "prepare_truffle_config::0",
+    "time" : {
+      "start" : 1637682573756,
+      "stop" : 1637682573756,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Truffle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.truffle"
+  }, {
+    "name" : "suite",
+    "value" : "test_truffle"
+  }, {
+    "name" : "host",
+    "value" : "fv-az132-568"
+  }, {
+    "name" : "thread",
+    "value" : "4754-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.truffle.test_truffle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "44005cc001effcd1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/44005cc001effcd1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676469178,
+          "stop" : 1637676513108,
+          "duration" : 43930
+        }
+      }, {
+        "uid" : "b285f7e7677dc296",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/1//#testresult/b285f7e7677dc296",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637674817845,
+          "stop" : 1637674851831,
+          "duration" : 33986
+        }
+      }, {
+        "uid" : "b925a409dfb0eaeb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/b925a409dfb0eaeb",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compilation warnings encountered:\n  \n      Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      245022926\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  1_initial_migration.js\n  ======================\n  \n     Deploying 'Migrations'\n     ----------------------\n     > transaction hash:    0xd54e5f42bd83685bdef99e4894453f3be777f8f7a282f3dc7dd7de750060958c\n     > Blocks: 0            Seconds: 0\n     > contract address:    0x1a5615BC9bB36CDF93678cC17D6660727e91904D\n     > block number:        96164536\n     > block timestamp:     1637664390\n     > account:             0xB941034Beeaa83996b9B05d89E5e726165B7f107\n     > balance:             4.999915713\n     > gas used:            84287 (0x1493f)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000084287 ETH\n  \n  \n     > Saving migration to chain.\n     > Saving artifacts\n     -------------------------------------\n     > Total cost:         0.000084287 ETH\n  \n  \n  2_deploy_contracts.js\n  =====================\n  \n     Deploying 'ConvertLib'\n     ----------------------\n     > transaction hash:    0xc0258b13db72ff52d0068385f71b55aed8c91ac29024cb87f5d1e3ed8083b8b6\n     > Blocks: 0            Seconds: 0\n     > contract address:    0xd511a6F323F0D3197D8A93c57f3e8440206f907c\n     > block number:        96164586\n     > block timestamp:     1637664409\n     > account:             0xB941034Beeaa83996b9B05d89E5e726165B7f107\n     > balance:             4.999812516\n     > gas used:            60681 (0xed09)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000060681 ETH\n  \n  \n     Linking\n     -------\n     * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xd511a6F323F0D3197D8A93c57f3e8440206f907c)\n  \n     Deploying 'MetaCoin'\n     --------------------\n     > transaction hash:    0x0e0c2ca012c94723a561ec56f3e3da4dca32e8cbd18a936e7b794cb5ded14b0d\n     > Blocks: 32           Seconds: 12\n     > contract address:    0x5cCFAA18e25dDAd48e9b76bf12ff02e700Bc4cBe\n     > block number:        96164624\n     > block timestamp:     1637664424\n     > account:             0xB941034Beeaa83996b9B05d89E5e726165B7f107\n     > balance:             4.99971406\n     > gas used:            98456 (0x18098)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000098456 ETH\n  \n  \n  /home/runner/work/neon-compatibility/neon-compatibility\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  - Blocks: 0            Seconds: 0\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (internal/timers.js:557:17)\n      at processTimers (internal/timers.js:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at processTicksAndRejections (internal/process/task_queues.js:95:5)\n      at runNextTicks (internal/process/task_queues.js:64:3)\n      at listOnTimeout (internal/timers.js:526:9)\n      at processTimers (internal/timers.js:500:7)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne....js:500:7)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (internal/timers.js:557:17)\n        at processTimers (internal/timers.js:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at processTicksAndRejections (internal/process/task_queues.js:95:5)\n        at runNextTicks (internal/process/task_queues.js:64:3)\n        at listOnTimeout (internal/timers.js:526:9)\n        at processTimers (internal/timers.js:500:7)",
+        "time" : {
+          "start" : 1637664368302,
+          "stop" : 1637664451293,
+          "duration" : 82991
+        }
+      }, {
+        "uid" : "3b1dfd3c76f5a761",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/3b1dfd3c76f5a761",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637664599263,
+          "stop" : 1637664632359,
+          "duration" : 33096
+        }
+      }, {
+        "uid" : "4001152e2ea071f1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/4001152e2ea071f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637662273819,
+          "stop" : 1637662277087,
+          "duration" : 3268
+        }
+      }, {
+        "uid" : "9f82f3d02e67ee6e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/19//#testresult/9f82f3d02e67ee6e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637517632604,
+          "stop" : 1637517653090,
+          "duration" : 20486
+        }
+      }, {
+        "uid" : "86bccc1eb3b89d34",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/18//#testresult/86bccc1eb3b89d34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637513959878,
+          "stop" : 1637513979180,
+          "duration" : 19302
+        }
+      }, {
+        "uid" : "8dc5f455e1885582",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/17//#testresult/8dc5f455e1885582",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637336578205,
+          "stop" : 1637336594615,
+          "duration" : 16410
+        }
+      }, {
+        "uid" : "7ca9626ad3ab0eb8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/7ca9626ad3ab0eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334474333,
+          "stop" : 1637334519342,
+          "duration" : 45009
+        }
+      }, {
+        "uid" : "202aed9d6ac43f4a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/15//#testresult/202aed9d6ac43f4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637329774727,
+          "stop" : 1637329790156,
+          "duration" : 15429
+        }
+      }, {
+        "uid" : "4747a11e63fb5aa2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/4747a11e63fb5aa2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637329241738,
+          "stop" : 1637329257490,
+          "duration" : 15752
+        }
+      }, {
+        "uid" : "b9b3779cdd2c0c81",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/b9b3779cdd2c0c81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637320760537,
+          "stop" : 1637320781501,
+          "duration" : 20964
+        }
+      }, {
+        "uid" : "7c1719ddb19568d7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/7c1719ddb19568d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637318618486,
+          "stop" : 1637318639191,
+          "duration" : 20705
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5dc723261e3ca563.json",
+  "parameterValues" : [ ]
+}
