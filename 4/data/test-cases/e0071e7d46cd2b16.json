@@ -1,0 +1,103 @@
+{
+  "uid" : "e0071e7d46cd2b16",
+  "name" : "a role can be renounced multiple times",
+  "fullName" : "Contract: AccessControl renouncing with granted role.a role can be renounced multiple times",
+  "historyId" : "ce0f18dccf93a7832d75432a48a65050",
+  "time" : {
+    "start" : 1637688541353,
+    "stop" : 1637688556263,
+    "duration" : 14910
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\n                    at Context.<anonymous> (test/access/AccessControl.behavior.js:90:34)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: AccessControl renouncing with granted role"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: AccessControl renouncing with granted role"
+  }, {
+    "name" : "testMethod",
+    "value" : "a role can be renounced multiple times"
+  }, {
+    "name" : "package",
+    "value" : "Contract: AccessControl renouncing with granted role"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "88b9395018458d33",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/88b9395018458d33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676469652,
+          "stop" : 1637676478989,
+          "duration" : 9337
+        }
+      }, {
+        "uid" : "1c5b409db6677cd8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/1c5b409db6677cd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637664610793,
+          "stop" : 1637664641152,
+          "duration" : 30359
+        }
+      }, {
+        "uid" : "5aa9c28d5c633bd6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/5aa9c28d5c633bd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637664670984,
+          "stop" : 1637664680741,
+          "duration" : 9757
+        }
+      }, {
+        "uid" : "7ca53119e7e8140d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/7ca53119e7e8140d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637335353030,
+          "stop" : 1637335363185,
+          "duration" : 10155
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e0071e7d46cd2b16.json",
+  "parameterValues" : [ ]
+}

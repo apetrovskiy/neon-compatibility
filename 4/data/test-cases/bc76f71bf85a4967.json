@@ -1,0 +1,56 @@
+{
+  "uid" : "bc76f71bf85a4967",
+  "name" : "\"before all\" hook for \"cannot be initialized with a non-contract address\"",
+  "fullName" : "Contract: TransparentUpgradeableProxy.\"before all\" hook for \"cannot be initialized with a non-contract address\"",
+  "historyId" : "fbfa2d84ce6c98a229e0a239df657f2f",
+  "time" : {
+    "start" : 1637688556668,
+    "stop" : 1637688556668,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\n                    at Context.<anonymous> (test/proxy/transparent/TransparentUpgradeableProxy.behaviour.js:31:59)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: TransparentUpgradeableProxy"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: TransparentUpgradeableProxy"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook for \"cannot be initialized with a non-contract address\""
+  }, {
+    "name" : "package",
+    "value" : "Contract: TransparentUpgradeableProxy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bc76f71bf85a4967.json",
+  "parameterValues" : [ ]
+}

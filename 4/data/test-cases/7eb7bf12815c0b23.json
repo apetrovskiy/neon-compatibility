@@ -1,0 +1,94 @@
+{
+  "uid" : "7eb7bf12815c0b23",
+  "name" : "adds and removes multiple values",
+  "fullName" : "Contract: EnumerableSet EnumerableBytes32Set remove.adds and removes multiple values",
+  "historyId" : "13089de672c20f62369a3edd0c542542",
+  "time" : {
+    "start" : 1637688656424,
+    "stop" : 1637688745977,
+    "duration" : 89553
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Failed to check for transaction receipt:\n                {\n                  \"data\": {\n                    \"stack\": \"FetchError: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\\n    at ClientRequest.<anonymous> (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/node-fetch/lib/index.js:1483:11)\\n    at ClientRequest.emit (node:events:390:28)\\n    at TLSSocket.socketErrorListener (node:_http_client:447:9)\\n    at TLSSocket.emit (node:events:390:28)\\n    at emitErrorNT (node:internal/streams/destroy:157:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:122:3)\\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)\",\n                    \"name\": \"FetchError\"\n                  }\n                }",
+  "statusTrace" : "Error: Failed to check for transaction receipt:\n                    at Context.<anonymous> (test/utils/structs/EnumerableSet.behavior.js:108:22)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: EnumerableSet EnumerableBytes32Set remove"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: EnumerableSet EnumerableBytes32Set remove"
+  }, {
+    "name" : "testMethod",
+    "value" : "adds and removes multiple values"
+  }, {
+    "name" : "package",
+    "value" : "Contract: EnumerableSet EnumerableBytes32Set remove"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "65c6c7f06a1d3ea6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/65c6c7f06a1d3ea6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637682754466,
+          "stop" : 1637682789973,
+          "duration" : 35507
+        }
+      }, {
+        "uid" : "3a8005ceddd0ebc4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/3a8005ceddd0ebc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676664064,
+          "stop" : 1637676699331,
+          "duration" : 35267
+        }
+      }, {
+        "uid" : "fccd857b2402a8b5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/fccd857b2402a8b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637669728738,
+          "stop" : 1637669763194,
+          "duration" : 34456
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7eb7bf12815c0b23.json",
+  "parameterValues" : [ ]
+}

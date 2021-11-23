@@ -1,0 +1,122 @@
+{
+  "uid" : "399f897ded36b3c7",
+  "name" : "initializer has run",
+  "fullName" : "Contract: Initializable basic testing without inheritance after nested initialize.initializer has run",
+  "historyId" : "3e844e055e00d8f64e9219793b3782a3",
+  "time" : {
+    "start" : 1637688556297,
+    "stop" : 1637688556438,
+    "duration" : 141
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\n                    at Context.<anonymous> (test/proxy/utils/Initializable.test.js:11:50)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Initializable basic testing without inheritance after nested initialize"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Initializable basic testing without inheritance after nested initialize"
+  }, {
+    "name" : "testMethod",
+    "value" : "initializer has run"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Initializable basic testing without inheritance after nested initialize"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "1104a262b00de633",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/1104a262b00de633",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637682562772,
+          "stop" : 1637682569186,
+          "duration" : 6414
+        }
+      }, {
+        "uid" : "a55e09346716d853",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/a55e09346716d853",
+        "status" : "broken",
+        "statusDetails" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f437ff29880>: Failed to establish a new connection: [Errno 99] Cannot assign requested address'))",
+        "time" : {
+          "start" : 1637676726350,
+          "stop" : 1637676732520,
+          "duration" : 6170
+        }
+      }, {
+        "uid" : "1043994e12babd18",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/1043994e12babd18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637667959149,
+          "stop" : 1637667978528,
+          "duration" : 19379
+        }
+      }, {
+        "uid" : "e293543c303860e2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/e293543c303860e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637666992191,
+          "stop" : 1637666998309,
+          "duration" : 6118
+        }
+      }, {
+        "uid" : "dbf5a67af4a7ddf7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/dbf5a67af4a7ddf7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637662510457,
+          "stop" : 1637662516432,
+          "duration" : 5975
+        }
+      }, {
+        "uid" : "5f563f38a9b14f88",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/5f563f38a9b14f88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637335126596,
+          "stop" : 1637335133049,
+          "duration" : 6453
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "399f897ded36b3c7.json",
+  "parameterValues" : [ ]
+}

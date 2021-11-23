@@ -1,0 +1,126 @@
+{
+  "uid" : "2afcad72eb42e169",
+  "name" : "reverts",
+  "fullName" : "Contract: Clones clone initialization without parameters non payable when sending some balance.reverts",
+  "historyId" : "e07fa829e7f9cdc9dfd5d56a09990203",
+  "time" : {
+    "start" : 1637688612152,
+    "stop" : 1637688646004,
+    "duration" : 33852
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at Context.<anonymous> (test/proxy/Clones.behaviour.js:45:11)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Clones clone initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Clones clone initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Clones clone initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 7,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "6269a01b05da1646",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/6269a01b05da1646",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637682565611,
+          "stop" : 1637682573388,
+          "duration" : 7777
+        }
+      }, {
+        "uid" : "24f17bd3ea2b3ca",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/24f17bd3ea2b3ca",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument' to equal 'revert'",
+        "time" : {
+          "start" : 1637676726925,
+          "stop" : 1637676735053,
+          "duration" : 8128
+        }
+      }, {
+        "uid" : "bd59d8eb8dde9a26",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/bd59d8eb8dde9a26",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637667984693,
+          "stop" : 1637668014683,
+          "duration" : 29990
+        }
+      }, {
+        "uid" : "f6968aba9ee631b7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/f6968aba9ee631b7",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637666994390,
+          "stop" : 1637667002469,
+          "duration" : 8079
+        }
+      }, {
+        "uid" : "3c4996d94827bf5b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/3c4996d94827bf5b",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637662513429,
+          "stop" : 1637662521101,
+          "duration" : 7672
+        }
+      }, {
+        "uid" : "38aab3ffaa73f22",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/38aab3ffaa73f22",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637334886395,
+          "stop" : 1637334894116,
+          "duration" : 7721
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2afcad72eb42e169.json",
+  "parameterValues" : [ ]
+}
