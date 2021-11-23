@@ -1,0 +1,60 @@
+{
+  "uid" : "350b8e85858afb42",
+  "name" : "does not allow beneficiary withdrawal",
+  "fullName" : "Contract: RefundEscrow once deployed active state.does not allow beneficiary withdrawal",
+  "historyId" : "bbeba39ff6e46652f47ff3285cd3686e",
+  "time" : {
+    "start" : 1637669863983,
+    "stop" : 1637669869820,
+    "duration" : 5837
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '48a30ace38063a3002cdba78781aacc24b85d62f', 'c22fb1aee081b1d9df15775a1a0b9593f60558c1', 'f340fa01000000000000000000000000f8d04a4d2d3b1da40a1f717b7cd0ee77562abfcf', '0x2ed6689e54f180000']' returned non-zero exit status 1.",
+  "statusTrace" : "Error: Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '48a30ace38063a3002cdba78781aacc24b85d62f', 'c22fb1aee081b1d9df15775a1a0b9593f60558c1', 'f340fa01000000000000000000000000f8d04a4d2d3b1da40a1f717b7cd0ee77562abfcf', '0x2ed6689e54f180000']' returned non-zero exit status 1.\n                    at Context.<anonymous> (test/utils/escrow/RefundEscrow.test.js:45:27)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: RefundEscrow once deployed active state"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: RefundEscrow once deployed active state"
+  }, {
+    "name" : "testMethod",
+    "value" : "does not allow beneficiary withdrawal"
+  }, {
+    "name" : "package",
+    "value" : "Contract: RefundEscrow once deployed active state"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "neon-cli error",
+      "messageRegex" : ".*'neon-cli'.* returned non-zero exit status 1.",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "350b8e85858afb42.json",
+  "parameterValues" : [ ]
+}

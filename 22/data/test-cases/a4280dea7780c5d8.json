@@ -1,0 +1,90 @@
+{
+  "uid" : "a4280dea7780c5d8",
+  "name" : "reverts",
+  "fullName" : "Contract: ERC1967Proxy initialization without parameters non payable when sending some balance.reverts",
+  "historyId" : "b1686f9e14ee129474cd5b28f34ddf54",
+  "time" : {
+    "start" : 1637667016053,
+    "stop" : 1637667021355,
+    "duration" : 5302
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at Context.<anonymous> (test/proxy/Proxy.behaviour.js:101:11)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC1967Proxy initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1967Proxy initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1967Proxy initialization without parameters non payable when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f5afff060928b8f7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/f5afff060928b8f7",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637662541372,
+          "stop" : 1637662546057,
+          "duration" : 4685
+        }
+      }, {
+        "uid" : "533c5524f12136b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/533c5524f12136b",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637335191650,
+          "stop" : 1637335196412,
+          "duration" : 4762
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a4280dea7780c5d8.json",
+  "parameterValues" : [ ]
+}
