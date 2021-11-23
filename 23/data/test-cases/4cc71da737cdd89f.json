@@ -1,0 +1,79 @@
+{
+  "uid" : "4cc71da737cdd89f",
+  "name" : "fails to mint after cap is reached",
+  "fullName" : "Contract: ERC20Capped once deployed capped token.fails to mint after cap is reached",
+  "historyId" : "3c9be23ac8e02dd2819d1fe19a0a15cc",
+  "time" : {
+    "start" : 1637700013580,
+    "stop" : 1637700036486,
+    "duration" : 22906
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Transaction: 0xb3a4b812031752ae7fd2f005fa7a4b236ab64bb9148f0ce14de3136dcdc707f9 exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+  "statusTrace" : "StatusError: Transaction: 0xb3a4b812031752ae7fd2f005fa7a4b236ab64bb9148f0ce14de3136dcdc707f9 exited with an error (status 0). \n                    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Capped.test.js:22:41)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "testMethod",
+    "value" : "fails to mint after cap is reached"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "1b00acebbb6c943",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/1b00acebbb6c943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637667805994,
+          "stop" : 1637667814357,
+          "duration" : 8363
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4cc71da737cdd89f.json",
+  "parameterValues" : [ ]
+}

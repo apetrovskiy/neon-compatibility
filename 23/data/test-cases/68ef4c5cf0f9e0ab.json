@@ -1,0 +1,89 @@
+{
+  "uid" : "68ef4c5cf0f9e0ab",
+  "name" : "decreases the spender allowance subtracting the requested amount",
+  "fullName" : "Contract: ERC20 decrease allowance when the spender is not the zero address when the sender has enough balance when the spender had an approved amount.decreases the spender allowance subtracting the requested amount",
+  "historyId" : "1db6b2d778a17fb7c3f739b1edd07876",
+  "time" : {
+    "start" : 1637701503976,
+    "stop" : 1637701551213,
+    "duration" : 47237
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\n                    at Context.<anonymous> (test/token/ERC20/ERC20.test.js:82:37)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20 decrease allowance when the spender is not the zero address when the sender has enough balance when the spender had an approved amount"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20 decrease allowance when the spender is not the zero address when the sender has enough balance when the spender had an approved amount"
+  }, {
+    "name" : "testMethod",
+    "value" : "decreases the spender allowance subtracting the requested amount"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20 decrease allowance when the spender is not the zero address when the sender has enough balance when the spender had an approved amount"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "1634f78123fa6d2a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/1634f78123fa6d2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637668150610,
+          "stop" : 1637668160337,
+          "duration" : 9727
+        }
+      }, {
+        "uid" : "4c6d0a825d0ebb8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/4c6d0a825d0ebb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334802496,
+          "stop" : 1637334812451,
+          "duration" : 9955
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "68ef4c5cf0f9e0ab.json",
+  "parameterValues" : [ ]
+}

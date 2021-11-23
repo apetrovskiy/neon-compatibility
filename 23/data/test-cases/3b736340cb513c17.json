@@ -1,0 +1,101 @@
+{
+  "uid" : "3b736340cb513c17",
+  "name" : "deploys a contract with funds deposited in the factory",
+  "fullName" : "Contract: Create2 deploy.deploys a contract with funds deposited in the factory",
+  "historyId" : "2b708496b35e04fd2a7d75a3636d0c92",
+  "time" : {
+    "start" : 1637704133928,
+    "stop" : 1637704151491,
+    "duration" : 17563
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://neon.devnet.rpcpool.com/c7710a7b633cbadb9be9900c7946/', '--evm_loader=eeLSJgWzzxrqKv1UxtRVVH8FX3qCQWUs9QuAjJpETGU', 'emulate', 'c238c943ade6519803d6cc2a087e95f251503cb7', '3b9aad0d2f28db61e85985a4ff5bf6aecb478659', 'none', '0x1bc16d674ec80000']' returned non-zero exit status 1.",
+  "statusTrace" : "Error: Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://neon.devnet.rpcpool.com/c7710a7b633cbadb9be9900c7946/', '--evm_loader=eeLSJgWzzxrqKv1UxtRVVH8FX3qCQWUs9QuAjJpETGU', 'emulate', 'c238c943ade6519803d6cc2a087e95f251503cb7', '3b9aad0d2f28db61e85985a4ff5bf6aecb478659', 'none', '0x1bc16d674ec80000']' returned non-zero exit status 1.\n                    at Object.ErrorResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/node_modules/web3-core-helpers/lib/errors.js:28:19)\n                    at /Users/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/lib/index.js:302:36\n                    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testMethod",
+    "value" : "deploys a contract with funds deposited in the factory"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "neon-cli error",
+      "messageRegex" : ".*'neon-cli'.* returned non-zero exit status 1.",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "81e467d98ce9e107",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/81e467d98ce9e107",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+        "time" : {
+          "start" : 1637688767654,
+          "stop" : 1637688785813,
+          "duration" : 18159
+        }
+      }, {
+        "uid" : "295e653788e2b2dc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/295e653788e2b2dc",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', 'bcfb995664394e1f403735ac1943d3899c0c5542', 'd9a08519edd7bda1deb7f3ece305fdc96436c90d', 'none', '0x1bc16d674ec80000']' returned non-zero exit status 1.",
+        "time" : {
+          "start" : 1637676778455,
+          "stop" : 1637676783222,
+          "duration" : 4767
+        }
+      }, {
+        "uid" : "dfce36f9bf6e8998",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/dfce36f9bf6e8998",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '376aa90abcf4f4a473dd4aeb1353e7e0034b9f7b', 'd5112864c0ca9d453980d67cd165a52f1f9735d0', 'none', '0x1bc16d674ec80000']' returned non-zero exit status 1.",
+        "time" : {
+          "start" : 1637669836418,
+          "stop" : 1637669840999,
+          "duration" : 4581
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3b736340cb513c17.json",
+  "parameterValues" : [ ]
+}

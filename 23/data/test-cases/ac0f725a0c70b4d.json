@@ -1,0 +1,121 @@
+{
+  "uid" : "ac0f725a0c70b4d",
+  "name" : "payable initialization",
+  "fullName" : "Contract: BeaconProxy initialization.payable initialization",
+  "historyId" : "24ebe6e80a855369e1a1ec51b8bda755",
+  "time" : {
+    "start" : 1637698836927,
+    "stop" : 1637698876690,
+    "duration" : 39763
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+  "statusTrace" : "Error: Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'\n                    at Object.ErrorResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/node_modules/web3-core-helpers/lib/errors.js:28:19)\n                    at /Users/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/lib/index.js:302:36\n                    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: BeaconProxy initialization"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: BeaconProxy initialization"
+  }, {
+    "name" : "testMethod",
+    "value" : "payable initialization"
+  }, {
+    "name" : "package",
+    "value" : "Contract: BeaconProxy initialization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Not supported",
+      "messageRegex" : ".*'EthereumModel' object has no attribute .*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "6bfaca2e5919175",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/6bfaca2e5919175",
+        "status" : "broken",
+        "statusDetails" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+        "time" : {
+          "start" : 1637682633154,
+          "stop" : 1637682643842,
+          "duration" : 10688
+        }
+      }, {
+        "uid" : "49978aefbeb5b338",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/21//#testresult/49978aefbeb5b338",
+        "status" : "broken",
+        "statusDetails" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+        "time" : {
+          "start" : 1637668188075,
+          "stop" : 1637668227554,
+          "duration" : 39479
+        }
+      }, {
+        "uid" : "e8e486cc72932ffa",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/e8e486cc72932ffa",
+        "status" : "broken",
+        "statusDetails" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+        "time" : {
+          "start" : 1637667058138,
+          "stop" : 1637667068550,
+          "duration" : 10412
+        }
+      }, {
+        "uid" : "36ba786121fb9c9e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/36ba786121fb9c9e",
+        "status" : "broken",
+        "statusDetails" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+        "time" : {
+          "start" : 1637662582753,
+          "stop" : 1637662593192,
+          "duration" : 10439
+        }
+      }, {
+        "uid" : "6f000309734b2b2c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/6f000309734b2b2c",
+        "status" : "failed",
+        "statusDetails" : "expected '100000000000000000000' to equal '100'",
+        "time" : {
+          "start" : 1637335241954,
+          "stop" : 1637335253554,
+          "duration" : 11600
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ac0f725a0c70b4d.json",
+  "parameterValues" : [ ]
+}

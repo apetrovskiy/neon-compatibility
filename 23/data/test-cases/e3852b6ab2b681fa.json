@@ -1,0 +1,80 @@
+{
+  "uid" : "e3852b6ab2b681fa",
+  "name" : "run",
+  "fullName" : "Contract: Governor scenario score not reached.run",
+  "historyId" : "6b96b3692c516ae403c0152042e30064",
+  "time" : {
+    "start" : 1637699325694,
+    "stop" : 1637699514264,
+    "duration" : 188570
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Target block #(96254583) is lower than current block #(96254683)",
+  "statusTrace" : "Error: Target block #(96254583) is lower than current block #(96254683)\n                    at Object.advanceBlockTo (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/time.js:22:38)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at Context.<anonymous> (test/governance/GovernorWorkflow.behavior.js:61:9)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Governor scenario score not reached"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Governor scenario score not reached"
+  }, {
+    "name" : "testMethod",
+    "value" : "run"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Governor scenario score not reached"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "5fb48170dd563499",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/5fb48170dd563499",
+        "status" : "broken",
+        "statusDetails" : "Target block #(8287) is lower than current block #(8306)",
+        "time" : {
+          "start" : 1637666117296,
+          "stop" : 1637666162331,
+          "duration" : 45035
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e3852b6ab2b681fa.json",
+  "parameterValues" : [ ]
+}

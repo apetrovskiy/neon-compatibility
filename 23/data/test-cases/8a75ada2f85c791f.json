@@ -1,0 +1,89 @@
+{
+  "uid" : "8a75ada2f85c791f",
+  "name" : "removes added keys",
+  "fullName" : "Contract: BitMap unset.removes added keys",
+  "historyId" : "c6c15489147db7a23f4556d0a77c9745",
+  "time" : {
+    "start" : 1637704133910,
+    "stop" : 1637704163214,
+    "duration" : 29304
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established\n                    at Context.<anonymous> (test/utils/structs/BitMap.test.js:85:25)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: BitMap unset"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: BitMap unset"
+  }, {
+    "name" : "testMethod",
+    "value" : "removes added keys"
+  }, {
+    "name" : "package",
+    "value" : "Contract: BitMap unset"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f863976ff8ae1f1f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/f863976ff8ae1f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637682779365,
+          "stop" : 1637682792183,
+          "duration" : 12818
+        }
+      }, {
+        "uid" : "c9df41d7df6250f5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/c9df41d7df6250f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637669771104,
+          "stop" : 1637669783290,
+          "duration" : 12186
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8a75ada2f85c791f.json",
+  "parameterValues" : [ ]
+}

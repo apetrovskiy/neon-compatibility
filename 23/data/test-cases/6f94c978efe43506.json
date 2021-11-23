@@ -1,0 +1,88 @@
+{
+  "uid" : "6f94c978efe43506",
+  "name" : "returns the amount of tokens owned by the given address",
+  "fullName" : "Contract: ERC1155Pausable when token is paused balanceOf.returns the amount of tokens owned by the given address",
+  "historyId" : "cc77a19e590a47f19cb78fefdf0807ad",
+  "time" : {
+    "start" : 1637701553099,
+    "stop" : 1637701565836,
+    "duration" : 12737
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: socket hang up",
+  "statusTrace" : "Error: Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: socket hang up\n                    at Context.<anonymous> (test/token/ERC1155/extensions/ERC1155Pausable.test.js:13:47)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC1155Pausable when token is paused balanceOf"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1155Pausable when token is paused balanceOf"
+  }, {
+    "name" : "testMethod",
+    "value" : "returns the amount of tokens owned by the given address"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1155Pausable when token is paused balanceOf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "65eb0ceae509bfdb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/65eb0ceae509bfdb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637668179621,
+          "stop" : 1637668192809,
+          "duration" : 13188
+        }
+      }, {
+        "uid" : "8d3e3056af0c9bfd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/8d3e3056af0c9bfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334830687,
+          "stop" : 1637334843895,
+          "duration" : 13208
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6f94c978efe43506.json",
+  "parameterValues" : [ ]
+}

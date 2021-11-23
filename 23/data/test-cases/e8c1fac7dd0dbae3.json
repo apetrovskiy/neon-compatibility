@@ -1,0 +1,80 @@
+{
+  "uid" : "e8c1fac7dd0dbae3",
+  "name" : "run",
+  "fullName" : "Contract: Governor state Executed.run",
+  "historyId" : "dd67fc4af2f48e77b4338f51d11510ac",
+  "time" : {
+    "start" : 1637700390721,
+    "stop" : 1637700592163,
+    "duration" : 201442
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "expected '3' to equal '7'",
+  "statusTrace" : "AssertionError: expected '3' to equal '7'\n                    at Context.<anonymous> (test/governance/Governor.test.js:631:64)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Governor state Executed"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Governor state Executed"
+  }, {
+    "name" : "testMethod",
+    "value" : "run"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Governor state Executed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ba53ec24d87dc9c3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/ba53ec24d87dc9c3",
+        "status" : "broken",
+        "statusDetails" : "expected '3' to equal '7'",
+        "time" : {
+          "start" : 1637666359645,
+          "stop" : 1637666404339,
+          "duration" : 44694
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e8c1fac7dd0dbae3.json",
+  "parameterValues" : [ ]
+}

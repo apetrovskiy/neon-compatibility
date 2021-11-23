@@ -1,0 +1,105 @@
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+============ running command... ============
+cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd "/home/runner/work/neon-compatibility/neon-compatibility"; pwd;
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ConvertLib.sol
+> Compiling ./contracts/MetaCoin.sol
+> Compiling ./contracts/Migrations.sol
+> Compilation warnings encountered:
+
+    Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/MetaCoin.sol:16:2:
+   |
+16 | 	constructor() public {
+   | 	^ (Relevant source part starts here and spans across multiple lines).
+
+,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/Migrations.sol:12:3:
+   |
+12 |   constructor() public {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+> Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.4+commit.c7e474f2.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'neonlabs'
+> Network id:      245022926
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x52d4e32ce65ce180d46a4925dda9ccd3cb48c3f50253e0762e86a0894bad8883
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xC9fa9Cf040ab34D181f99C8Fd3B7ECC50a195e2E
+   > block number:        96241494
+   > block timestamp:     1637694373
+   > account:             0x485DB0bC33d8cA4a9c11a5D60Cd75df4Bf1B74dB
+   > balance:             4.999915713
+   > gas used:            84287 (0x1493f)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000084287 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000084287 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'ConvertLib'
+   ----------------------
+   > transaction hash:    0x4c9666b50fe63b3dc2f118ba263024a2a00dce2444cb0020dfe710d7ef722e14
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xeEEa7E45bB71a512D144a2e80aBEa62C88503030
+   > block number:        96241547
+   > block timestamp:     1637694394
+   > account:             0x485DB0bC33d8cA4a9c11a5D60Cd75df4Bf1B74dB
+   > balance:             4.999812516
+   > gas used:            60681 (0xed09)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000060681 ETH
+
+
+   Linking
+   -------
+   * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xeEEa7E45bB71a512D144a2e80aBEa62C88503030)
+
+   Deploying 'MetaCoin'
+   --------------------
+   > transaction hash:    0xd35047cbb233e59f7b8d31ce5db4db1e1a82f88a930c42a7573531992e82f0ff
+/home/runner/work/neon-compatibility/neon-compatibility
+
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+
+/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848
+          var e = new Error('ETIMEDOUT')
+                  ^
+Error: PollingBlockTracker - encountered an error while attempting to update latest block:
+Error: ETIMEDOUT
+    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+    at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+

@@ -1,0 +1,88 @@
+{
+  "uid" : "12237c5a97f34006",
+  "name" : "accepts owner signature",
+  "fullName" : "Contract: ERC20Permit permit.accepts owner signature",
+  "historyId" : "3c017042d24fdfe456d1c8380eee2155",
+  "time" : {
+    "start" : 1637699999773,
+    "stop" : 1637700052146,
+    "duration" : 52373
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Transaction: 0x0d00656687bc85a1ecafab67405345372a23a2120a3b446cd2b1e71617b37247 exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+  "statusTrace" : "StatusError: Transaction: 0x0d00656687bc85a1ecafab67405345372a23a2120a3b446cd2b1e71617b37247 exited with an error (status 0). \n                    at Context.<anonymous> (test/token/ERC20/extensions/draft-ERC20Permit.test.js:73:40)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20Permit permit"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Permit permit"
+  }, {
+    "name" : "testMethod",
+    "value" : "accepts owner signature"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Permit permit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "e8dd7d31a6d7e858",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/e8dd7d31a6d7e858",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637667803543,
+          "stop" : 1637667817593,
+          "duration" : 14050
+        }
+      }, {
+        "uid" : "5b87cc1e27842102",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/5b87cc1e27842102",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334524654,
+          "stop" : 1637334538817,
+          "duration" : 14163
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "12237c5a97f34006.json",
+  "parameterValues" : [ ]
+}
