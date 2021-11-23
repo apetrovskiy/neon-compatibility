@@ -1,0 +1,90 @@
+{
+  "uid" : "1e7868d69039dd83",
+  "name" : "reverts on transfer",
+  "fullName" : "Contract: SafeERC20 with token that returns false on all calls.reverts on transfer",
+  "historyId" : "1b98e7eea84e6e983a92798c98b528fe",
+  "time" : {
+    "start" : 1637662701027,
+    "stop" : 1637662701305,
+    "duration" : 278
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+  "statusTrace" : "HardhatError: HH110: Invalid JSON-RPC response received: <html>\n                    at Context.<anonymous> (test/token/ERC20/utils/SafeERC20.test.js:21:80)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: SafeERC20 with token that returns false on all calls"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: SafeERC20 with token that returns false on all calls"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts on transfer"
+  }, {
+    "name" : "package",
+    "value" : "Contract: SafeERC20 with token that returns false on all calls"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "b5bc82e187aefd23",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/b5bc82e187aefd23",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329375579,
+          "stop" : 1637329378423,
+          "duration" : 2844
+        }
+      }, {
+        "uid" : "22c7a38ad9b21872",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/22c7a38ad9b21872",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320773520,
+          "stop" : 1637320776792,
+          "duration" : 3272
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1e7868d69039dd83.json",
+  "parameterValues" : [ ]
+}

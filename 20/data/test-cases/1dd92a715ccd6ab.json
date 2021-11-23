@@ -1,0 +1,150 @@
+{
+  "uid" : "1dd92a715ccd6ab",
+  "name" : "rejects zero address for beneficiary",
+  "fullName" : "Contract: VestingWallet.rejects zero address for beneficiary",
+  "historyId" : "bef7a5330168f359aa261f5b27a742ca",
+  "time" : {
+    "start" : 1637662313735,
+    "stop" : 1637662314045,
+    "duration" : 310
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+  "statusTrace" : "HardhatError: HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                \n                    at Object.parseJsonResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/util/jsonrpc.ts:47:11)\n                    at HttpProvider._fetchJsonRpcResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:173:14)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at HttpProvider.request (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:55:29)\n                    at Web3HTTPProviderAdapter._sendJsonRpcRequest (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-web3/src/web3-provider-adapter.ts:80:22)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "testMethod",
+    "value" : "rejects zero address for beneficiary"
+  }, {
+    "name" : "package",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 9,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "75c1087be6835d46",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/19//#testresult/75c1087be6835d46",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637517917683,
+          "stop" : 1637517922212,
+          "duration" : 4529
+        }
+      }, {
+        "uid" : "322ed384c51b0e22",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/18//#testresult/322ed384c51b0e22",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637514281530,
+          "stop" : 1637514285956,
+          "duration" : 4426
+        }
+      }, {
+        "uid" : "6d1a7141845df3df",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/17//#testresult/6d1a7141845df3df",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637337019481,
+          "stop" : 1637337024083,
+          "duration" : 4602
+        }
+      }, {
+        "uid" : "69fc3dab43d4fed6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/69fc3dab43d4fed6",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637335618945,
+          "stop" : 1637335622220,
+          "duration" : 3275
+        }
+      }, {
+        "uid" : "6b343a85766f8bc9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/15//#testresult/6b343a85766f8bc9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637330307904,
+          "stop" : 1637330311015,
+          "duration" : 3111
+        }
+      }, {
+        "uid" : "de21ad5a41c90e52",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/de21ad5a41c90e52",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329641430,
+          "stop" : 1637329645776,
+          "duration" : 4346
+        }
+      }, {
+        "uid" : "a7014cfde7eea6cd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/a7014cfde7eea6cd",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637321042774,
+          "stop" : 1637321047199,
+          "duration" : 4425
+        }
+      }, {
+        "uid" : "3b490286802afa29",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/3b490286802afa29",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318916645,
+          "stop" : 1637318919701,
+          "duration" : 3056
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1dd92a715ccd6ab.json",
+  "parameterValues" : [ ]
+}

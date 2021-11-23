@@ -1,0 +1,1473 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 502",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "95bf382635c5553c",
+        "parentUid" : "e705b6fb5463b32ee86ab624bd889c61",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662099762,
+          "stop" : 1637662100308,
+          "duration" : 546
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e705b6fb5463b32ee86ab624bd889c61"
+    }, {
+      "name" : "could not detect network (event=\"noNetwork\", code=NETWORK_ERROR, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "shouldCountTransactions",
+        "uid" : "f484f1034da108a4",
+        "parentUid" : "92b1f558e9ce31b7aa49f234dfbca901",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662100310,
+          "stop" : 1637662101544,
+          "duration" : 1234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldConnectViaEthersJs",
+        "uid" : "dade54664a779e71",
+        "parentUid" : "92b1f558e9ce31b7aa49f234dfbca901",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662101545,
+          "stop" : 1637662102675,
+          "duration" : 1130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testQueryingBlockchain",
+        "uid" : "cb05585b878a8c09",
+        "parentUid" : "92b1f558e9ce31b7aa49f234dfbca901",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662102686,
+          "stop" : 1637662103813,
+          "duration" : 1127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "d9d9feffb6017e50",
+        "parentUid" : "92b1f558e9ce31b7aa49f234dfbca901",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662103814,
+          "stop" : 1637662104936,
+          "duration" : 1122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "92b1f558e9ce31b7aa49f234dfbca901"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "73fcd96a18abb3e2",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662104944,
+          "stop" : 1637662106085,
+          "duration" : 1141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "bad response (status=502, headers={\"server\":\"nginx/1.18.0 (Ubuntu)\",\"date\":\"Tue, 23 Nov 2021 10:08:26 GMT\",\"content-type\":\"text/html\",\"content-length\":\"166\",\"connection\":\"close\"}, body=\"<html>\\r\\n<head><title>502 Bad Gateway</title></head>\\r\\n<body>\\r\\n<center><h1>502 Bad Gateway</h1></center>\\r\\n<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n</body>\\r\\n</html>\\r\\n\", requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.teststand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "8c72907fa7d4512a",
+        "parentUid" : "babb43720f532a211ba319e7c6ca4d1e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662106095,
+          "stop" : 1637662106379,
+          "duration" : 284
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "3f088b31a015b824",
+        "parentUid" : "babb43720f532a211ba319e7c6ca4d1e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662106389,
+          "stop" : 1637662106672,
+          "duration" : 283
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "babb43720f532a211ba319e7c6ca4d1e"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "a8c8775189de1a8b",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662106684,
+          "stop" : 1637662106691,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "HH110: Invalid JSON-RPC response received: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.18.0 (Ubuntu)</center>\r\n</body>\r\n</html>\r\n",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "d4f48a7e6c25321",
+        "parentUid" : "8b98e1e4bcb4da0df983ebc538c4149b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662112445,
+          "stop" : 1637662112832,
+          "duration" : 387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8b98e1e4bcb4da0df983ebc538c4149b"
+    }, {
+      "name" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+      "children" : [ {
+        "name" : "rejects zero address for beneficiary",
+        "uid" : "1dd92a715ccd6ab",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662313735,
+          "stop" : 1637662314045,
+          "duration" : 310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uses less than 30k gas [skip-on-coverage]",
+        "uid" : "b038c0918fbe42c5",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336252,
+          "stop" : 1637662337187,
+          "duration" : 935
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "run",
+        "uid" : "dbd28af99d57bdec",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336257,
+          "stop" : 1637662337190,
+          "duration" : 933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "run",
+        "uid" : "d3a47746fc10e6bd",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336266,
+          "stop" : 1637662337187,
+          "duration" : 921
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uses less than 30k gas [skip-on-coverage]",
+        "uid" : "5b88410f580e9900",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336493,
+          "stop" : 1637662337189,
+          "duration" : 696
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "run",
+        "uid" : "8f0ba5259a6f0f17",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336537,
+          "stop" : 1637662337188,
+          "duration" : 651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uses less than 30k gas [skip-on-coverage]",
+        "uid" : "3a7664a65090ff8a",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662336737,
+          "stop" : 1637662337191,
+          "duration" : 454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "initializes the proxy",
+        "uid" : "b0cfa5eb1e5e9e69",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662638332,
+          "stop" : 1637662648029,
+          "duration" : 9697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "can perform normal process in non-pause",
+        "uid" : "4c3095501a4e492",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662667466,
+          "stop" : 1637662667923,
+          "duration" : 457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "can record an async payment correctly",
+        "uid" : "7acc4d8300c74869",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662667514,
+          "stop" : 1637662667975,
+          "duration" : 461
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nonReentrant function can be called",
+        "uid" : "ad30e53fe52b1484",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662667643,
+          "stop" : 1637662668084,
+          "duration" : 441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "requires a non-zero cap",
+        "uid" : "1d172ece082f6bc2",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662698763,
+          "stop" : 1637662699532,
+          "duration" : 769
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "burns the requested amount",
+        "uid" : "32fc706965870ee9",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662699291,
+          "stop" : 1637662700022,
+          "duration" : 731
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "starts with the correct cap",
+        "uid" : "6bb0983267e9b2f7",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662699547,
+          "stop" : 1637662699826,
+          "duration" : 279
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "rejects a release time in the past",
+        "uid" : "4e788ee214ecde84",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662699677,
+          "stop" : 1637662700524,
+          "duration" : 847
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts on transfer",
+        "uid" : "33c6ec18e83f1131",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662700546,
+          "stop" : 1637662701015,
+          "duration" : 469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts on transfer",
+        "uid" : "1e7868d69039dd83",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662701027,
+          "stop" : 1637662701305,
+          "duration" : 278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "doesn't revert on transfer",
+        "uid" : "b9bd8fd78d7750dd",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662701308,
+          "stop" : 1637662701585,
+          "duration" : 277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "doesn't revert on transfer",
+        "uid" : "1aaff8d4777e7f61",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662701590,
+          "stop" : 1637662701872,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "allows to transfer when unpaused",
+        "uid" : "f6896692105bfd82",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662715455,
+          "stop" : 1637662715974,
+          "duration" : 519
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "token match",
+        "uid" : "24bdc365161bb5da",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662716498,
+          "stop" : 1637662716954,
+          "duration" : 456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "initial nonce is 0",
+        "uid" : "73c5788771185054",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662718868,
+          "stop" : 1637662719702,
+          "duration" : 834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "emits a snapshot event",
+        "uid" : "c5ab33a4a15e00d9",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662720840,
+          "stop" : 1637662721440,
+          "duration" : 600
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "deployer has the default admin role",
+        "uid" : "28dc2bbf45afa9df",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662721811,
+          "stop" : 1637662722567,
+          "duration" : 756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "\"before all\" hook for \"deployer has the balance equal to initial supply\"",
+        "uid" : "200dbd2f94cc85c8",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662722327,
+          "stop" : 1637662722327,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has a name",
+        "uid" : "6a48a690fdadf679",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662737948,
+          "stop" : 1637662738514,
+          "duration" : 566
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "does not emit AuthorizedOperator events for default operators",
+        "uid" : "39ae3b75e6f64f56",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662739984,
+          "stop" : 1637662740431,
+          "duration" : 447
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "\"before all\" hook for \"returns the name\"",
+        "uid" : "6a35bd58ef40b283",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662741176,
+          "stop" : 1637662741176,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uses less than 30k gas [skip-on-coverage]",
+        "uid" : "4160c947a17c135d",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662743150,
+          "stop" : 1637662743654,
+          "duration" : 504
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts when trying to transferFrom",
+        "uid" : "5ef0705a041f3a92",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662743596,
+          "stop" : 1637662744471,
+          "duration" : 875
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "receives an ERC721 token",
+        "uid" : "919391166d3ec5c4",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662743735,
+          "stop" : 1637662744326,
+          "duration" : 591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "it is empty by default",
+        "uid" : "41e2dd1b16fd4ae0",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662758677,
+          "stop" : 1637662759145,
+          "duration" : 468
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "burns the given token ID and adjusts the balance of the owner",
+        "uid" : "ffe9c36be0a78ac2",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662759502,
+          "stop" : 1637662760090,
+          "duration" : 588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "token has correct name",
+        "uid" : "ddf6c322778824cf",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662761233,
+          "stop" : 1637662761765,
+          "duration" : 532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "uses less than 30k gas [skip-on-coverage]",
+        "uid" : "f1ebec00089e382",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662762522,
+          "stop" : 1637662763152,
+          "duration" : 630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "exist",
+        "uid" : "7d0312d08f48bfd1",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662764788,
+          "stop" : 1637662765284,
+          "duration" : 496
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts when trying to safeTransferFrom from holder",
+        "uid" : "d7d2dda2e79d7cc8",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662764798,
+          "stop" : 1637662765361,
+          "duration" : 563
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "receives ERC1155 tokens from a single ID",
+        "uid" : "1bb995737a86836a",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662765238,
+          "stop" : 1637662765703,
+          "duration" : 465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "holder can burn their tokens",
+        "uid" : "529c63af89afbc4e",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662771430,
+          "stop" : 1637662771941,
+          "duration" : 511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts when queried about the zero address",
+        "uid" : "f3cfbf54a9ecb34f",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662772258,
+          "stop" : 1637662772627,
+          "duration" : 369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "deployer has the default admin role",
+        "uid" : "8467ea2c69045243",
+        "parentUid" : "95e376b649e25a1f4184bb8bab0a7fdc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662772764,
+          "stop" : 1637662773110,
+          "duration" : 346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "95e376b649e25a1f4184bb8bab0a7fdc"
+    }, {
+      "name" : "Returned error: failed to get recent blockhash",
+      "children" : [ {
+        "name" : "has expected balance",
+        "uid" : "dd735e3327256e8f",
+        "parentUid" : "e4eb7f4b39109be9118fb614d66bf4bc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662627590,
+          "stop" : 1637662638326,
+          "duration" : 10736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4eb7f4b39109be9118fb614d66bf4bc"
+    }, {
+      "name" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '9e4d116ab21e12865efb247a3fb93c4812a889a4', 'f97a3852f3ded78d00fca187a0b26ac8a651de36', '6e9ebc81000000000000000000000000dc8b459db53eb470f035336ceb850f525e6cf5909758e99a853963efc75c6635e3fa67538c9b3fcb25687f84684db8c3527fdabf00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000004227367d500000000000000000000000000000000000000000000000000000000', '0x0']' returned non-zero exit status 101.",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "546a8112c9494178",
+        "parentUid" : "c63da24c45d26877966eb2c6143a8380",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662632611,
+          "stop" : 1637662638695,
+          "duration" : 6084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c63da24c45d26877966eb2c6143a8380"
+    }, {
+      "name" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f956563a6d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "82dd3b62beaac1ec",
+        "parentUid" : "d141fe1e9fef928cfa5c8efd76552b2b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662639278,
+          "stop" : 1637662639846,
+          "duration" : 568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d141fe1e9fef928cfa5c8efd76552b2b"
+    }, {
+      "name" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f956571b9a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "3ca6020da079af43",
+        "parentUid" : "e007040417c376165e95999688a073f2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662639848,
+          "stop" : 1637662641428,
+          "duration" : 1580
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e007040417c376165e95999688a073f2"
+    }, {
+      "name" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95653930a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "5614407397d396c5",
+        "parentUid" : "a661f43bfb27d47a30feef00f8881138",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662641431,
+          "stop" : 1637662641996,
+          "duration" : 565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a661f43bfb27d47a30feef00f8881138"
+    }, {
+      "name" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f956562f6a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "a646f5e52acd2713",
+        "parentUid" : "3ef806de22e31caf61403d77636d3adb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662642566,
+          "stop" : 1637662643131,
+          "duration" : 565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ef806de22e31caf61403d77636d3adb"
+    }, {
+      "name" : "Returned error: HTTPConnectionPool(host='test-solana', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f956539c910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))",
+      "children" : [ {
+        "name" : "initializes the proxy",
+        "uid" : "c68ae2b745d0dbfe",
+        "parentUid" : "66ef3dc3ac2c14d25264ae24d9c784db",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662643133,
+          "stop" : 1637662643696,
+          "duration" : 563
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66ef3dc3ac2c14d25264ae24d9c784db"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: \n  Compiling your contracts...\n  ===========================\n  UnhandledRejections detected\n  Promise {\n    <rejected> {\n      code: -32603,\n      message: 'Unknown Error: <html>\\r\\n' +\n        '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n        '<body>\\r\\n' +\n        '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n        '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n        '</body>\\r\\n' +\n        '</html>\\r\\n',\n      data: { originalError: {} },\n      stack: 'Error: Unknown Error: <html>\\r\\n' +\n        '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n        '<body>\\r\\n' +\n        '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n        '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n        '</body>\\r\\n' +\n        '</html>\\r\\n' +\n        '\\n' +\n        '    at Request._callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57:23)\\n' +\n        '    at Request.self.callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:185:22)\\n' +\n        '    at Request.emit (events.js:400:28)\\n' +\n        '    at Request.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1154:10)\\n' +\n        '    at Request.emit (events.js:400:28)\\n' +\n        '    at IncomingMessage.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1076:12)\\n' +\n        '    at Object.onceWrapper (events.js:519:28)\\n' +\n        '    at IncomingMessage.emit (events.js:412:35)\\n' +\n        '    at endReadableNT (internal/streams/readable.js:1334:12)\\n' +\n        '    at processTicksAndRejections (internal/process/task_queues.js:82:21)'\n    }\n  } {\n    code: -32603,\n    message: 'Unknown Error: <html>\\r\\n' +\n      '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n      '<body>\\r\\n' +\n      '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n      '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n      '</body>\\r\\n' +\n      '</html>\\r\\n',\n    data: { originalError: {} },\n    stack: 'Error: Unknown Error: <html>\\r\\n' +\n      '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n      '<body>\\r\\n' +\n      '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n      '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n      '</body>\\r\\n' +\n      '</html>\\r\\n' +\n      '\\n' +\n      '    at Request._callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57:23)\\n' +\n      '    at Request.self.callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:185:22)\\n' +\n      '    at Request.emit (events.js:400:28)\\n' +\n      '    at Request.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1154:10)\\n' +\n      '    at Request.emit (events.js:400:28)\\n' +\n      '    at IncomingMessage.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1076:12)\\n' +\n      '    at Object.onceWrapper (events.js:519:28)\\n' +\n      '    at IncomingMessage.emit (events.js:412:35)\\n' +\n      '    at endReadableNT (internal/streams/readable.js:1334:12)\\n' +\n      '    at processTicksAndRejections (internal/process/task_queues.js:82:21)'\n  }\n  Promise {\n    <rejected> {\n      code: -32603,\n      message: 'Unknown Error: <html>\\r\\n' +\n        '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n        '<body>\\r\\n' +\n        '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n        '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n        '</body>\\r\\n' +\n        '</html>\\r\\n',\n      data: { originalError: {} },\n      stack: 'Error: Unknown Error: <html>\\r\\n' +\n        '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n        '<body>\\r\\n' +\n        '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n        '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n        '</body>\\r\\n' +\n        '</html>\\r\\n' +\n        '\\n' +\n        '    at Request._callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57:23)\\n' +\n        '    at Request.self.callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:185:22)\\n' +\n        '    at Request.emit (events.js:400:28)\\n' +\n        '    at Request.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1154:10)\\n' +\n        '    at Request.emit (events.js:400:28)\\n' +\n        '    at IncomingMessage.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1076:12)\\n' +\n        '    at Object.onceWrapper (events.js:519:28)\\n' +\n        '    at IncomingMessage.emit (events.js:412:35)\\n' +\n        '    at endReadableNT (internal/streams/readable.js:1334:12)\\n' +\n        '    at processTicksAndRejections (internal/process/task_queues.js:82:21)'\n    }\n  } {\n    code: -32603,\n    message: 'Unknown Error: <html>\\r\\n' +\n      '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n      '<body>\\r\\n' +\n      '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n      '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n      '</body>\\r\\n' +\n      '</html>\\r\\n',\n    data: { originalError: {} },\n    stack: 'Error: Unknown Error: <html>\\r\\n' +\n      '<head><title>502 Bad Gateway</title></head>\\r\\n' +\n      '<body>\\r\\n' +\n      '<center><h1>502 Bad Gateway</h1></center>\\r\\n' +\n      '<hr><center>nginx/1.18.0 (Ubuntu)</center>\\r\\n' +\n      '</body>\\r\\n' +\n      '</html>\\r\\n' +\n      '\\n' +\n      '    at Request._callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57:23)\\n' +\n      '    at Request.self.callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:185:22)\\n' +\n      '    at Request.emit (events.js:400:28)\\n' +\n      '    at Request.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1154:10)\\n' +\n      '    at Request.emit (events.js:400:28)\\n' +\n      '    at IncomingMessage.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1076:12)\\n' +\n      '    at Object.onceWrapper (events.js:519:28)\\n' +\n      '    at IncomingMessage.emit (events.js:412:35)\\n' +\n      '    at endReadableNT (internal/streams/readable.js:1334:12)\\n' +\n      '    at processTicksAndRejections (internal/process/task_queues.js:82:21)'\n  }\n  - Fetching solc version list from solc-bin. Attempt #1\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57\n            const err = new Error(msg)\n                        ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: Unknown Error: <html>\r\n  <head><title>502 Bad Gateway</title></head>\r\n  <body>\r\n  <center><h1>502 Bad Gateway</h1></center>\r\n  <hr><center>nginx/1.18.0 (Ubuntu)</center>\r\n  </body>\r\n  </html>\r\n  \n      at Request._callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@trufflesuite/web3-provider-engine/subproviders/rpc.js:57:23)\n      at Request.self.callback (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:185:22)\n      at Request.emit (events.js:400:28)\n      at Request.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1154:10)\n      at Request.emit (events.js:400:28)\n      at IncomingMessage.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:1076:12)\n      at Object.onceWrapper (events.js:519:28)\n      at IncomingMessage.emit (events.js:412:35)\n      at endReadableNT (internal/streams/readable.js:1334:12)\n      at processTicksAndRejections (internal/process/task_queues.js:82:21)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at runMicrotasks (<anonymous>)\n      at processTicksAndRejections (internal/process/task_queues.js:95:5)\n  \nassert 1 == 0\n +  where 1 = CompletedProcess(args='cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3', returnc...51:24)\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\\n').returncode",
+      "children" : [ {
+        "name" : "test_issue_364_self_destruct_contract",
+        "uid" : "e88e64dd2c577b34",
+        "parentUid" : "b433b57719312f9026512bde7359a18e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662283627,
+          "stop" : 1637662286777,
+          "duration" : 3150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b433b57719312f9026512bde7359a18e"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'UpgradeableBeacon: implementation is not a contract'",
+      "children" : [ {
+        "name" : "cannot be created with non-contract implementation",
+        "uid" : "2774f5cdb129b613",
+        "parentUid" : "871ae1c251210142dadd24225ad567d9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662505535,
+          "stop" : 1637662507512,
+          "duration" : 1977
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "871ae1c251210142dadd24225ad567d9"
+    }, {
+      "name" : "Expected an exception but none was received",
+      "children" : [ {
+        "name" : "reverts",
+        "uid" : "3c4996d94827bf5b",
+        "parentUid" : "c00aea839a25a22472dbb28c3ad8d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662513429,
+          "stop" : 1637662521101,
+          "duration" : 7672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts",
+        "uid" : "f5afff060928b8f7",
+        "parentUid" : "c00aea839a25a22472dbb28c3ad8d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662541372,
+          "stop" : 1637662546057,
+          "duration" : 4685
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts",
+        "uid" : "2df4e72f63ee2eb",
+        "parentUid" : "c00aea839a25a22472dbb28c3ad8d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662571191,
+          "stop" : 1637662580162,
+          "duration" : 8971
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts",
+        "uid" : "55f1ec92614f2cdc",
+        "parentUid" : "c00aea839a25a22472dbb28c3ad8d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662580277,
+          "stop" : 1637662585344,
+          "duration" : 5067
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts",
+        "uid" : "7401f4ce02f514a",
+        "parentUid" : "c00aea839a25a22472dbb28c3ad8d8ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662580692,
+          "stop" : 1637662591238,
+          "duration" : 10546
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c00aea839a25a22472dbb28c3ad8d8ee"
+    }, {
+      "name" : "expected '0' to equal '1000000'",
+      "children" : [ {
+        "name" : "has expected balance",
+        "uid" : "ef8db38034f17ee5",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662525202,
+          "stop" : 1637662530102,
+          "duration" : 4900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has expected balance",
+        "uid" : "db1a9d36282dc22e",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662546133,
+          "stop" : 1637662556493,
+          "duration" : 10360
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has expected balance",
+        "uid" : "546eef7bc3d46be4",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662546814,
+          "stop" : 1637662554486,
+          "duration" : 7672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has expected balance",
+        "uid" : "287c6540111dba80",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662562897,
+          "stop" : 1637662568375,
+          "duration" : 5478
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has expected balance",
+        "uid" : "8d0fcc6f67b36f04",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662604719,
+          "stop" : 1637662610327,
+          "duration" : 5608
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "has expected balance",
+        "uid" : "26422efc39f6283e",
+        "parentUid" : "35391d0c6bf5b76ad94afc507bdca5ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662607356,
+          "stop" : 1637662615488,
+          "duration" : 8132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35391d0c6bf5b76ad94afc507bdca5ec"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC1967: new beacon is not a contract'",
+      "children" : [ {
+        "name" : "non-contract beacon",
+        "uid" : "5163cc70b6abc2e1",
+        "parentUid" : "77da5e1ad12e44132342e1c5fb78030c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662551418,
+          "stop" : 1637662552997,
+          "duration" : 1579
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "77da5e1ad12e44132342e1c5fb78030c"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC1967: beacon implementation is not a contract'",
+      "children" : [ {
+        "name" : "non-contract implementation",
+        "uid" : "dbbd73ee19eb44bc",
+        "parentUid" : "d57a1e3f9f6982f2051688d0af893685",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662558099,
+          "stop" : 1637662563191,
+          "duration" : 5092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d57a1e3f9f6982f2051688d0af893685"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+      "children" : [ {
+        "name" : "reverting initialization",
+        "uid" : "de743d504a308519",
+        "parentUid" : "74e12234cc8ec0bfdc26279881291998",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662593193,
+          "stop" : 1637662599095,
+          "duration" : 5902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "reverts",
+        "uid" : "c6a590780e78ab53",
+        "parentUid" : "74e12234cc8ec0bfdc26279881291998",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662610334,
+          "stop" : 1637662611906,
+          "duration" : 1572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "74e12234cc8ec0bfdc26279881291998"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: HTTPConnectionPool(host=\\'test-solana\\', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError(\\'<urllib3.connection.HTTPConnection object at 0x7f9565397940>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution\\'))' to equal 'revert'",
+      "children" : [ {
+        "name" : "reverts",
+        "uid" : "af14b3cf1a652b54",
+        "parentUid" : "15c6dee81b513cbc0d1b2015e0961ae2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662638702,
+          "stop" : 1637662639275,
+          "duration" : 573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "15c6dee81b513cbc0d1b2015e0961ae2"
+    }, {
+      "name" : "Wrong kind of exception received: expected 'Returned error: HTTPConnectionPool(host=\\'test-solana\\', port=8899): Max retries exceeded with url: / (Caused by NewConnectionError(\\'<urllib3.connection.HTTPConnection object at 0x7f956571bbb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution\\'))' to equal 'revert'",
+      "children" : [ {
+        "name" : "reverts",
+        "uid" : "733eb50ea747e51",
+        "parentUid" : "62720bdc9c8d7d2db4699b4dc8d6ca7b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637662641999,
+          "stop" : 1637662642563,
+          "duration" : 564
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "62720bdc9c8d7d2db4699b4dc8d6ca7b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Not supported",
+    "children" : [ {
+      "name" : "Returned error: 'EthereumModel' object has no attribute 'eth_getStorageAt'",
+      "children" : [ {
+        "name" : "no initialization",
+        "uid" : "6e9ee88c6160e09a",
+        "parentUid" : "46cf8e2332574f1d447bda346abdaf95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662563203,
+          "stop" : 1637662572347,
+          "duration" : 9144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "non-payable initialization",
+        "uid" : "c535f54516159da5",
+        "parentUid" : "46cf8e2332574f1d447bda346abdaf95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662572355,
+          "stop" : 1637662582752,
+          "duration" : 10397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "payable initialization",
+        "uid" : "36ba786121fb9c9e",
+        "parentUid" : "46cf8e2332574f1d447bda346abdaf95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637662582753,
+          "stop" : 1637662593192,
+          "duration" : 10439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "46cf8e2332574f1d447bda346abdaf95"
+    } ],
+    "uid" : "74a85a700e270c086f9590bc39e50507"
+  } ],
+  "name" : "categories"
+}
