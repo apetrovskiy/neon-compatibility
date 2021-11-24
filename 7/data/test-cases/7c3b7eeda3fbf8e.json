@@ -1,0 +1,203 @@
+{
+  "uid" : "7c3b7eeda3fbf8e",
+  "name" : "reverts when queried about the zero address",
+  "fullName" : "Contract: ERC1155 like an ERC1155 balanceOf.reverts when queried about the zero address",
+  "historyId" : "fd35fbacc9377a65abae8d6f5766d40",
+  "time" : {
+    "start" : 1637748554144,
+    "stop" : 1637748559364,
+    "duration" : 5220
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1\n                    at Context.<anonymous> (test/token/ERC1155/ERC1155.test.js:15:39)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC1155 like an ERC1155 balanceOf"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1155 like an ERC1155 balanceOf"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts when queried about the zero address"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1155 like an ERC1155 balanceOf"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 12,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "34da2470654b1e0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/24//#testresult/34da2470654b1e0",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637746083849,
+          "stop" : 1637746088868,
+          "duration" : 5019
+        }
+      }, {
+        "uid" : "698b5512d9f6f4c2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/698b5512d9f6f4c2",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637744257474,
+          "stop" : 1637744261883,
+          "duration" : 4409
+        }
+      }, {
+        "uid" : "4c5554d0efcb33b0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/4c5554d0efcb33b0",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637742487326,
+          "stop" : 1637742490394,
+          "duration" : 3068
+        }
+      }, {
+        "uid" : "84bc6a534ab541bd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/84bc6a534ab541bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637701718044,
+          "stop" : 1637701757710,
+          "duration" : 39666
+        }
+      }, {
+        "uid" : "6d8229d346322ba1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/6d8229d346322ba1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637668223342,
+          "stop" : 1637668229527,
+          "duration" : 6185
+        }
+      }, {
+        "uid" : "f3cfbf54a9ecb34f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/f3cfbf54a9ecb34f",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637662772258,
+          "stop" : 1637662772627,
+          "duration" : 369
+        }
+      }, {
+        "uid" : "54d1e8344eca4e16",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/19//#testresult/54d1e8344eca4e16",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637517764695,
+          "stop" : 1637517769206,
+          "duration" : 4511
+        }
+      }, {
+        "uid" : "5d197d30060564a7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/18//#testresult/5d197d30060564a7",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637514133079,
+          "stop" : 1637514137502,
+          "duration" : 4423
+        }
+      }, {
+        "uid" : "d1cd9e7935b8267d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/17//#testresult/d1cd9e7935b8267d",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637336852051,
+          "stop" : 1637336856564,
+          "duration" : 4513
+        }
+      }, {
+        "uid" : "8bfb22557d188f4f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/8bfb22557d188f4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334853164,
+          "stop" : 1637334859564,
+          "duration" : 6400
+        }
+      }, {
+        "uid" : "30272b09182dedbc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/15//#testresult/30272b09182dedbc",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637330128135,
+          "stop" : 1637330131476,
+          "duration" : 3341
+        }
+      }, {
+        "uid" : "35599e27e919d40e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/14//#testresult/35599e27e919d40e",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637329468572,
+          "stop" : 1637329473002,
+          "duration" : 4430
+        }
+      }, {
+        "uid" : "bb629ee97231b42f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/bb629ee97231b42f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320856724,
+          "stop" : 1637320861469,
+          "duration" : 4745
+        }
+      }, {
+        "uid" : "ba990edaf01073d1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/12//#testresult/ba990edaf01073d1",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 2: custom program error: 0x1",
+        "time" : {
+          "start" : 1637318759544,
+          "stop" : 1637318763037,
+          "duration" : 3493
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7c3b7eeda3fbf8e.json",
+  "parameterValues" : [ ]
+}
