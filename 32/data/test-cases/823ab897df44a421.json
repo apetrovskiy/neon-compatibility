@@ -1,0 +1,106 @@
+{
+  "uid" : "823ab897df44a421",
+  "name" : "fails deploying a contract if factory contract does not have sufficient balance",
+  "fullName" : "Contract: Create2 deploy.fails deploying a contract if factory contract does not have sufficient balance",
+  "historyId" : "e9734245c845579d6c7b1e64ff8c775e",
+  "time" : {
+    "start" : 1637859262452,
+    "stop" : 1637859275803,
+    "duration" : 13351
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (test/utils/Create2.test.js:86:7)",
+  "flaky" : false,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "testMethod",
+    "value" : "fails deploying a contract if factory contract does not have sufficient balance"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Create2 deploy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "37137da986388dc5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/37137da986388dc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637704236731,
+          "stop" : 1637704258168,
+          "duration" : 21437
+        }
+      }, {
+        "uid" : "d46f176f7f0b7737",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/d46f176f7f0b7737",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637688878349,
+          "stop" : 1637688898488,
+          "duration" : 20139
+        }
+      }, {
+        "uid" : "923d20c15b8eeec4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/923d20c15b8eeec4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676801498,
+          "stop" : 1637676806683,
+          "duration" : 5185
+        }
+      }, {
+        "uid" : "76899dd62058c51f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/76899dd62058c51f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637669859545,
+          "stop" : 1637669865014,
+          "duration" : 5469
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "823ab897df44a421.json",
+  "parameterValues" : [ ]
+}
