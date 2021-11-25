@@ -1,0 +1,102 @@
+{
+  "uid" : "b4c9b3e68db1b24",
+  "name" : "exist",
+  "fullName" : "Contract: ERC1155Supply after mint batch.exist",
+  "historyId" : "ea43ae18f9b2de7f2bd1861d8a8c08c1",
+  "time" : {
+    "start" : 1637867833801,
+    "stop" : 1637867853023,
+    "duration" : 19222
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '0x3d4027f2e0bd46f6c90afcc9eb342a9eb418e842', '0xc47fcc11a5906050e80729d7039fda79a675ee3f', '0x4f558e790000000000000000000000000000000000000000000000000000000000004d82', '']' returned non-zero exit status 101.",
+  "statusTrace" : "Error: Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '0x3d4027f2e0bd46f6c90afcc9eb342a9eb418e842', '0xc47fcc11a5906050e80729d7039fda79a675ee3f', '0x4f558e790000000000000000000000000000000000000000000000000000000000004d82', '']' returned non-zero exit status 101.\n                    at Context.<anonymous> (test/token/ERC1155/extensions/ERC1155Supply.test.js:59:33)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC1155Supply after mint batch"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1155Supply after mint batch"
+  }, {
+    "name" : "testMethod",
+    "value" : "exist"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1155Supply after mint batch"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "4427a5727b9e934d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/32//#testresult/4427a5727b9e934d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637855817844,
+          "stop" : 1637855834877,
+          "duration" : 17033
+        }
+      }, {
+        "uid" : "36bb17178979f742",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/36bb17178979f742",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637701407997,
+          "stop" : 1637701465589,
+          "duration" : 57592
+        }
+      }, {
+        "uid" : "a4e18b9674299a36",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/a4e18b9674299a36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637668150651,
+          "stop" : 1637668162953,
+          "duration" : 12302
+        }
+      }, {
+        "uid" : "5638532a1e6d1ad5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/16//#testresult/5638532a1e6d1ad5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637334759092,
+          "stop" : 1637334771552,
+          "duration" : 12460
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b4c9b3e68db1b24.json",
+  "parameterValues" : [ ]
+}

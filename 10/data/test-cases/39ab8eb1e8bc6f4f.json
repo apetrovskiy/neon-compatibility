@@ -1,0 +1,122 @@
+{
+  "uid" : "39ab8eb1e8bc6f4f",
+  "name" : "set several consecutive keys",
+  "fullName" : "Contract: BitMap setTo.set several consecutive keys",
+  "historyId" : "2ea6dd862716ecfb221940d45575a5e2",
+  "time" : {
+    "start" : 1637867948316,
+    "stop" : 1637867968807,
+    "duration" : 20491
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '65e89b0ab6bba0e1e257bf4f49eec092317b15b2', '9975299a46857c1a26e832a5e65f73df61fa0686', 'dcc9d43c0000000000000000000000000000000000000000000000000000000000001ed70000000000000000000000000000000000000000000000000000000000000000', '0x0']' returned non-zero exit status 101.",
+  "statusTrace" : "Error: Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://test-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', 'emulate', '65e89b0ab6bba0e1e257bf4f49eec092317b15b2', '9975299a46857c1a26e832a5e65f73df61fa0686', 'dcc9d43c0000000000000000000000000000000000000000000000000000000000001ed70000000000000000000000000000000000000000000000000000000000000000', '0x0']' returned non-zero exit status 101.\n                    at Context.<anonymous> (test/utils/structs/BitMap.test.js:44:25)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: BitMap setTo"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: BitMap setTo"
+  }, {
+    "name" : "testMethod",
+    "value" : "set several consecutive keys"
+  }, {
+    "name" : "package",
+    "value" : "Contract: BitMap setTo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "40c221886ed6c59a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/32//#testresult/40c221886ed6c59a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637859184824,
+          "stop" : 1637859209298,
+          "duration" : 24474
+        }
+      }, {
+        "uid" : "deb97114a75b687a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/deb97114a75b687a",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+        "time" : {
+          "start" : 1637703946977,
+          "stop" : 1637704007285,
+          "duration" : 60308
+        }
+      }, {
+        "uid" : "bf300ff3d2ac3678",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/bf300ff3d2ac3678",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+        "time" : {
+          "start" : 1637688523453,
+          "stop" : 1637688561407,
+          "duration" : 37954
+        }
+      }, {
+        "uid" : "fb0acd585d0279d5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/fb0acd585d0279d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637682723627,
+          "stop" : 1637682746799,
+          "duration" : 23172
+        }
+      }, {
+        "uid" : "1e7a74ddfbf6f1be",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/1e7a74ddfbf6f1be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637676692371,
+          "stop" : 1637676714138,
+          "duration" : 21767
+        }
+      }, {
+        "uid" : "bf7d7f0e04a7854f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/bf7d7f0e04a7854f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637669717749,
+          "stop" : 1637669739072,
+          "duration" : 21323
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "39ab8eb1e8bc6f4f.json",
+  "parameterValues" : [ ]
+}
