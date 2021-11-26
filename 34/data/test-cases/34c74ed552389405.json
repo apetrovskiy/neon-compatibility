@@ -1,0 +1,100 @@
+{
+  "uid" : "34c74ed552389405",
+  "name" : "reverts on a non-static function",
+  "fullName" : "Contract: Address functionStaticCall.reverts on a non-static function",
+  "historyId" : "7c12d3f5f08134e55f82001cf15f8454",
+  "time" : {
+    "start" : 1637891917016,
+    "stop" : 1637891928208,
+    "duration" : 11192
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (test/utils/Address.test.js:304:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Address functionStaticCall"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Address functionStaticCall"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts on a non-static function"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Address functionStaticCall"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "3944d3b64a62d979",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/9//#testresult/3944d3b64a62d979",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637866422995,
+          "stop" : 1637866434177,
+          "duration" : 11182
+        }
+      }, {
+        "uid" : "236fdcd42a540b61",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/236fdcd42a540b61",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637682854991,
+          "stop" : 1637682867188,
+          "duration" : 12197
+        }
+      }, {
+        "uid" : "dde7b25e13b39655",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/dde7b25e13b39655",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1637669857911,
+          "stop" : 1637669869365,
+          "duration" : 11454
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "34c74ed552389405.json",
+  "parameterValues" : [ ]
+}
