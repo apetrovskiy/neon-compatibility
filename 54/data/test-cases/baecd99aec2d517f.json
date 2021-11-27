@@ -1,0 +1,236 @@
+{
+  "uid" : "baecd99aec2d517f",
+  "name" : "starts with the correct cap",
+  "fullName" : "Contract: ERC20Capped once deployed capped token.starts with the correct cap",
+  "historyId" : "c8aba8aa05e7153cc84a4f6532098a08",
+  "time" : {
+    "start" : 1638017215636,
+    "stop" : 1638017224259,
+    "duration" : 8623
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "testMethod",
+    "value" : "starts with the correct cap"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC20Capped once deployed capped token"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 10,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "80c92f1cb9323e8b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/56//#testresult/80c92f1cb9323e8b",
+        "status" : "broken",
+        "statusDetails" : "done() called multiple times in test <Contract: ERC20Capped requires a non-zero cap> of file /Users/runner/work/neon-compatibility/neon-compatibility/openzeppelin-contracts/test/token/ERC20/extensions/ERC20Capped.test.js; in addition, done() received error: AssertionError: Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'ERC20Capped: cap is 0'\n                    at expectException (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:20:30)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at expectRevert (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n                    at Context.<anonymous> (/Users/runner/work/neon-compatibility/neon-compatibility/openzeppelin-contracts/test/token/ERC20/extensions/ERC20Capped.test.js:15:5) {\n                  showDiff: true,\n                  actual: 'Returned error: execution reverted',\n                  expected: 'ERC20Capped: cap is 0',\n                  operator: 'strictEqual'\n                }",
+        "time" : {
+          "start" : 1638018748862,
+          "stop" : 1638018769994,
+          "duration" : 21132
+        }
+      }, {
+        "uid" : "a60bc95ceac8c0ed",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/55//#testresult/a60bc95ceac8c0ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638017646206,
+          "stop" : 1638017660710,
+          "duration" : 14504
+        }
+      }, {
+        "uid" : "d0e8c91ce0a43a13",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/39//#testresult/d0e8c91ce0a43a13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638010110145,
+          "stop" : 1638010117635,
+          "duration" : 7490
+        }
+      }, {
+        "uid" : "415d9515164874e4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/34//#testresult/415d9515164874e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637887297390,
+          "stop" : 1637887309336,
+          "duration" : 11946
+        }
+      }, {
+        "uid" : "d3d3e7b65767de6b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/10//#testresult/d3d3e7b65767de6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637867790634,
+          "stop" : 1637867799065,
+          "duration" : 8431
+        }
+      }, {
+        "uid" : "3f4df074f2666a9d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/32//#testresult/3f4df074f2666a9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637855519524,
+          "stop" : 1637855525628,
+          "duration" : 6104
+        }
+      }, {
+        "uid" : "97ce30f35357ae20",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/29//#testresult/97ce30f35357ae20",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction",
+        "time" : {
+          "start" : 1637850360482,
+          "stop" : 1637850365206,
+          "duration" : 4724
+        }
+      }, {
+        "uid" : "7ff45e8b91230413",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/27//#testresult/7ff45e8b91230413",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637809830872,
+          "stop" : 1637809834560,
+          "duration" : 3688
+        }
+      }, {
+        "uid" : "3d2352c24e67ccb9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/26//#testresult/3d2352c24e67ccb9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637799263535,
+          "stop" : 1637799267225,
+          "duration" : 3690
+        }
+      }, {
+        "uid" : "6dd22c90a614191c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/25//#testresult/6dd22c90a614191c",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637749327126,
+          "stop" : 1637749330091,
+          "duration" : 2965
+        }
+      }, {
+        "uid" : "45bea034ed667439",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/45bea034ed667439",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637748556035,
+          "stop" : 1637748559718,
+          "duration" : 3683
+        }
+      }, {
+        "uid" : "a5f36d1cf1749cc4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/24//#testresult/a5f36d1cf1749cc4",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637746086921,
+          "stop" : 1637746090475,
+          "duration" : 3554
+        }
+      }, {
+        "uid" : "e30fc6f15e9840d9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/6//#testresult/e30fc6f15e9840d9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637744165789,
+          "stop" : 1637744169440,
+          "duration" : 3651
+        }
+      }, {
+        "uid" : "5087dda5e20341e0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/5//#testresult/5087dda5e20341e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637742323140,
+          "stop" : 1637742329131,
+          "duration" : 5991
+        }
+      }, {
+        "uid" : "56949ed4353f0497",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/56949ed4353f0497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637699923543,
+          "stop" : 1637699949769,
+          "duration" : 26226
+        }
+      }, {
+        "uid" : "2af3337102ad5a4b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/2af3337102ad5a4b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637667783905,
+          "stop" : 1637667789694,
+          "duration" : 5789
+        }
+      }, {
+        "uid" : "6bb0983267e9b2f7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/20//#testresult/6bb0983267e9b2f7",
+        "status" : "broken",
+        "statusDetails" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+        "time" : {
+          "start" : 1637662699547,
+          "stop" : 1637662699826,
+          "duration" : 279
+        }
+      }, {
+        "uid" : "fe9ac080790d8d28",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/13//#testresult/fe9ac080790d8d28",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637320772758,
+          "stop" : 1637320776149,
+          "duration" : 3391
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "baecd99aec2d517f.json",
+  "parameterValues" : [ ]
+}
