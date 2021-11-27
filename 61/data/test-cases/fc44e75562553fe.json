@@ -1,0 +1,120 @@
+{
+  "uid" : "fc44e75562553fe",
+  "name" : "run",
+  "fullName" : "Contract: Governor scenario Invalid vote type.run",
+  "historyId" : "ed0b99835b357529fb6601d7bc0b1444",
+  "time" : {
+    "start" : 1638033380601,
+    "stop" : 1638033433583,
+    "duration" : 52982
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Target block #(440167) is lower than current block #(440186)",
+  "statusTrace" : "Error: Target block #(440167) is lower than current block #(440186)\n                    at Object.advanceBlockTo (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/time.js:22:38)\n                    at runMicrotasks (<anonymous>)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at Context.<anonymous> (test/governance/GovernorWorkflow.behavior.js:61:9)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: Governor scenario Invalid vote type"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: Governor scenario Invalid vote type"
+  }, {
+    "name" : "testMethod",
+    "value" : "run"
+  }, {
+    "name" : "package",
+    "value" : "Contract: Governor scenario Invalid vote type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "ad699ccfdb575297",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/39//#testresult/ad699ccfdb575297",
+        "status" : "broken",
+        "statusDetails" : "Target block #(385956) is lower than current block #(385975)",
+        "time" : {
+          "start" : 1638008592105,
+          "stop" : 1638008635344,
+          "duration" : 43239
+        }
+      }, {
+        "uid" : "ac992b3e8778d270",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/34//#testresult/ac992b3e8778d270",
+        "status" : "broken",
+        "statusDetails" : "Target block #(96073) is lower than current block #(96092)",
+        "time" : {
+          "start" : 1637885313211,
+          "stop" : 1637885356312,
+          "duration" : 43101
+        }
+      }, {
+        "uid" : "3c5da52312cdea4a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/10//#testresult/3c5da52312cdea4a",
+        "status" : "broken",
+        "statusDetails" : "Returned error: failed to get recent blockhash",
+        "time" : {
+          "start" : 1637867807922,
+          "stop" : 1637867853346,
+          "duration" : 45424
+        }
+      }, {
+        "uid" : "ea1da93a9b09aeba",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/ea1da93a9b09aeba",
+        "status" : "broken",
+        "statusDetails" : "Target block #(96253040) is lower than current block #(96253131)",
+        "time" : {
+          "start" : 1637698719607,
+          "stop" : 1637698906513,
+          "duration" : 186906
+        }
+      }, {
+        "uid" : "63fb0c174b51ccc4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/22//#testresult/63fb0c174b51ccc4",
+        "status" : "broken",
+        "statusDetails" : "Target block #(7933) is lower than current block #(7952)",
+        "time" : {
+          "start" : 1637665971630,
+          "stop" : 1637666014673,
+          "duration" : 43043
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fc44e75562553fe.json",
+  "parameterValues" : [ ]
+}
