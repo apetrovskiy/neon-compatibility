@@ -1,0 +1,82 @@
+{
+  "uid" : "d5cced29a15ed57f",
+  "name" : "reverts with a null destination address",
+  "fullName" : "Contract: ERC721Enumerable _mint(address, uint256).reverts with a null destination address",
+  "historyId" : "754f8bb54400381657871a32dca2ba11",
+  "time" : {
+    "start" : 1638014836735,
+    "stop" : 1638014843506,
+    "duration" : 6771
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC721Enumerable _mint(address, uint256)"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC721Enumerable _mint(address, uint256)"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts with a null destination address"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC721Enumerable _mint(address, uint256)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "65a477df00cee447",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638014492116,
+        "stop" : 1638014499109,
+        "duration" : 6993
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f2010eeb7e67bc53",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/f2010eeb7e67bc53",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.devnet.neonlabs.org/solana failed, reason: Client network socket disconnected before secure TLS connection was established",
+        "time" : {
+          "start" : 1637702038777,
+          "stop" : 1637702039131,
+          "duration" : 354
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d5cced29a15ed57f.json",
+  "parameterValues" : [ ]
+}
