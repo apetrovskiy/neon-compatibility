@@ -1,0 +1,33 @@
+name: Run Process Upload
+description: Runs all the tests from a subfolder, post-process test results and uploads them to gh-pages
+inputs:
+  folder-name:
+    description: name of subfolder
+    required: true
+    default: ''
+  jobsNumber:
+    description: number of jobs runnign in parallel
+    required: true
+    default: '8'
+runs:
+  using: "composite"
+  steps:
+    - name: Display input parameters
+      run: |
+        echo "subfolder name = ${{ inputs.folder-name }}"
+        echo "jobs number = ${{ inputs.jobsNumber }}"
+      shell: bash
+    - uses: ./.github/actions/run-hardhat-tests
+      if: always()
+      with:
+        folder-name: ${{ inputs.folder-name }}
+        jobsNumber: ${{ inputs.jobsNumber }}
+    - uses: ./.github/actions/allure-postprocessing
+      if: always()
+      with:
+        item-type: epic
+        name: OpenZeppelin contracts
+    - uses: ./.github/actions/allure-upload
+      if: always()
+      with:
+        folder-name: openzeppelin-contracts/allure-results
