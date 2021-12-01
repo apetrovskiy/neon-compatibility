@@ -1,6 +1,7 @@
 require("dotenv").config({ path: "../.env" });
 const Web3 = require("web3");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
+
 module.exports = {
   networks: {
     neonlabs: {
@@ -22,9 +23,11 @@ module.exports = {
       from: process.env.ADDRESS_FROM,
       to: process.env.ADDRESS_TO,
       network_id: process.env.NETWORK_ID,
+      timeout: 10000,
       gas: 3000000,
       gasPrice: 1000000000,
       timeoutBlocks: 100000,
+      networkCheckTimeout: 1000000
 
       // gas
       // gasPrice
