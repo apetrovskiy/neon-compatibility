@@ -1,0 +1,270 @@
+{
+  "uid" : "62c639c33b96e666",
+  "name" : "reverts",
+  "fullName" : "Contract: ERC1967Proxy initialization with parameters reverting initialization.reverts",
+  "historyId" : "25c6d5145d1ae0e6bffe17385722c805",
+  "time" : {
+    "start" : 1638983655227,
+    "stop" : 1638983655507,
+    "duration" : 280
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                ",
+  "statusTrace" : "HardhatError: HH110: Invalid JSON-RPC response received: <html>\n                <head><title>502 Bad Gateway</title></head>\n                <body>\n                <center><h1>502 Bad Gateway</h1></center>\n                <hr><center>nginx/1.18.0 (Ubuntu)</center>\n                </body>\n                </html>\n                \n                    at Object.parseJsonResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/util/jsonrpc.ts:47:11)\n                    at HttpProvider._fetchJsonRpcResponse (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:173:14)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at HttpProvider.request (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:55:29)\n                    at Web3HTTPProviderAdapter._sendJsonRpcRequest (/Users/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-web3/src/web3-provider-adapter.ts:80:22)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ERC1967Proxy initialization with parameters reverting initialization"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ERC1967Proxy initialization with parameters reverting initialization"
+  }, {
+    "name" : "testMethod",
+    "value" : "reverts"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ERC1967Proxy initialization with parameters reverting initialization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 24,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 25
+      },
+      "items" : [ {
+        "uid" : "4fcf9a8b442ae157",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/65//#testresult/4fcf9a8b442ae157",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638349179937,
+          "stop" : 1638349181497,
+          "duration" : 1560
+        }
+      }, {
+        "uid" : "4585df53870776a6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/64//#testresult/4585df53870776a6",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638330335430,
+          "stop" : 1638330337001,
+          "duration" : 1571
+        }
+      }, {
+        "uid" : "e39f682293531149",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/63//#testresult/e39f682293531149",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638318097480,
+          "stop" : 1638318099063,
+          "duration" : 1583
+        }
+      }, {
+        "uid" : "4ee8ecdd05f14f7e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/62//#testresult/4ee8ecdd05f14f7e",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638220462751,
+          "stop" : 1638220465314,
+          "duration" : 2563
+        }
+      }, {
+        "uid" : "6362a5a554c0e7a9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/58//#testresult/6362a5a554c0e7a9",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638032866078,
+          "stop" : 1638032868284,
+          "duration" : 2206
+        }
+      }, {
+        "uid" : "44210273c2fdf15a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/60//#testresult/44210273c2fdf15a",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638035575986,
+          "stop" : 1638035579385,
+          "duration" : 3399
+        }
+      }, {
+        "uid" : "a9d1154ec2809337",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/61//#testresult/a9d1154ec2809337",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638035168703,
+          "stop" : 1638035173406,
+          "duration" : 4703
+        }
+      }, {
+        "uid" : "66fc91a6305a023c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/59//#testresult/66fc91a6305a023c",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638030828100,
+          "stop" : 1638030829731,
+          "duration" : 1631
+        }
+      }, {
+        "uid" : "18f6f19742b57e23",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/57//#testresult/18f6f19742b57e23",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638030069034,
+          "stop" : 1638030070785,
+          "duration" : 1751
+        }
+      }, {
+        "uid" : "39147e2415582be1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/56//#testresult/39147e2415582be1",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638017490209,
+          "stop" : 1638017493032,
+          "duration" : 2823
+        }
+      }, {
+        "uid" : "a121f329425f6017",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/55//#testresult/a121f329425f6017",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638016800028,
+          "stop" : 1638016801851,
+          "duration" : 1823
+        }
+      }, {
+        "uid" : "ed358700a0505ff7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/39//#testresult/ed358700a0505ff7",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1638009816031,
+          "stop" : 1638009817645,
+          "duration" : 1614
+        }
+      }, {
+        "uid" : "110c83669f685099",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/34//#testresult/110c83669f685099",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637886568484,
+          "stop" : 1637886570146,
+          "duration" : 1662
+        }
+      }, {
+        "uid" : "cf72a034eb12cc6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/9//#testresult/cf72a034eb12cc6",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637866284444,
+          "stop" : 1637866287033,
+          "duration" : 2589
+        }
+      }, {
+        "uid" : "599f18a667bc0de3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/10//#testresult/599f18a667bc0de3",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637866654993,
+          "stop" : 1637866657573,
+          "duration" : 2580
+        }
+      }, {
+        "uid" : "fceaadd8a95a3a7b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/32//#testresult/fceaadd8a95a3a7b",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637855359401,
+          "stop" : 1637855360909,
+          "duration" : 1508
+        }
+      }, {
+        "uid" : "ea0b818abb4526a8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/23//#testresult/ea0b818abb4526a8",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637698944523,
+          "stop" : 1637698949716,
+          "duration" : 5193
+        }
+      }, {
+        "uid" : "8be5b550021cf440",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/4//#testresult/8be5b550021cf440",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637688963589,
+          "stop" : 1637688969025,
+          "duration" : 5436
+        }
+      }, {
+        "uid" : "849ed90fd8259037",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/3//#testresult/849ed90fd8259037",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637682661949,
+          "stop" : 1637682663607,
+          "duration" : 1658
+        }
+      }, {
+        "uid" : "e9bcfdb99330e036",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/2//#testresult/e9bcfdb99330e036",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: execution reverted' to equal 'DummyImplementation reverted'",
+        "time" : {
+          "start" : 1637676849477,
+          "stop" : 1637676852068,
+          "duration" : 2591
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "62c639c33b96e666.json",
+  "parameterValues" : [ ]
+}
