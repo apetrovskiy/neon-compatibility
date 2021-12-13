@@ -1,0 +1,177 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 401",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "9f79e1f9471f00dc",
+        "parentUid" : "d75729c6e03a4218b703191d8aa592cf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411286932,
+          "stop" : 1639411287666,
+          "duration" : 734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d75729c6e03a4218b703191d8aa592cf"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "c96d0eab97a92644",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411290198,
+          "stop" : 1639411292172,
+          "duration" : 1974
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "provided ENS name resolves to null (argument=\"tx.to\", value=\"ricmoo.firefly.eth\", code=INVALID_ARGUMENT, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "18bf6721c85f2ce5",
+        "parentUid" : "a84db27a603b95faa88ded5ac73acc8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411292173,
+          "stop" : 1639411293616,
+          "duration" : 1443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a84db27a603b95faa88ded5ac73acc8c"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "3abd921f14b89797",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411293625,
+          "stop" : 1639411294590,
+          "duration" : 965
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "a30798281eda8c8a",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411296615,
+          "stop" : 1639411296620,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Not supported",
+    "children" : [ {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"'EthereumModel' object has no attribute 'eth_accounts'\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.teststand2.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "f56e5855cc1266e1",
+        "parentUid" : "367e969f6919dbbc6ec9c5b0539eaca7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411294595,
+          "stop" : 1639411295074,
+          "duration" : 479
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "96a0aa7acda28d73",
+        "parentUid" : "367e969f6919dbbc6ec9c5b0539eaca7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411295075,
+          "stop" : 1639411295567,
+          "duration" : 492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "367e969f6919dbbc6ec9c5b0539eaca7"
+    }, {
+      "name" : "'EthereumModel' object has no attribute 'eth_accounts'",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "281950d71e9d0001",
+        "parentUid" : "616b35d0f72e0c77835a18b2e151ce18",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639411301676,
+          "stop" : 1639411302724,
+          "duration" : 1048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "616b35d0f72e0c77835a18b2e151ce18"
+    } ],
+    "uid" : "74a85a700e270c086f9590bc39e50507"
+  } ],
+  "name" : "categories"
+}
