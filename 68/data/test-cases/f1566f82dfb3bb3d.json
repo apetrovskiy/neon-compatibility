@@ -1,0 +1,270 @@
+{
+  "uid" : "f1566f82dfb3bb3d",
+  "name" : "can accept a single deposit",
+  "fullName" : "Contract: ConditionalEscrow when withdrawal is allowed as an escrow deposits.can accept a single deposit",
+  "historyId" : "4750b370a995fbef6fd1d5e2210878df",
+  "time" : {
+    "start" : 1639394044620,
+    "stop" : 1639394050795,
+    "duration" : 6175
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/entrypoint.rs:1256 : Invalid Ethereum transaction nonce: acc 1, trx 0\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 32255 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [4019348281160, 9332880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"809680003611212531\", \"decimals\": 9, \"uiAmount\": 809680003.6112125, \"uiAmountString\": \"809680003.611212531\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"9999999956836\", \"decimals\": 9, \"uiAmount\": 9999.999956836, \"uiAmountString\": \"9999.999956836\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"10000000000000\", \"decimals\": 9, \"uiAmount\": 10000.0, \"uiAmountString\": \"10000\"}}], \"preBalances\": [4019348291160, 9332880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"809680003611212531\", \"decimals\": 9, \"uiAmount\": 809680003.6112125, \"uiAmountString\": \"809680003.611212531\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"9999999956836\", \"decimals\": 9, \"uiAmount\": 9999.999956836, \"uiAmountString\": \"9999.999956836\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"10000000000000\", \"decimals\": 9, \"uiAmount\": 10000.0, \"uiAmountString\": \"10000\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}",
+  "statusTrace" : "Error: Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/entrypoint.rs:1256 : Invalid Ethereum transaction nonce: acc 1, trx 0\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 32255 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [4019348281160, 9332880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"809680003611212531\", \"decimals\": 9, \"uiAmount\": 809680003.6112125, \"uiAmountString\": \"809680003.611212531\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"9999999956836\", \"decimals\": 9, \"uiAmount\": 9999.999956836, \"uiAmountString\": \"9999.999956836\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"10000000000000\", \"decimals\": 9, \"uiAmount\": 10000.0, \"uiAmountString\": \"10000\"}}], \"preBalances\": [4019348291160, 9332880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"809680003611212531\", \"decimals\": 9, \"uiAmount\": 809680003.6112125, \"uiAmountString\": \"809680003.611212531\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"9999999956836\", \"decimals\": 9, \"uiAmount\": 9999.999956836, \"uiAmountString\": \"9999.999956836\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"10000000000000\", \"decimals\": 9, \"uiAmount\": 10000.0, \"uiAmountString\": \"10000\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}\n                    at /Users/runner/work/neon-compatibility/neon-compatibility/openzeppelin-contracts/test/utils/escrow/ConditionalEscrow.test.js:15:64\n                    at Array.map (<anonymous>)\n                    at Context.<anonymous> (test/utils/escrow/ConditionalEscrow.test.js:15:39)\n                    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "OpenZeppelin contracts"
+  }, {
+    "name" : "suite",
+    "value" : "Contract: ConditionalEscrow when withdrawal is allowed as an escrow deposits"
+  }, {
+    "name" : "testClass",
+    "value" : "Contract: ConditionalEscrow when withdrawal is allowed as an escrow deposits"
+  }, {
+    "name" : "testMethod",
+    "value" : "can accept a single deposit"
+  }, {
+    "name" : "package",
+    "value" : "Contract: ConditionalEscrow when withdrawal is allowed as an escrow deposits"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 37,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 37
+      },
+      "items" : [ {
+        "uid" : "f7089bbe16f04793",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/67//#testresult/f7089bbe16f04793",
+        "status" : "broken",
+        "statusDetails" : "Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/entrypoint.rs:1256 : Invalid Ethereum transaction nonce: acc 1, trx 0\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 32261 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [4043632896520, 8009880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"996779502790884008\", \"decimals\": 9, \"uiAmount\": 996779502.790884, \"uiAmountString\": \"996779502.790884008\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"99999956848\", \"decimals\": 9, \"uiAmount\": 99.999956848, \"uiAmountString\": \"99.999956848\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"100000000000\", \"decimals\": 9, \"uiAmount\": 100.0, \"uiAmountString\": \"100\"}}], \"preBalances\": [4043632906520, 8009880, 2039280, 2039280, 2672640, 2039280, 47174880, 2672640, 1, 0, 1, 1141440, 1461600, 1130582400, 1169280], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"996779502790884008\", \"decimals\": 9, \"uiAmount\": 996779502.790884, \"uiAmountString\": \"996779502.790884008\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"99999956848\", \"decimals\": 9, \"uiAmount\": 99.999956848, \"uiAmountString\": \"99.999956848\"}}, {\"accountIndex\": 5, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"100000000000\", \"decimals\": 9, \"uiAmount\": 100.0, \"uiAmountString\": \"100\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}",
+        "time" : {
+          "start" : 1639390028988,
+          "stop" : 1639390034765,
+          "duration" : 5777
+        }
+      }, {
+        "uid" : "2d0cf0f9f9fc6503",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/65//#testresult/2d0cf0f9f9fc6503",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0x3d1226e54aa48b17353f1f9dbf8c5809db52f69390d8e6408c25a36aaa1b871a exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+        "time" : {
+          "start" : 1638357667777,
+          "stop" : 1638357676967,
+          "duration" : 9190
+        }
+      }, {
+        "uid" : "c732d0712124f933",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/64//#testresult/c732d0712124f933",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1638336900253,
+          "stop" : 1638336906288,
+          "duration" : 6035
+        }
+      }, {
+        "uid" : "3e80c9e544dfcaf6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/63//#testresult/3e80c9e544dfcaf6",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0xf1e37ca28682a48f0dda2626f5ab74c771ddfd93db5ee2b074a07f7df7caed65 exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+        "time" : {
+          "start" : 1638323935634,
+          "stop" : 1638323942551,
+          "duration" : 6917
+        }
+      }, {
+        "uid" : "eab561e0a3cfc277",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/62//#testresult/eab561e0a3cfc277",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1638227998271,
+          "stop" : 1638228006709,
+          "duration" : 8438
+        }
+      }, {
+        "uid" : "fc3c2e53a115ec",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/59//#testresult/fc3c2e53a115ec",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0x658e884cdd35f17fcf0c593f90ac5d005d388b95295e157befab3df0a08fb72a exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+        "time" : {
+          "start" : 1638039564238,
+          "stop" : 1638039576500,
+          "duration" : 12262
+        }
+      }, {
+        "uid" : "b27e900786d30b22",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/57//#testresult/b27e900786d30b22",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1638038499181,
+          "stop" : 1638038515993,
+          "duration" : 16812
+        }
+      }, {
+        "uid" : "b20fd66f18cb2b5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/56//#testresult/b20fd66f18cb2b5",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1638025607325,
+          "stop" : 1638025615625,
+          "duration" : 8300
+        }
+      }, {
+        "uid" : "e565710f1e492732",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/55//#testresult/e565710f1e492732",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1638025102369,
+          "stop" : 1638025110773,
+          "duration" : 8404
+        }
+      }, {
+        "uid" : "aad08b044ac5688c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/34//#testresult/aad08b044ac5688c",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1637891586970,
+          "stop" : 1637891596436,
+          "duration" : 9466
+        }
+      }, {
+        "uid" : "d701d9c3d360eff0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/9//#testresult/d701d9c3d360eff0",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1637866086950,
+          "stop" : 1637866099341,
+          "duration" : 12391
+        }
+      }, {
+        "uid" : "a91159aa9c9136b2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/10//#testresult/a91159aa9c9136b2",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0x89647ff7fc6b8d5b4ee6df853d0304fce35f8f537955a0338875309cbf53e238 exited with an error (status 0). \n                     Please check that the transaction:\n                     - satisfies all conditions set by Solidity `require` statements.\n                     - does not trigger a Solidity `revert` statement.\n                ",
+        "time" : {
+          "start" : 1637867920293,
+          "stop" : 1637867928762,
+          "duration" : 8469
+        }
+      }, {
+        "uid" : "83ae84953a120b2d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/32//#testresult/83ae84953a120b2d",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument",
+        "time" : {
+          "start" : 1637859239301,
+          "stop" : 1637859246521,
+          "duration" : 7220
+        }
+      }, {
+        "uid" : "5d70123a0d424ca2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/30//#testresult/5d70123a0d424ca2",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction",
+        "time" : {
+          "start" : 1637851983205,
+          "stop" : 1637851986489,
+          "duration" : 3284
+        }
+      }, {
+        "uid" : "97bf63a7152c529a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/29//#testresult/97bf63a7152c529a",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction",
+        "time" : {
+          "start" : 1637850527120,
+          "stop" : 1637850530551,
+          "duration" : 3431
+        }
+      }, {
+        "uid" : "7febbb5b4f87fc14",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/28//#testresult/7febbb5b4f87fc14",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction",
+        "time" : {
+          "start" : 1637847349083,
+          "stop" : 1637847351893,
+          "duration" : 2810
+        }
+      }, {
+        "uid" : "e9ded1076ba67734",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/27//#testresult/e9ded1076ba67734",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637809988903,
+          "stop" : 1637809992637,
+          "duration" : 3734
+        }
+      }, {
+        "uid" : "c2ff4af2a3fa77f6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/26//#testresult/c2ff4af2a3fa77f6",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637799442116,
+          "stop" : 1637799445780,
+          "duration" : 3664
+        }
+      }, {
+        "uid" : "d3082e61d244d384",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/25//#testresult/d3082e61d244d384",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 3: custom program error: 0x1",
+        "time" : {
+          "start" : 1637749408618,
+          "stop" : 1637749411804,
+          "duration" : 3186
+        }
+      }, {
+        "uid" : "adfe33959ce39865",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/7//#testresult/adfe33959ce39865",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 1: custom program error: 0x1",
+        "time" : {
+          "start" : 1637748415489,
+          "stop" : 1637748418823,
+          "duration" : 3334
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f1566f82dfb3bb3d.json",
+  "parameterValues" : [ ]
+}
