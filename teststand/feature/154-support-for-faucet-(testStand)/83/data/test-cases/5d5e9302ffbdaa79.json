@@ -1,0 +1,65 @@
+{
+  "uid" : "5d5e9302ffbdaa79",
+  "name" : "rejects zero address for beneficiary",
+  "fullName" : "rejects zero address for beneficiary",
+  "historyId" : "86557ca2d9395eea8c10700365ee7c2a",
+  "time" : {
+    "start" : 1639909924844,
+    "stop" : 1639909925230,
+    "duration" : 386
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: connection already closed",
+  "statusTrace" : "Error: Returned error: connection already closed\n    at Object.ErrorResponse (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/node_modules/web3-core-helpers/lib/errors.js:28:19)\n    at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/lib/index.js:302:36\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: VestingWallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5d5e9302ffbdaa79.json",
+  "parameterValues" : [ ]
+}

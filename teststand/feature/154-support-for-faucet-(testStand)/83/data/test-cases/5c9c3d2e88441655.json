@@ -1,0 +1,68 @@
+{
+  "uid" : "5c9c3d2e88441655",
+  "name" : "returns false when interface implementation is queried",
+  "fullName" : "returns false when interface implementation is queried",
+  "historyId" : "a87c508c5a1043200ad708d8e4672561",
+  "time" : {
+    "start" : 1639909915811,
+    "stop" : 1639909916574,
+    "duration" : 763
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: connection already closed",
+  "statusTrace" : "Error: Returned error: connection already closed\n    at Context.<anonymous> (test/utils/introspection/ERC1820Implementer.test.js:14:56)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1820Implementer"
+  }, {
+    "name" : "suite",
+    "value" : "with no registered interfaces"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5c9c3d2e88441655.json",
+  "parameterValues" : [ ]
+}
