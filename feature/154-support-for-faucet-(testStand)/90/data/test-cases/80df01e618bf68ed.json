@@ -1,0 +1,105 @@
+{
+  "uid" : "80df01e618bf68ed",
+  "name" : "reverts when retrieving non-existent elements",
+  "fullName" : "reverts when retrieving non-existent elements",
+  "historyId" : "4f003f9a21f178e67a41a9716de55910",
+  "time" : {
+    "start" : 1640007373305,
+    "stop" : 1640007384293,
+    "duration" : 10988
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: EnumerableSet"
+  }, {
+    "name" : "suite",
+    "value" : "EnumerableBytes32Set"
+  }, {
+    "name" : "subSuite",
+    "value" : "at"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "3adc7130523db651",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/3adc7130523db651",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639995418564,
+          "stop" : 1639995422575,
+          "duration" : 4011
+        }
+      }, {
+        "uid" : "56dfd228e215cdf8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/82//#testresult/56dfd228e215cdf8",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1639911839421,
+          "stop" : 1639911970491,
+          "duration" : 131070
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "80df01e618bf68ed.json",
+  "parameterValues" : [ ]
+}
