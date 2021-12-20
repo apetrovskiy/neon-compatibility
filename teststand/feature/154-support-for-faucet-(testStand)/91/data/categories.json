@@ -1,0 +1,177 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 502",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "e4b0be45cf255df4",
+        "parentUid" : "e705b6fb5463b32ee86ab624bd889c61",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004652692,
+          "stop" : 1640004653528,
+          "duration" : 836
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e705b6fb5463b32ee86ab624bd889c61"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "4916d570d0908468",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004656716,
+          "stop" : 1640004658819,
+          "duration" : 2103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "a999f1babd0321fd",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004660380,
+          "stop" : 1640004661421,
+          "duration" : 1041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "3a585ad990b03468",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004663529,
+          "stop" : 1640004663537,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Not supported",
+    "children" : [ {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"'EthereumModel' object has no attribute 'eth_accounts'\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.teststand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "9edca3e9bc9c2922",
+        "parentUid" : "d2966f81742a88d30931ba98afd1b11b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004658820,
+          "stop" : 1640004660370,
+          "duration" : 1550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d2966f81742a88d30931ba98afd1b11b"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"'EthereumModel' object has no attribute 'eth_accounts'\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.teststand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "26c6f0d2e5519f44",
+        "parentUid" : "82cf1aafc15dda217f2555c041af7191",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004661428,
+          "stop" : 1640004661923,
+          "duration" : 495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "f2dfa5c6b8bfd1cf",
+        "parentUid" : "82cf1aafc15dda217f2555c041af7191",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004661923,
+          "stop" : 1640004662488,
+          "duration" : 565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "82cf1aafc15dda217f2555c041af7191"
+    }, {
+      "name" : "'EthereumModel' object has no attribute 'eth_accounts'",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "7a2382f607c7cf73",
+        "parentUid" : "616b35d0f72e0c77835a18b2e151ce18",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640004668586,
+          "stop" : 1640004669636,
+          "duration" : 1050
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "616b35d0f72e0c77835a18b2e151ce18"
+    } ],
+    "uid" : "74a85a700e270c086f9590bc39e50507"
+  } ],
+  "name" : "categories"
+}
