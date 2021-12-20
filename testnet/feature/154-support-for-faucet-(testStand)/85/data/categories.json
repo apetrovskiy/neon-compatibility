@@ -1,0 +1,493 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "883856af5700ddff",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983624556,
+          "stop" : 1639983625372,
+          "duration" : 816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "551318bfb0b77897",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983629554,
+          "stop" : 1639983632470,
+          "duration" : 2916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "660c253921c9939d",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983634396,
+          "stop" : 1639983635742,
+          "duration" : 1346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "44df9c4a47b4e8df",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983637876,
+          "stop" : 1639983637882,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "ValueError: Gas estimation failed: 'execution reverted: Insufficient balance'. This transaction will likely revert. If you wish to broadcast, you must set the gas limit manually.",
+      "children" : [ {
+        "name" : "test_insufficient_balance",
+        "uid" : "8d533a253dc02b83",
+        "parentUid" : "5f4213889cfcdff121652c3e5acdd001",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983838310,
+          "stop" : 1639983839265,
+          "duration" : 955
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_insufficient_balance",
+        "uid" : "ec50b0024043e10f",
+        "parentUid" : "5f4213889cfcdff121652c3e5acdd001",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639984009069,
+          "stop" : 1639984021109,
+          "duration" : 12040
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f4213889cfcdff121652c3e5acdd001"
+    }, {
+      "name" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+      "children" : [ {
+        "name" : "test_insufficient_approval",
+        "uid" : "ddfb2bcaea9e7f4a",
+        "parentUid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639984021190,
+          "stop" : 1639984021577,
+          "duration" : 387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Not supported",
+    "children" : [ {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"'EthereumModel' object has no attribute 'eth_accounts'\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.testnet.neonlabs.org/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "d503c647ef18cb48",
+        "parentUid" : "5f6eadd006d4e0d5688fd7bfdb6be64f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983632471,
+          "stop" : 1639983634379,
+          "duration" : 1908
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f6eadd006d4e0d5688fd7bfdb6be64f"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"'EthereumModel' object has no attribute 'eth_accounts'\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://proxy.testnet.neonlabs.org/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "c87e0ddf6cb5e466",
+        "parentUid" : "c5532d67cbaaf649206ae0efa46e8850",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983635763,
+          "stop" : 1639983636248,
+          "duration" : 485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "f512cde807b73b32",
+        "parentUid" : "c5532d67cbaaf649206ae0efa46e8850",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983636249,
+          "stop" : 1639983636731,
+          "duration" : 482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5532d67cbaaf649206ae0efa46e8850"
+    }, {
+      "name" : "'EthereumModel' object has no attribute 'eth_accounts'",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "fd215a5d3a403489",
+        "parentUid" : "616b35d0f72e0c77835a18b2e151ce18",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983644445,
+          "stop" : 1639983645523,
+          "duration" : 1078
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "616b35d0f72e0c77835a18b2e151ce18"
+    }, {
+      "name" : "brownie.exceptions.RPCRequestError: 'EthereumModel' object has no attribute 'debug_traceTransaction'",
+      "children" : [ {
+        "name" : "test_returns_true",
+        "uid" : "eaecd24342aa0602",
+        "parentUid" : "9142149abb271b05b89f49196141a7d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983753880,
+          "stop" : 1639983759800,
+          "duration" : 5920
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "d1fee4496f9b6a",
+        "parentUid" : "9142149abb271b05b89f49196141a7d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983801844,
+          "stop" : 1639983810700,
+          "duration" : 8856
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "f37ea05bacae44f3",
+        "parentUid" : "9142149abb271b05b89f49196141a7d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639983967995,
+          "stop" : 1639983979755,
+          "duration" : 11760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9142149abb271b05b89f49196141a7d3"
+    } ],
+    "uid" : "74a85a700e270c086f9590bc39e50507"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Transaction did not revert",
+      "children" : [ {
+        "name" : "test_no_approval",
+        "uid" : "54f19bab63505532",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984021698,
+          "stop" : 1639984032958,
+          "duration" : 11260
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoked_approval",
+        "uid" : "afcc85c6e9eae66d",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984032975,
+          "stop" : 1639984051241,
+          "duration" : 18266
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self_no_approval",
+        "uid" : "ec6137292debae0d",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984062068,
+          "stop" : 1639984067642,
+          "duration" : 5574
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90f888e015672ae267836a9e2c59904f"
+    }, {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...ttempt #1.\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.13.1\n    /home/runner/work/neon-compatibility/neon-compatibility\n    - Fetching solc version list from solc-bin. Attempt #1\n    ✔ Downloading compiler. Attempt #1.",
+      "children" : [ {
+        "name" : "test_contracts[input_data0]",
+        "uid" : "7237f752343c14a",
+        "parentUid" : "38d3bb28c4e7f58bedfceca8a53a3178",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984078020,
+          "stop" : 1639984098461,
+          "duration" : 20441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/Ownable.test.js', test_files=['access/Ownable.test.js'], contracts=['access/Ownable.sol', 'mocks/OwnableMock.sol', 'mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      } ],
+      "uid" : "38d3bb28c4e7f58bedfceca8a53a3178"
+    }, {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...patibility\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.13.1\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_contracts[input_data1]",
+        "uid" : "710315a95ee89652",
+        "parentUid" : "1f689f49ec365620ebd0eef9cfede94c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984098483,
+          "stop" : 1639984117506,
+          "duration" : 19023
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControl.test.js', test_files=['access/AccessControl.test.js', 'access/AccessControl.behavior.js'], contracts=['mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data2]",
+        "uid" : "75ed64f03b866996",
+        "parentUid" : "1f689f49ec365620ebd0eef9cfede94c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984117527,
+          "stop" : 1639984136558,
+          "duration" : 19031
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControlEnumerable.test.js', test_files=['access/AccessControlEnumerable.test.js', 'access/AccessControl.behavior.js'], contracts=['utils/Strings.sol', 'utils/introspection/ERC165.sol', 'mocks/AccessControlEnumerableMock.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data3]",
+        "uid" : "f02def7e7d5d6dd3",
+        "parentUid" : "1f689f49ec365620ebd0eef9cfede94c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984136579,
+          "stop" : 1639984156080,
+          "duration" : 19501
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='finance/PaymentSplitter.test.js', test_files=['finance/PaymentSplitter.test.js'], contracts=['finance/PaymentSplitter.sol', 'utils/Address.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='3_deploy_contracts.js')" ]
+      } ],
+      "uid" : "1f689f49ec365620ebd0eef9cfede94c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Connection problem",
+    "children" : [ {
+      "name" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compilation warnings encountered:\n  \n      Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      245022940\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  1_initial_migration.js\n  ======================\n  \n     Deploying 'Migrations'\n     ----------------------\n     > transaction hash:    0x0202712cf028e50e7ca4d34f2c176ab6b0afe92f95f84d8b79a31527feea697a\n     > Blocks: 0            Seconds: 0\n     > contract address:    0x6FA97Ffb31B3aC53C54e9C2E15631E3D3c414c04\n     > block number:        108897338\n     > block timestamp:     1639984184\n     > account:             0xF2397Ce49e268999475E2F678308353C201A5883\n     > balance:             999.999915713\n     > gas used:            84287 (0x1493f)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000084287 ETH\n  \n  \n     > Saving migration to chain.\n     > Saving artifacts\n     -------------------------------------\n     > Total cost:         0.000084287 ETH\n  \n  \n  2_deploy_contracts.js\n  =====================\n  \n     Deploying 'ConvertLib'\n     ----------------------\n     > transaction hash:    0x0c4c66555ca1011292b3e97f6e65f209ddde4aeafced0c2095155953871bd7c0\n     > Blocks: 25           Seconds: 12\n     > contract address:    0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F\n     > block number:        108897388\n     > block timestamp:     1639984209\n     > account:             0xF2397Ce49e268999475E2F678308353C201A5883\n     > balance:             999.999812516\n     > gas used:            60681 (0xed09)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000060681 ETH\n  \n  \n     Linking\n     -------\n     * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F)\n  /home/runner/work/neon-compatibility/neon-compatibility\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  - Blocks: 0            Seconds: 0\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at runMicrotasks (<anonymous>)\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne...eues:96:5)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at runMicrotasks (<anonymous>)\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+      "children" : [ {
+        "name" : "test_truffle_migration",
+        "uid" : "701d02297ffc4c82",
+        "parentUid" : "a5787ba029126190e72e27367d6d1382",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984156100,
+          "stop" : 1639984235190,
+          "duration" : 79090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a5787ba029126190e72e27367d6d1382"
+    }, {
+      "name" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  Using network 'neonlabs'.\n  \n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compiling ./test/TestMetaCoin.sol\n  > Compilation warnings encountered:\n  \n      Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n  --> project:/test/TestMetaCoin.sol\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /tmp/test--4144-V34xbnpWloXF\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  /home/runner/work/neon-compatibility/neon-compatibility\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne...eues:96:5)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+      "children" : [ {
+        "name" : "test_truffle_contract",
+        "uid" : "78099e04b4cc7907",
+        "parentUid" : "25f1cba889da99303d52b2749afe9057",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984235209,
+          "stop" : 1639984299585,
+          "duration" : 64376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "25f1cba889da99303d52b2749afe9057"
+    }, {
+      "name" : "AssertionError: assert 'failing' not in '/home/runne...patibility\\n'\n  'failing' is contained here:\n    \n    \u001B[31m  2 failing\u001B[0m\n  ?          +++++++\n    \n    \u001B[0m  1) TestMetaCoin\n           \"before all\" hook: prepare suite for \"testInitialBalanceUsingDeployedContract\":\n    \u001B[0m\u001B[31m     Uncaught Error: ETIMEDOUT\u001B[0m\u001B[90m\n          at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n          at listOnTimeout (node:internal/timers:557:17)\n          at processTimers (node:internal/timers:500:7)\n    \u001B[0m\n    \u001B[0m  2) Contract: MetaCoin\n           \"before all\" hook: prepare suite for \"should put 10000 MetaCoin in the first account\":\n    \u001B[0m\u001B[31m     Uncaught Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\u001B[0m\u001B[90m\n          at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n          at runMicrotasks (<anonymous>)\n          at processTicksAndRejections (node:internal/process/task_queues:96:5)\n          at runNextTicks (node:internal/process/task_queues:65:3)\n          at listOnTimeout (node:internal/timers:526:9)\n          at processTimers (node:internal/timers:500:7)\n    \u001B[0m\n    \n    \n    UnhandledRejections detected\n    Promise {\n      <rejected> {\n        code: -32603,\n        message: 'ETIMEDOUT',\n        data: { originalError: [Object] },\n        stack: 'Error: ETIMEDOUT\\n' +\n          '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n          '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n          '    at processTimers (node:internal/timers:500:7)',\n        uncaught: true\n      }\n    } {\n      code: -32603,\n      message: 'ETIMEDOUT',\n      data: { originalError: { code: 'ETIMEDOUT', connect: true } },\n      stack: 'Error: ETIMEDOUT\\n' +\n        '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n        '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n        '    at processTimers (node:internal/timers:500:7)',\n      uncaught: true\n    }\n    Promise {\n      <rejected> {\n        code: -32603,\n        message: 'ETIMEDOUT',\n        data: { originalError: [Object] },\n        stack: 'Error: ETIMEDOUT\\n' +\n          '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n          '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n          '    at processTimers (node:internal/timers:500:7)',\n        uncaught: true\n      }\n    } {\n      code: -32603,\n      message: 'ETIMEDOUT',\n      data: { originalError: { code: 'ETIMEDOUT', connect: true } },\n      stack: 'Error: ETIMEDOUT\\n' +\n        '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n        '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n        '    at processTimers (node:internal/timers:500:7)',\n      uncaught: true\n    }\n    Promise {\n      <rejected> {\n        code: -32603,\n        message: 'ETIMEDOUT',\n        data: { originalError: [Object] },\n        stack: 'Error: ETIMEDOUT\\n' +\n          '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n          '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n          '    at processTimers (node:internal/timers:500:7)',\n        uncaught: true\n      }\n    } {\n      code: -32603,\n      message: 'ETIMEDOUT',\n      data: { originalError: { code: 'ETIMEDOUT', connect: true } },\n      stack: 'Error: ETIMEDOUT\\n' +\n        '    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\\n' +\n        '    at listOnTimeout (node:internal/timers:557:17)\\n' +\n        '    at processTimers (node:internal/timers:500:7)',\n      uncaught: true\n    }\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_truffle_test",
+        "uid" : "5a653b09198080eb",
+        "parentUid" : "d633cdcfe28f38099082769a063ee7fc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639984299604,
+          "stop" : 1639984491573,
+          "duration" : 191969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d633cdcfe28f38099082769a063ee7fc"
+    } ],
+    "uid" : "750dee1fdd8e7db2bba7cd1ef19a74e3"
+  } ],
+  "name" : "categories"
+}

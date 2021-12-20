@@ -1,0 +1,101 @@
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+============ running command... ============
+cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd "/home/runner/work/neon-compatibility/neon-compatibility"; pwd;
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ConvertLib.sol
+> Compiling ./contracts/MetaCoin.sol
+> Compiling ./contracts/Migrations.sol
+> Compilation warnings encountered:
+
+    Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/MetaCoin.sol:16:2:
+   |
+16 | 	constructor() public {
+   | 	^ (Relevant source part starts here and spans across multiple lines).
+
+,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/Migrations.sol:12:3:
+   |
+12 |   constructor() public {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+> Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.4+commit.c7e474f2.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'neonlabs'
+> Network id:      245022940
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x0202712cf028e50e7ca4d34f2c176ab6b0afe92f95f84d8b79a31527feea697a
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x6FA97Ffb31B3aC53C54e9C2E15631E3D3c414c04
+   > block number:        108897338
+   > block timestamp:     1639984184
+   > account:             0xF2397Ce49e268999475E2F678308353C201A5883
+   > balance:             999.999915713
+   > gas used:            84287 (0x1493f)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000084287 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000084287 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'ConvertLib'
+   ----------------------
+   > transaction hash:    0x0c4c66555ca1011292b3e97f6e65f209ddde4aeafced0c2095155953871bd7c0
+   > Blocks: 25           Seconds: 12
+   > contract address:    0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F
+   > block number:        108897388
+   > block timestamp:     1639984209
+   > account:             0xF2397Ce49e268999475E2F678308353C201A5883
+   > balance:             999.999812516
+   > gas used:            60681 (0xed09)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000060681 ETH
+
+
+   Linking
+   -------
+   * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F)
+/home/runner/work/neon-compatibility/neon-compatibility
+
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+- Blocks: 0            Seconds: 0
+
+/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848
+          var e = new Error('ETIMEDOUT')
+                  ^
+Error: PollingBlockTracker - encountered an error while attempting to update latest block:
+Error: ETIMEDOUT
+    at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+    at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
