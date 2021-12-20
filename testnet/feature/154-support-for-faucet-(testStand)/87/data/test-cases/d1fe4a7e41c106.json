@@ -1,0 +1,187 @@
+{
+  "uid" : "d1fe4a7e41c106",
+  "name" : "test_truffle_migration",
+  "fullName" : "tests.truffle.test_truffle#test_truffle_migration",
+  "historyId" : "e63c5a1b531c2472845045a6f65cedaf",
+  "time" : {
+    "start" : 1639984908838,
+    "stop" : 1639984995244,
+    "duration" : 86406
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compilation warnings encountered:\n  \n      Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      245022940\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  1_initial_migration.js\n  ======================\n  \n     Deploying 'Migrations'\n     ----------------------\n     > transaction hash:    0xb61ec2d231cdcc965e4c86f02fd7850f5e5b34c55f33d3cbd5dd5982ed3df254\n     > Blocks: 0            Seconds: 0\n     > contract address:    0x4e9eFa6E6E86f9128fc60fA97FEc57f10D22eEb3\n     > block number:        108898822\n     > block timestamp:     1639984941\n     > account:             0x591c04a9EEBe7Fc2B3c12732CbA641050a0a8101\n     > balance:             999.999915713\n     > gas used:            84287 (0x1493f)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000084287 ETH\n  \n  \n     > Saving migration to chain.\n     > Saving artifacts\n     -------------------------------------\n     > Total cost:         0.000084287 ETH\n  \n  \n  2_deploy_contracts.js\n  =====================\n  \n     Deploying 'ConvertLib'\n     ----------------------\n     > transaction hash:    0x9975b2b2eaabf4003012ce0d103586bef63e051a5e6b20aa6c163a3e3c666873\n  /home/runner/work/neon-compatibility/neon-compatibility\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  - Blocks: 0            Seconds: 0\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n      at runNextTicks (node:internal/process/task_queues:65:3)\n      at listOnTimeout (node:internal/timers:526:9)\n      at processTimers (node:internal/timers:500:7)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne...ers:500:7)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at runNextTicks (node:internal/process/task_queues:65:3)\n        at listOnTimeout (node:internal/timers:526:9)\n        at processTimers (node:internal/timers:500:7)",
+  "statusTrace" : "@allure.feature(FEATURE)\n    def test_truffle_migration():\n        # truffle migrate --network neonlabs\n        cmd_res = run_command_line(\n            f\"{Subfolder.CD_METACOIN} {RunCommand.TRUFFLE} \" +\n            f\"migrate --network {NETWORK_NAME} {CD_BACK}\")\n        actual_result = cmd_res.stdout.decode() + cmd_res.stderr.decode()\n        assert cmd_res.returncode == 0, actual_result\n        assert TruffleBasedError.ERROR_NO_ATTRIBUTE_ETH_ACCOUNTS \\\n            not in actual_result\n        assert TruffleError.ERROR_COULD_NOT_CONNECT not in actual_result\n        assert TruffleError.ERROR_NOT_AUTHORIZED not in actual_result\n        assert TruffleError.ERROR_TIMEOUT not in actual_result\n        assert TruffleError.ERROR_CANNOT_READ_PROPERTIES not in actual_result\n        assert TruffleError.ERROR_DEPLOYMENT_FAILED not in actual_result\n        assert TruffleError.ERROR_BLOCK_NOT_AVAILABLE not in actual_result\n        assert TruffleError.ERROR_SOCKET_TIMEOUT not in actual_result\n>       assert TruffleError.ERROR_ETIMEOUT not in actual_result, actual_result\nE       AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\nE         \nE         Compiling your contracts...\nE         ===========================\nE         > Compiling ./contracts/ConvertLib.sol\nE         > Compiling ./contracts/MetaCoin.sol\nE         > Compiling ./contracts/Migrations.sol\nE         > Compilation warnings encountered:\nE         \nE             Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\nE           --> project:/contracts/MetaCoin.sol:16:2:\nE            |\nE         16 | \tconstructor() public {\nE            | \t^ (Relevant source part starts here and spans across multiple lines).\nE         \nE         ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\nE           --> project:/contracts/Migrations.sol:12:3:\nE            |\nE         12 |   constructor() public {\nE            |   ^ (Relevant source part starts here and spans across multiple lines).\nE         \nE         \nE         > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\nE         > Compiled successfully using:\nE            - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\nE         \nE         \nE         \nE         Starting migrations...\nE         ======================\nE         > Network name:    'neonlabs'\nE         > Network id:      245022940\nE         > Block gas limit: 6721975 (0x6691b7)\nE         \nE         \nE         1_initial_migration.js\nE         ======================\nE         \nE            Deploying 'Migrations'\nE            ----------------------\nE            > transaction hash:    0xb61ec2d231cdcc965e4c86f02fd7850f5e5b34c55f33d3cbd5dd5982ed3df254\nE            > Blocks: 0            Seconds: 0\nE            > contract address:    0x4e9eFa6E6E86f9128fc60fA97FEc57f10D22eEb3\nE            > block number:        108898822\nE            > block timestamp:     1639984941\nE            > account:             0x591c04a9EEBe7Fc2B3c12732CbA641050a0a8101\nE            > balance:             999.999915713\nE            > gas used:            84287 (0x1493f)\nE            > gas price:           1 gwei\nE            > value sent:          0 ETH\nE            > total cost:          0.000084287 ETH\nE         \nE         \nE            > Saving migration to chain.\nE            > Saving artifacts\nE            -------------------------------------\nE            > Total cost:         0.000084287 ETH\nE         \nE         \nE         2_deploy_contracts.js\nE         =====================\nE         \nE            Deploying 'ConvertLib'\nE            ----------------------\nE            > transaction hash:    0x9975b2b2eaabf4003012ce0d103586bef63e051a5e6b20aa6c163a3e3c666873\nE         /home/runner/work/neon-compatibility/neon-compatibility\nE         - Blocks: 0            Seconds: 0\nE         - Saving migration to chain.\nE         - Blocks: 0            Seconds: 0\nE         \nE         /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\nE                   var e = new Error('ETIMEDOUT')\nE                           ^\nE         Error: PollingBlockTracker - encountered an error while attempting to update latest block:\nE         Error: ETIMEDOUT\nE             at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\nE             at listOnTimeout (node:internal/timers:557:17)\nE             at processTimers (node:internal/timers:500:7)\nE             at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\nE             at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE             at runNextTicks (node:internal/process/task_queues:65:3)\nE             at listOnTimeout (node:internal/timers:526:9)\nE             at processTimers (node:internal/timers:500:7)\nE         \nE       assert 'Error: ETIMEDOUT' not in '/home/runne...ers:500:7)\\n'\nE         'Error: ETIMEDOUT' is contained here:\nE           st block:\nE           Error: ETIMEDOUT\nE               at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\nE               at listOnTimeout (node:internal/timers:557:17)\nE               at processTimers (node:internal/timers:500:7)\nE               at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\nE               at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE               at runNextTicks (node:internal/process/task_queues:65:3)\nE               at listOnTimeout (node:internal/timers:526:9)\nE               at processTimers (node:internal/timers:500:7)\n\ntests/truffle/test_truffle.py:39: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "prepare_truffle_config",
+    "time" : {
+      "start" : 1639984908826,
+      "stop" : 1639984908837,
+      "duration" : 11
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preset variables",
+      "time" : {
+        "start" : 1639984908826,
+        "stop" : 1639984908837,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Clean up folder \"'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'\"",
+      "time" : {
+        "start" : 1639984908837,
+        "stop" : 1639984908837,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "folder",
+        "value" : "'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compilation warnings encountered:\n  \n      Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      245022940\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  1_initial_migration.js\n  ======================\n  \n     Deploying 'Migrations'\n     ----------------------\n     > transaction hash:    0xb61ec2d231cdcc965e4c86f02fd7850f5e5b34c55f33d3cbd5dd5982ed3df254\n     > Blocks: 0            Seconds: 0\n     > contract address:    0x4e9eFa6E6E86f9128fc60fA97FEc57f10D22eEb3\n     > block number:        108898822\n     > block timestamp:     1639984941\n     > account:             0x591c04a9EEBe7Fc2B3c12732CbA641050a0a8101\n     > balance:             999.999915713\n     > gas used:            84287 (0x1493f)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000084287 ETH\n  \n  \n     > Saving migration to chain.\n     > Saving artifacts\n     -------------------------------------\n     > Total cost:         0.000084287 ETH\n  \n  \n  2_deploy_contracts.js\n  =====================\n  \n     Deploying 'ConvertLib'\n     ----------------------\n     > transaction hash:    0x9975b2b2eaabf4003012ce0d103586bef63e051a5e6b20aa6c163a3e3c666873\n  /home/runner/work/neon-compatibility/neon-compatibility\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  - Blocks: 0            Seconds: 0\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n      at runNextTicks (node:internal/process/task_queues:65:3)\n      at listOnTimeout (node:internal/timers:526:9)\n      at processTimers (node:internal/timers:500:7)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne...ers:500:7)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at runNextTicks (node:internal/process/task_queues:65:3)\n        at listOnTimeout (node:internal/timers:526:9)\n        at processTimers (node:internal/timers:500:7)",
+    "statusTrace" : "@allure.feature(FEATURE)\n    def test_truffle_migration():\n        # truffle migrate --network neonlabs\n        cmd_res = run_command_line(\n            f\"{Subfolder.CD_METACOIN} {RunCommand.TRUFFLE} \" +\n            f\"migrate --network {NETWORK_NAME} {CD_BACK}\")\n        actual_result = cmd_res.stdout.decode() + cmd_res.stderr.decode()\n        assert cmd_res.returncode == 0, actual_result\n        assert TruffleBasedError.ERROR_NO_ATTRIBUTE_ETH_ACCOUNTS \\\n            not in actual_result\n        assert TruffleError.ERROR_COULD_NOT_CONNECT not in actual_result\n        assert TruffleError.ERROR_NOT_AUTHORIZED not in actual_result\n        assert TruffleError.ERROR_TIMEOUT not in actual_result\n        assert TruffleError.ERROR_CANNOT_READ_PROPERTIES not in actual_result\n        assert TruffleError.ERROR_DEPLOYMENT_FAILED not in actual_result\n        assert TruffleError.ERROR_BLOCK_NOT_AVAILABLE not in actual_result\n        assert TruffleError.ERROR_SOCKET_TIMEOUT not in actual_result\n>       assert TruffleError.ERROR_ETIMEOUT not in actual_result, actual_result\nE       AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\nE         \nE         Compiling your contracts...\nE         ===========================\nE         > Compiling ./contracts/ConvertLib.sol\nE         > Compiling ./contracts/MetaCoin.sol\nE         > Compiling ./contracts/Migrations.sol\nE         > Compilation warnings encountered:\nE         \nE             Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\nE           --> project:/contracts/MetaCoin.sol:16:2:\nE            |\nE         16 | \tconstructor() public {\nE            | \t^ (Relevant source part starts here and spans across multiple lines).\nE         \nE         ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\nE           --> project:/contracts/Migrations.sol:12:3:\nE            |\nE         12 |   constructor() public {\nE            |   ^ (Relevant source part starts here and spans across multiple lines).\nE         \nE         \nE         > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\nE         > Compiled successfully using:\nE            - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\nE         \nE         \nE         \nE         Starting migrations...\nE         ======================\nE         > Network name:    'neonlabs'\nE         > Network id:      245022940\nE         > Block gas limit: 6721975 (0x6691b7)\nE         \nE         \nE         1_initial_migration.js\nE         ======================\nE         \nE            Deploying 'Migrations'\nE            ----------------------\nE            > transaction hash:    0xb61ec2d231cdcc965e4c86f02fd7850f5e5b34c55f33d3cbd5dd5982ed3df254\nE            > Blocks: 0            Seconds: 0\nE            > contract address:    0x4e9eFa6E6E86f9128fc60fA97FEc57f10D22eEb3\nE            > block number:        108898822\nE            > block timestamp:     1639984941\nE            > account:             0x591c04a9EEBe7Fc2B3c12732CbA641050a0a8101\nE            > balance:             999.999915713\nE            > gas used:            84287 (0x1493f)\nE            > gas price:           1 gwei\nE            > value sent:          0 ETH\nE            > total cost:          0.000084287 ETH\nE         \nE         \nE            > Saving migration to chain.\nE            > Saving artifacts\nE            -------------------------------------\nE            > Total cost:         0.000084287 ETH\nE         \nE         \nE         2_deploy_contracts.js\nE         =====================\nE         \nE            Deploying 'ConvertLib'\nE            ----------------------\nE            > transaction hash:    0x9975b2b2eaabf4003012ce0d103586bef63e051a5e6b20aa6c163a3e3c666873\nE         /home/runner/work/neon-compatibility/neon-compatibility\nE         - Blocks: 0            Seconds: 0\nE         - Saving migration to chain.\nE         - Blocks: 0            Seconds: 0\nE         \nE         /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\nE                   var e = new Error('ETIMEDOUT')\nE                           ^\nE         Error: PollingBlockTracker - encountered an error while attempting to update latest block:\nE         Error: ETIMEDOUT\nE             at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\nE             at listOnTimeout (node:internal/timers:557:17)\nE             at processTimers (node:internal/timers:500:7)\nE             at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\nE             at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE             at runNextTicks (node:internal/process/task_queues:65:3)\nE             at listOnTimeout (node:internal/timers:526:9)\nE             at processTimers (node:internal/timers:500:7)\nE         \nE       assert 'Error: ETIMEDOUT' not in '/home/runne...ers:500:7)\\n'\nE         'Error: ETIMEDOUT' is contained here:\nE           st block:\nE           Error: ETIMEDOUT\nE               at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\nE               at listOnTimeout (node:internal/timers:557:17)\nE               at processTimers (node:internal/timers:500:7)\nE               at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\nE               at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE               at runNextTicks (node:internal/process/task_queues:65:3)\nE               at listOnTimeout (node:internal/timers:526:9)\nE               at processTimers (node:internal/timers:500:7)\n\ntests/truffle/test_truffle.py:39: AssertionError",
+    "steps" : [ {
+      "name" : "Run command: \"'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'\"",
+      "time" : {
+        "start" : 1639984908838,
+        "stop" : 1639984995242,
+        "duration" : 86404
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "command",
+        "value" : "'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "9966e03fbf1dd8ba",
+      "name" : "stdout",
+      "source" : "9966e03fbf1dd8ba.txt",
+      "type" : "text/plain",
+      "size" : 3444
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "prepare_truffle_config::0",
+    "time" : {
+      "start" : 1639984995250,
+      "stop" : 1639984995250,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Truffle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.truffle"
+  }, {
+    "name" : "suite",
+    "value" : "test_truffle"
+  }, {
+    "name" : "host",
+    "value" : "fv-az275-339"
+  }, {
+    "name" : "thread",
+    "value" : "3772-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.truffle.test_truffle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Connection problem",
+      "messageRegex" : ".*Error: ETIMEDOUT.*|.*ESOCKETTIMEDOUT.*|.*ECONNRESET.*|.*Client network socket disconnected before secure TLS connection was established.*|.*500 Internal Server Error.*nginx.*|.*Error: socket hang up.*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "701d02297ffc4c82",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/testnet/feature/154-support-for-faucet-(testStand)/85//#testresult/701d02297ffc4c82",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: /home/runner/work/neon-compatibility/neon-compatibility/Metacoin\n  \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ConvertLib.sol\n  > Compiling ./contracts/MetaCoin.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compilation warnings encountered:\n  \n      Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/MetaCoin.sol:16:2:\n     |\n  16 | \tconstructor() public {\n     | \t^ (Relevant source part starts here and spans across multiple lines).\n  \n  ,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\n    --> project:/contracts/Migrations.sol:12:3:\n     |\n  12 |   constructor() public {\n     |   ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      245022940\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  1_initial_migration.js\n  ======================\n  \n     Deploying 'Migrations'\n     ----------------------\n     > transaction hash:    0x0202712cf028e50e7ca4d34f2c176ab6b0afe92f95f84d8b79a31527feea697a\n     > Blocks: 0            Seconds: 0\n     > contract address:    0x6FA97Ffb31B3aC53C54e9C2E15631E3D3c414c04\n     > block number:        108897338\n     > block timestamp:     1639984184\n     > account:             0xF2397Ce49e268999475E2F678308353C201A5883\n     > balance:             999.999915713\n     > gas used:            84287 (0x1493f)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000084287 ETH\n  \n  \n     > Saving migration to chain.\n     > Saving artifacts\n     -------------------------------------\n     > Total cost:         0.000084287 ETH\n  \n  \n  2_deploy_contracts.js\n  =====================\n  \n     Deploying 'ConvertLib'\n     ----------------------\n     > transaction hash:    0x0c4c66555ca1011292b3e97f6e65f209ddde4aeafced0c2095155953871bd7c0\n     > Blocks: 25           Seconds: 12\n     > contract address:    0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F\n     > block number:        108897388\n     > block timestamp:     1639984209\n     > account:             0xF2397Ce49e268999475E2F678308353C201A5883\n     > balance:             999.999812516\n     > gas used:            60681 (0xed09)\n     > gas price:           1 gwei\n     > value sent:          0 ETH\n     > total cost:          0.000060681 ETH\n  \n  \n     Linking\n     -------\n     * Contract: MetaCoin <--> Library: ConvertLib (at address: 0xC0d6B50F041d4C8A33B28cbcfa076FbbBa6F903F)\n  /home/runner/work/neon-compatibility/neon-compatibility\n  - Blocks: 0            Seconds: 0\n  - Saving migration to chain.\n  - Blocks: 0            Seconds: 0\n  \n  /home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848\n            var e = new Error('ETIMEDOUT')\n                    ^\n  Error: PollingBlockTracker - encountered an error while attempting to update latest block:\n  Error: ETIMEDOUT\n      at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n      at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n      at runMicrotasks (<anonymous>)\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n  \nassert 'Error: ETIMEDOUT' not in '/home/runne...eues:96:5)\\n'\n  'Error: ETIMEDOUT' is contained here:\n    st block:\n    Error: ETIMEDOUT\n        at Timeout.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/request/request.js:848:19)\n        at listOnTimeout (node:internal/timers:557:17)\n        at processTimers (node:internal/timers:500:7)\n        at PollingBlockTracker._performSync (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/eth-block-tracker/src/polling.js:51:24)\n        at runMicrotasks (<anonymous>)\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "time" : {
+          "start" : 1639984156100,
+          "stop" : 1639984235190,
+          "duration" : 79090
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d1fe4a7e41c106.json",
+  "parameterValues" : [ ]
+}

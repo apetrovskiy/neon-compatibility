@@ -1,0 +1,177 @@
+{
+  "uid" : "b699fc918e2421e2",
+  "name" : "test_issue_364_self_destruct_contract",
+  "fullName" : "tests.truffle.test_truffle#test_issue_364_self_destruct_contract",
+  "historyId" : "9b9a0ac6c1438da1dd6a59ac61d1506c",
+  "time" : {
+    "start" : 1639985178312,
+    "stop" : 1639985247594,
+    "duration" : 69282
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "prepare_truffle_config",
+    "time" : {
+      "start" : 1639985178299,
+      "stop" : 1639985178311,
+      "duration" : 12
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preset variables",
+      "time" : {
+        "start" : 1639985178299,
+        "stop" : 1639985178311,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Clean up folder \"'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'\"",
+      "time" : {
+        "start" : 1639985178311,
+        "stop" : 1639985178311,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "folder",
+        "value" : "'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Run command: \"'cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3'\"",
+      "time" : {
+        "start" : 1639985178312,
+        "stop" : 1639985247593,
+        "duration" : 69281
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "command",
+        "value" : "'cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "263cc7920e97ce02",
+      "name" : "stdout",
+      "source" : "263cc7920e97ce02.txt",
+      "type" : "text/plain",
+      "size" : 3212
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "prepare_truffle_config::0",
+    "time" : {
+      "start" : 1639985247595,
+      "stop" : 1639985247595,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Truffle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.truffle"
+  }, {
+    "name" : "suite",
+    "value" : "test_truffle"
+  }, {
+    "name" : "host",
+    "value" : "fv-az275-339"
+  }, {
+    "name" : "thread",
+    "value" : "3772-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.truffle.test_truffle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "dfb60ae3e5ec1756",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/testnet/feature/154-support-for-faucet-(testStand)/85//#testresult/dfb60ae3e5ec1756",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984491591,
+          "stop" : 1639984548136,
+          "duration" : 56545
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b699fc918e2421e2.json",
+  "parameterValues" : [ ]
+}
