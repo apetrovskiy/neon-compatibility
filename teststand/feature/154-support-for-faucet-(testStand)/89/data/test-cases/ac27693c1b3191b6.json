@@ -1,0 +1,89 @@
+{
+  "uid" : "ac27693c1b3191b6",
+  "name" : "reverts on transfer",
+  "fullName" : "reverts on transfer",
+  "historyId" : "c7755f999b258d98264d32614c5f9d8f",
+  "time" : {
+    "start" : 1639993253371,
+    "stop" : 1639993254343,
+    "duration" : 972
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: connection already closed",
+  "statusTrace" : "Error: Returned error: connection already closed\n    at Context.<anonymous> (test/token/ERC20/utils/SafeERC20.test.js:21:80)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: SafeERC20"
+  }, {
+    "name" : "suite",
+    "value" : "with token that returns false on all calls"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "d7a4a6345629d1e1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/d7a4a6345629d1e1",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909921071,
+          "stop" : 1639909921835,
+          "duration" : 764
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ac27693c1b3191b6.json",
+  "parameterValues" : [ ]
+}

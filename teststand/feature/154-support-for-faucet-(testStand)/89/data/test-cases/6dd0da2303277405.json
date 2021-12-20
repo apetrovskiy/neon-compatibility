@@ -1,0 +1,89 @@
+{
+  "uid" : "6dd0da2303277405",
+  "name" : "adds correctly if it does not overflow and the result is positive",
+  "fullName" : "adds correctly if it does not overflow and the result is positive",
+  "historyId" : "03cb1ab7d45f51a1a2538122312fd954",
+  "time" : {
+    "start" : 1639993260820,
+    "stop" : 1639993261784,
+    "duration" : 964
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: connection already closed",
+  "statusTrace" : "Error: Returned error: connection already closed\n    at Context.<anonymous> (test/utils/math/SignedSafeMath.test.js:10:49)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: SignedSafeMath"
+  }, {
+    "name" : "suite",
+    "value" : "add"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "3b17ee49a9b630f2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/3b17ee49a9b630f2",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909919860,
+          "stop" : 1639909920609,
+          "duration" : 749
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6dd0da2303277405.json",
+  "parameterValues" : [ ]
+}

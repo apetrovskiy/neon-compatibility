@@ -1,0 +1,89 @@
+{
+  "uid" : "ea973edb40825d8",
+  "name" : "downcasts 0",
+  "fullName" : "downcasts 0",
+  "historyId" : "b8acbf5d43e1f9280ef501c806bb8af9",
+  "time" : {
+    "start" : 1639993261785,
+    "stop" : 1639993262742,
+    "duration" : 957
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: connection already closed",
+  "statusTrace" : "Error: Returned error: connection already closed\n    at Context.<anonymous> (test/utils/math/SafeCast.test.js:9:43)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: SafeCast"
+  }, {
+    "name" : "suite",
+    "value" : "toUint8"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "1649d7541e72917",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/1649d7541e72917",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909920611,
+          "stop" : 1639909921375,
+          "duration" : 764
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ea973edb40825d8.json",
+  "parameterValues" : [ ]
+}
