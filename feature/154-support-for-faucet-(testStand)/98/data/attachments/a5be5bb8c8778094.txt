@@ -1,0 +1,119 @@
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+============ running command... ============
+cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd "/home/runner/work/neon-compatibility/neon-compatibility"; pwd;
+/home/runner/work/neon-compatibility/neon-compatibility/Metacoin
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ConvertLib.sol
+> Compiling ./contracts/MetaCoin.sol
+> Compiling ./contracts/Migrations.sol
+> Compilation warnings encountered:
+
+    Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/MetaCoin.sol:16:2:
+   |
+16 | 	constructor() public {
+   | 	^ (Relevant source part starts here and spans across multiple lines).
+
+,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> project:/contracts/Migrations.sol:12:3:
+   |
+12 |   constructor() public {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+> Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.4+commit.c7e474f2.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'neonlabs'
+> Network id:      111
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x35f3766173b81559471a75eee8027c81e2d04d35a295b8b60a8bccdce81fc563
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xDD6a5D865e2f5acB13154EdC963a53082a91aD76
+   > block number:        2680121
+   > block timestamp:     1640102167
+   > account:             0x0c1F959DFb4D0cd9aEa577EddA1519be6AFF6133
+   > balance:             999.999915713
+   > gas used:            84287 (0x1493f)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000084287 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000084287 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'ConvertLib'
+   ----------------------
+   > transaction hash:    0x4fc5d4f74d187d9e10a1fe4b7ab82f3080292d3ee5a7953c593ec6624d28c276
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x7655a9760719CE9a3ff6D00b5f9B55590B124De1
+   > block number:        2680147
+   > block timestamp:     1640102178
+   > account:             0x0c1F959DFb4D0cd9aEa577EddA1519be6AFF6133
+   > balance:             999.999812516
+   > gas used:            60681 (0xed09)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000060681 ETH
+
+
+   Linking
+   -------
+   * Contract: MetaCoin <--> Library: ConvertLib (at address: 0x7655a9760719CE9a3ff6D00b5f9B55590B124De1)
+
+   Deploying 'MetaCoin'
+   --------------------
+   > transaction hash:    0xdf5f9b5a640c82a35fae0f7a5a95befa771af4616ac28788e8b664bcd5cc7282
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x9F29380c74197Cf08D67502EC896B9Dec3Ec0f94
+   > block number:        2680164
+   > block timestamp:     1640102185
+   > account:             0x0c1F959DFb4D0cd9aEa577EddA1519be6AFF6133
+   > balance:             999.99971406
+   > gas used:            98456 (0x18098)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000098456 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000159137 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.000243424 ETH
+
+
+/home/runner/work/neon-compatibility/neon-compatibility
+
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+
