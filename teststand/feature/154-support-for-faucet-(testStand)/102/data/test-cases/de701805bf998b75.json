@@ -1,0 +1,96 @@
+{
+  "uid" : "de701805bf998b75",
+  "name" : "\"before all\" hook: deploying in \"Contract: SignatureChecker (ERC1271)\"",
+  "fullName" : "\"before all\" hook: deploying in \"Contract: SignatureChecker (ERC1271)\"",
+  "historyId" : "831d98494b7f439587a2fa1aec86f037",
+  "time" : {
+    "start" : 1640106038224,
+    "stop" : 1640106038224,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4\n    at Context.<anonymous> (test/utils/cryptography/SignatureChecker.test.js:15:59)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: SignatureChecker (ERC1271)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f52c004436ce6c9e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/f52c004436ce6c9e",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639993260819,
+          "stop" : 1639993260819,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "796e0e284819b7f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/796e0e284819b7f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909919859,
+          "stop" : 1639909919859,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "de701805bf998b75.json",
+  "parameterValues" : [ ]
+}

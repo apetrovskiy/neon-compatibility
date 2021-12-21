@@ -1,0 +1,99 @@
+{
+  "uid" : "bf57a627a1a8577f",
+  "name" : "reverts when trying to safeTransferFrom from holder",
+  "fullName" : "reverts when trying to safeTransferFrom from holder",
+  "historyId" : "0be12b70d54233d1055078c69bae7750",
+  "time" : {
+    "start" : 1640106059993,
+    "stop" : 1640106063377,
+    "duration" : 3384
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4\n    at Context.<anonymous> (test/token/ERC1155/extensions/ERC1155Pausable.test.js:13:47)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1155Pausable"
+  }, {
+    "name" : "suite",
+    "value" : "when token is paused"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "8324dd11b80774e9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/8324dd11b80774e9",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639993271138,
+          "stop" : 1639993272119,
+          "duration" : 981
+        }
+      }, {
+        "uid" : "7b77b75dca3a9840",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/7b77b75dca3a9840",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639909928215,
+          "stop" : 1639909932471,
+          "duration" : 4256
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bf57a627a1a8577f.json",
+  "parameterValues" : [ ]
+}

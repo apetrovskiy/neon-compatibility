@@ -1,0 +1,99 @@
+{
+  "uid" : "6c60eda757de023e",
+  "name" : "returns the transaction sender when called from an EOA",
+  "fullName" : "returns the transaction sender when called from an EOA",
+  "historyId" : "671c8eeb4c80e289d6658c8af5c784d3",
+  "time" : {
+    "start" : 1640106034771,
+    "stop" : 1640106037406,
+    "duration" : 2635
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4\n    at Context.<anonymous> (test/utils/Context.test.js:12:41)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Context"
+  }, {
+    "name" : "suite",
+    "value" : "msgSender"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7e3fb91e338c75b0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/7e3fb91e338c75b0",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639993259712,
+          "stop" : 1639993260681,
+          "duration" : 969
+        }
+      }, {
+        "uid" : "33b24f22b4c23075",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/33b24f22b4c23075",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639909918889,
+          "stop" : 1639909922482,
+          "duration" : 3593
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6c60eda757de023e.json",
+  "parameterValues" : [ ]
+}

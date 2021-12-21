@@ -1,0 +1,235 @@
+{
+  "uid" : "1a1341c460a81bd2",
+  "name" : "test_transfer_to_self_no_approval",
+  "fullName" : "tests.brownie.token.tests.test_transferFrom#test_transfer_to_self_no_approval",
+  "historyId" : "e64c769fe7fbe0824bd4983651fa94bc",
+  "time" : {
+    "start" : 1640106198706,
+    "stop" : 1640106200221,
+    "duration" : 1515
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Transaction did not revert",
+  "statusTrace" : "accounts = <brownie.network.account.Accounts object at 0x7f7720121100>\ntoken = <Token Contract '0xBE8559CD952197c871B442b4bEa71f3C94Eea90f'>\n\n    def test_transfer_to_self_no_approval(accounts, token):\n        amount = token.balanceOf(accounts[0])\n    \n        with brownie.reverts():\n>           token.transferFrom(accounts[0], accounts[0], amount, {'from': accounts[0]})\n\ntests/brownie/token/tests/test_transferFrom.py:154: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <brownie.test.managers.runner.RevertContextManager object at 0x7f7716b6eb80>\nexc_type = None, exc_value = None, traceback = None\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        CONFIG.argv[\"always_transact\"] = self.always_transact\n    \n        if exc_type is None:\n>           raise AssertionError(\"Transaction did not revert\")\nE           AssertionError: Transaction did not revert\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/test/managers/runner.py:81: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1640106091831,
+      "stop" : 1640106091831,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1640106092835,
+      "stop" : 1640106107949,
+      "duration" : 15114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1640106113590,
+      "stop" : 1640106113590,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1640106113591,
+      "stop" : 1640106113858,
+      "duration" : 267
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1640106136094,
+      "stop" : 1640106139918,
+      "duration" : 3824
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Transaction did not revert",
+    "statusTrace" : "accounts = <brownie.network.account.Accounts object at 0x7f7720121100>\ntoken = <Token Contract '0xBE8559CD952197c871B442b4bEa71f3C94Eea90f'>\n\n    def test_transfer_to_self_no_approval(accounts, token):\n        amount = token.balanceOf(accounts[0])\n    \n        with brownie.reverts():\n>           token.transferFrom(accounts[0], accounts[0], amount, {'from': accounts[0]})\n\ntests/brownie/token/tests/test_transferFrom.py:154: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <brownie.test.managers.runner.RevertContextManager object at 0x7f7716b6eb80>\nexc_type = None, exc_value = None, traceback = None\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        CONFIG.argv[\"always_transact\"] = self.always_transact\n    \n        if exc_type is None:\n>           raise AssertionError(\"Transaction did not revert\")\nE           AssertionError: Transaction did not revert\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/test/managers/runner.py:81: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cf64ab40fafd49a3",
+      "name" : "stdout",
+      "source" : "cf64ab40fafd49a3.txt",
+      "type" : "text/plain",
+      "size" : 314
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1640106358052,
+      "stop" : 1640106358052,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transferFrom"
+  }, {
+    "name" : "host",
+    "value" : "fv-az196-256"
+  }, {
+    "name" : "thread",
+    "value" : "3701-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transferFrom"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "8710926260824d98",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/101//#testresult/8710926260824d98",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1640104742965,
+          "stop" : 1640104746258,
+          "duration" : 3293
+        }
+      }, {
+        "uid" : "ae67351611c885bb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/99//#testresult/ae67351611c885bb",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x624bda89dd306bf79e2a8cab7cf80d1175e597ea6ab112dd58002cb669f2c1dd",
+        "time" : {
+          "start" : 1640102015808,
+          "stop" : 1640102017923,
+          "duration" : 2115
+        }
+      }, {
+        "uid" : "9f6dfb9a8cf52c33",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/97//#testresult/9f6dfb9a8cf52c33",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x1705b4fb78120d57abe34156e41b2877dbdfa0c33fd376b1077f528604c748c6",
+        "time" : {
+          "start" : 1640099795146,
+          "stop" : 1640099796920,
+          "duration" : 1774
+        }
+      }, {
+        "uid" : "3b78eaa87e9b0f53",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/95//#testresult/3b78eaa87e9b0f53",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x059c21db4593a987db88660aab19e094360b57428925818f254622321b7341ef",
+        "time" : {
+          "start" : 1640097654697,
+          "stop" : 1640097654697,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "584cbf24b3f486ae",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/93//#testresult/584cbf24b3f486ae",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0xcf7d24c05be68fb20c747ad1f24d607cf9fe5f59dfae1ef92371dc5fcefecc94",
+        "time" : {
+          "start" : 1640013511859,
+          "stop" : 1640013523752,
+          "duration" : 11893
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1a1341c460a81bd2.json",
+  "parameterValues" : [ ]
+}

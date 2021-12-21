@@ -1,0 +1,96 @@
+{
+  "uid" : "420c68dd8dae93ea",
+  "name" : "has an owner",
+  "fullName" : "has an owner",
+  "historyId" : "30a6932c39ad7cf6ab22766423d13d1c",
+  "time" : {
+    "start" : 1640106020883,
+    "stop" : 1640106024499,
+    "duration" : 3616
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+  "statusTrace" : "Error: Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4\n    at Context.<anonymous> (test/access/Ownable.test.js:12:37)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Ownable"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "eeb14693ce3cb33f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/eeb14693ce3cb33f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639993249829,
+          "stop" : 1639993250829,
+          "duration" : 1000
+        }
+      }, {
+        "uid" : "42e44174e3438930",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/42e44174e3438930",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909915562,
+          "stop" : 1639909916373,
+          "duration" : 811
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "420c68dd8dae93ea.json",
+  "parameterValues" : [ ]
+}
