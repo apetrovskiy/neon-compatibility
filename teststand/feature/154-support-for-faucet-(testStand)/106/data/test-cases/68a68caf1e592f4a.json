@@ -1,0 +1,224 @@
+{
+  "uid" : "68a68caf1e592f4a",
+  "name" : "test_brownie_deploy",
+  "fullName" : "tests.brownie.test_brownie#test_brownie_deploy",
+  "historyId" : "6e83a925951bfd8b9c39b6ea82974dc9",
+  "time" : {
+    "start" : 1640117319435,
+    "stop" : 1640117324951,
+    "duration" : 5516
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1640117303686,
+      "stop" : 1640117303686,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1640117305479,
+      "stop" : 1640117319434,
+      "duration" : 13955
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9f55d457a0a9202d",
+      "name" : "log",
+      "source" : "9f55d457a0a9202d.txt",
+      "type" : "text/plain",
+      "size" : 287
+    }, {
+      "uid" : "3850c7cbabbcc207",
+      "name" : "stdout",
+      "source" : "3850c7cbabbcc207.txt",
+      "type" : "text/plain",
+      "size" : 685
+    }, {
+      "uid" : "7adc5d7d11e6c385",
+      "name" : "stderr",
+      "source" : "7adc5d7d11e6c385.txt",
+      "type" : "text/plain",
+      "size" : 7267
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie"
+  }, {
+    "name" : "suite",
+    "value" : "test_brownie"
+  }, {
+    "name" : "host",
+    "value" : "fv-az278-921"
+  }, {
+    "name" : "thread",
+    "value" : "3627-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.test_brownie"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "4d0deff803000567",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/105//#testresult/4d0deff803000567",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640115965834,
+          "stop" : 1640115971331,
+          "duration" : 5497
+        }
+      }, {
+        "uid" : "c649f960e81189e8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/104//#testresult/c649f960e81189e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640112902560,
+          "stop" : 1640112906314,
+          "duration" : 3754
+        }
+      }, {
+        "uid" : "4480dabb71f03033",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/102//#testresult/4480dabb71f03033",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640106107951,
+          "stop" : 1640106113588,
+          "duration" : 5637
+        }
+      }, {
+        "uid" : "df39cb762e95763c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/101//#testresult/df39cb762e95763c",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x8da2633a93edb8eb4153b4d44bf39f8b210daa1d15c9844ebbc02d178739a9a7",
+        "time" : {
+          "start" : 1640104648622,
+          "stop" : 1640104656221,
+          "duration" : 7599
+        }
+      }, {
+        "uid" : "9be51e04833a2ce0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/99//#testresult/9be51e04833a2ce0",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x27baf295ddd374a1f71faf5d7b6331f7554a7c2fbc9a331acabe369063ad53a4",
+        "time" : {
+          "start" : 1640101831012,
+          "stop" : 1640101836108,
+          "duration" : 5096
+        }
+      }, {
+        "uid" : "2f07011337c9351f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/97//#testresult/2f07011337c9351f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640099682370,
+          "stop" : 1640099686030,
+          "duration" : 3660
+        }
+      }, {
+        "uid" : "73e388b41146bef2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/95//#testresult/73e388b41146bef2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640097634638,
+          "stop" : 1640097639663,
+          "duration" : 5025
+        }
+      }, {
+        "uid" : "4eb62ff6d674563a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/93//#testresult/4eb62ff6d674563a",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x160bf232a16da9000c1df4ce33864f25d46c33fcee334d9f2b92918256d0317e",
+        "time" : {
+          "start" : 1640013336208,
+          "stop" : 1640013343767,
+          "duration" : 7559
+        }
+      }, {
+        "uid" : "5d300875a7bb3691",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/5d300875a7bb3691",
+        "status" : "broken",
+        "statusDetails" : "ValueError: connection already closed",
+        "time" : {
+          "start" : 1639993299764,
+          "stop" : 1639993300632,
+          "duration" : 868
+        }
+      }, {
+        "uid" : "3b6222ae2480b13e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/3b6222ae2480b13e",
+        "status" : "broken",
+        "statusDetails" : "ValueError: connection already closed",
+        "time" : {
+          "start" : 1639909990466,
+          "stop" : 1639909991343,
+          "duration" : 877
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "68a68caf1e592f4a.json",
+  "parameterValues" : [ ]
+}
