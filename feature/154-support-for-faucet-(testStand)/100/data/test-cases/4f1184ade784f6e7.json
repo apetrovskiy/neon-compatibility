@@ -1,0 +1,112 @@
+{
+  "uid" : "4f1184ade784f6e7",
+  "name" : "can accept a single deposit",
+  "fullName" : "can accept a single deposit",
+  "historyId" : "1bf22d2f56e688cb2f1927bdcfeb1dac",
+  "time" : {
+    "start" : 1640106275139,
+    "stop" : 1640106295653,
+    "duration" : 20514
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/account_data.rs:225\", \"Program log: program/src/entrypoint.rs:1259 : Invalid Ethereum transaction nonce: acc 57, trx 56\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 24233 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [11647615647868, 341193880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"867776430406262851\", \"decimals\": 9, \"uiAmount\": 867776430.4062629, \"uiAmountString\": \"867776430.406262851\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996697245\", \"decimals\": 9, \"uiAmount\": 999.996697245, \"uiAmountString\": \"999.996697245\"}}], \"preBalances\": [11647615657868, 341193880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"867776430406262851\", \"decimals\": 9, \"uiAmount\": 867776430.4062629, \"uiAmountString\": \"867776430.406262851\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996697245\", \"decimals\": 9, \"uiAmount\": 999.996697245, \"uiAmountString\": \"999.996697245\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}",
+  "statusTrace" : "Error: Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/account_data.rs:225\", \"Program log: program/src/entrypoint.rs:1259 : Invalid Ethereum transaction nonce: acc 57, trx 56\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 24233 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [11647615647868, 341193880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"867776430406262851\", \"decimals\": 9, \"uiAmount\": 867776430.4062629, \"uiAmountString\": \"867776430.406262851\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996697245\", \"decimals\": 9, \"uiAmount\": 999.996697245, \"uiAmountString\": \"999.996697245\"}}], \"preBalances\": [11647615657868, 341193880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"867776430406262851\", \"decimals\": 9, \"uiAmount\": 867776430.4062629, \"uiAmountString\": \"867776430.406262851\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996697245\", \"decimals\": 9, \"uiAmount\": 999.996697245, \"uiAmountString\": \"999.996697245\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}\n    at /home/runner/work/neon-compatibility/neon-compatibility/openzeppelin-contracts/test/utils/escrow/ConditionalEscrow.test.js:15:64\n    at Array.map (<anonymous>)\n    at Context.<anonymous> (test/utils/escrow/ConditionalEscrow.test.js:15:39)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ConditionalEscrow"
+  }, {
+    "name" : "suite",
+    "value" : "when withdrawal is allowed"
+  }, {
+    "name" : "subSuite",
+    "value" : "as an escrow > deposits"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "17eed01b01e4c0f7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/92//#testresult/17eed01b01e4c0f7",
+        "status" : "broken",
+        "statusDetails" : "Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/account_data.rs:225\", \"Program log: program/src/entrypoint.rs:1259 : Invalid Ethereum transaction nonce: acc 54, trx 53\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 24358 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [12056288661468, 323862880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"873265428792325333\", \"decimals\": 9, \"uiAmount\": 873265428.7923254, \"uiAmountString\": \"873265428.792325333\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996897585\", \"decimals\": 9, \"uiAmount\": 999.996897585, \"uiAmountString\": \"999.996897585\"}}], \"preBalances\": [12056288671468, 323862880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"873265428792325333\", \"decimals\": 9, \"uiAmount\": 873265428.7923254, \"uiAmountString\": \"873265428.792325333\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999996897585\", \"decimals\": 9, \"uiAmount\": 999.996897585, \"uiAmountString\": \"999.996897585\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}",
+        "time" : {
+          "start" : 1640015171739,
+          "stop" : 1640015184645,
+          "duration" : 12906
+        }
+      }, {
+        "uid" : "dc606d9fd837a5e1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/dc606d9fd837a5e1",
+        "status" : "broken",
+        "statusDetails" : "Returned error: {\"err\": {\"InstructionError\": [1, \"InvalidArgument\"]}, \"fee\": 10000, \"innerInstructions\": [], \"logMessages\": [\"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\", \"Program log: program/src/account_data.rs:225\", \"Program log: program/src/entrypoint.rs:1259 : Invalid Ethereum transaction nonce: acc 69, trx 68\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 23934 of 500000 compute units\", \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: invalid program argument\"], \"postBalances\": [12185338893788, 314495880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"postTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"875510428331775607\", \"decimals\": 9, \"uiAmount\": 875510428.3317757, \"uiAmountString\": \"875510428.331775607\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999995955276\", \"decimals\": 9, \"uiAmount\": 999.995955276, \"uiAmountString\": \"999.995955276\"}}], \"preBalances\": [12185338903788, 314495880, 2039280, 2039280, 2672640, 47307120, 2672640, 1, 0, 1, 1141440, 1130582400], \"preTokenBalances\": [{\"accountIndex\": 2, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"875510428331775607\", \"decimals\": 9, \"uiAmount\": 875510428.3317757, \"uiAmountString\": \"875510428.331775607\"}}, {\"accountIndex\": 3, \"mint\": \"HPsV9Deocecw3GeZv1FkAPNCBRfuVyfw9MMwjwRe1xaU\", \"uiTokenAmount\": {\"amount\": \"999995955276\", \"decimals\": 9, \"uiAmount\": 999.995955276, \"uiAmountString\": \"999.995955276\"}}], \"rewards\": [], \"status\": {\"Err\": {\"InstructionError\": [1, \"InvalidArgument\"]}}}",
+        "time" : {
+          "start" : 1639995194958,
+          "stop" : 1639995223624,
+          "duration" : 28666
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4f1184ade784f6e7.json",
+  "parameterValues" : [ ]
+}
