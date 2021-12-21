@@ -1,0 +1,107 @@
+{
+  "uid" : "1f7625aeae86ffb4",
+  "name" : "Should return the new greeting once it's changed",
+  "fullName" : "Should return the new greeting once it's changed",
+  "historyId" : "2c311adb6e26ea339140e68e04c1139e",
+  "time" : {
+    "start" : 1640099597042,
+    "stop" : 1640099597682,
+    "duration" : 640
+  },
+  "status" : "broken",
+  "statusMessage" : "'EthereumModel' object has no attribute 'eth_accounts'",
+  "statusTrace" : "ProviderError: 'EthereumModel' object has no attribute 'eth_accounts'\n    at HttpProvider.request (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:49:19)\n    at GanacheGasMultiplierProvider.request (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/gas-providers.ts:310:34)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at EthersProviderWrapper.send (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)\n    at Object.getSigners (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/helpers.ts:23:20)\n    at getContractFactoryByAbiAndBytecode (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/helpers.ts:250:21)\n    at Context.<anonymous> (test/sample-test.js:6:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Hardhat advanced: Greeter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Not supported",
+      "messageRegex" : ".*'EthereumModel' object has no attribute .*",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "2709a0ca70876dd0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/94//#testresult/2709a0ca70876dd0",
+        "status" : "broken",
+        "statusDetails" : "'EthereumModel' object has no attribute 'eth_accounts'",
+        "time" : {
+          "start" : 1640097519219,
+          "stop" : 1640097520281,
+          "duration" : 1062
+        }
+      }, {
+        "uid" : "1380ab5d04de3f5d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/92//#testresult/1380ab5d04de3f5d",
+        "status" : "broken",
+        "statusDetails" : "'EthereumModel' object has no attribute 'eth_accounts'",
+        "time" : {
+          "start" : 1640013180386,
+          "stop" : 1640013181041,
+          "duration" : 655
+        }
+      }, {
+        "uid" : "4e89ff5233865793",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/4e89ff5233865793",
+        "status" : "broken",
+        "statusDetails" : "'EthereumModel' object has no attribute 'eth_accounts'",
+        "time" : {
+          "start" : 1640004709905,
+          "stop" : 1640004710571,
+          "duration" : 666
+        }
+      }, {
+        "uid" : "7f21d118b7314aed",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/7f21d118b7314aed",
+        "status" : "broken",
+        "statusDetails" : "'EthereumModel' object has no attribute 'eth_accounts'",
+        "time" : {
+          "start" : 1639993239877,
+          "stop" : 1639993240934,
+          "duration" : 1057
+        }
+      }, {
+        "uid" : "558a75d9b0763aeb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/82//#testresult/558a75d9b0763aeb",
+        "status" : "broken",
+        "statusDetails" : "'EthereumModel' object has no attribute 'eth_accounts'",
+        "time" : {
+          "start" : 1639909829758,
+          "stop" : 1639909830570,
+          "duration" : 812
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1f7625aeae86ffb4.json",
+  "parameterValues" : [ ]
+}
