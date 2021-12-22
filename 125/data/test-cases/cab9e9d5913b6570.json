@@ -1,0 +1,96 @@
+{
+  "uid" : "cab9e9d5913b6570",
+  "name" : "reverts when one of the addresses is the zero address",
+  "fullName" : "reverts when one of the addresses is the zero address",
+  "historyId" : "67babb99f6fa27e504d0aa881aa54cd0",
+  "time" : {
+    "start" : 1640195671806,
+    "stop" : 1640195679223,
+    "duration" : 7417
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1155"
+  }, {
+    "name" : "suite",
+    "value" : "like an ERC1155"
+  }, {
+    "name" : "subSuite",
+    "value" : "balanceOfBatch"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "40c77b5932e9ebbb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/40c77b5932e9ebbb",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1640194995001,
+          "stop" : 1640195206835,
+          "duration" : 211834
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cab9e9d5913b6570.json",
+  "parameterValues" : [ ]
+}
