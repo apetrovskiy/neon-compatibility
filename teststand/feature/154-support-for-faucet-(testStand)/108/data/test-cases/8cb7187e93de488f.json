@@ -1,0 +1,90 @@
+{
+  "uid" : "8cb7187e93de488f",
+  "name" : "recognize trusted forwarder",
+  "fullName" : "recognize trusted forwarder",
+  "historyId" : "0b9571a2c44b5019f8a1006ea291bae3",
+  "time" : {
+    "start" : 1640125000300,
+    "stop" : 1640125011393,
+    "duration" : 11093
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC2771Context"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "4c7be535a28db411",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/4c7be535a28db411",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639993249309,
+          "stop" : 1639993253579,
+          "duration" : 4270
+        }
+      }, {
+        "uid" : "3aad70d4e405ffc8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/3aad70d4e405ffc8",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639909914911,
+          "stop" : 1639909918605,
+          "duration" : 3694
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8cb7187e93de488f.json",
+  "parameterValues" : [ ]
+}

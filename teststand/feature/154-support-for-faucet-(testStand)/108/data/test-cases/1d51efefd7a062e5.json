@@ -1,0 +1,98 @@
+{
+  "uid" : "1d51efefd7a062e5",
+  "name" : "loses owner after renouncement",
+  "fullName" : "loses owner after renouncement",
+  "historyId" : "3685d4c9d7ebc478f263816f66bd41f8",
+  "time" : {
+    "start" : 1640125159732,
+    "stop" : 1640125290769,
+    "duration" : 131037
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443\n    at Context.<anonymous> (test/access/Ownable.test.js:12:37)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Ownable"
+  }, {
+    "name" : "suite",
+    "value" : "renounce ownership"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "41142cb26444b2e7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/106//#testresult/41142cb26444b2e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640117300830,
+          "stop" : 1640117537063,
+          "duration" : 236233
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1d51efefd7a062e5.json",
+  "parameterValues" : [ ]
+}

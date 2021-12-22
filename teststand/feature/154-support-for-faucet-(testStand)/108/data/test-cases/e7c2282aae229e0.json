@@ -1,0 +1,103 @@
+{
+  "uid" : "e7c2282aae229e0",
+  "name" : "set",
+  "fullName" : "set",
+  "historyId" : "008b519698183bd47a021484ba3aebfa",
+  "time" : {
+    "start" : 1640128533994,
+    "stop" : 1640128541996,
+    "duration" : 8002
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: StorageSlot"
+  }, {
+    "name" : "suite",
+    "value" : "boolean storage slot"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "a5f3d0e4bcf0ebd4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/a5f3d0e4bcf0ebd4",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639993266270,
+          "stop" : 1639993269297,
+          "duration" : 3027
+        }
+      }, {
+        "uid" : "75d9b5a02d83be46",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/75d9b5a02d83be46",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639909930486,
+          "stop" : 1639909931246,
+          "duration" : 760
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e7c2282aae229e0.json",
+  "parameterValues" : [ ]
+}

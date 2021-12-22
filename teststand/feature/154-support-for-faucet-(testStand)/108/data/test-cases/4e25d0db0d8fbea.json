@@ -1,0 +1,128 @@
+{
+  "uid" : "4e25d0db0d8fbea",
+  "name" : "reverts on decreaseAllowance",
+  "fullName" : "reverts on decreaseAllowance",
+  "historyId" : "fefea3fe19b0fa7a002c86910cf4ab0c",
+  "time" : {
+    "start" : 1640126387272,
+    "stop" : 1640126540396,
+    "duration" : 153124
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443\n    at Context.<anonymous> (test/token/ERC20/utils/SafeERC20.test.js:21:48)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: SafeERC20"
+  }, {
+    "name" : "suite",
+    "value" : "with token that returns false on all calls"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4b4de5f3c5f351cf",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/106//#testresult/4b4de5f3c5f351cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640118499849,
+          "stop" : 1640118514000,
+          "duration" : 14151
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4e25d0db0d8fbea.json",
+  "parameterValues" : [ ]
+}

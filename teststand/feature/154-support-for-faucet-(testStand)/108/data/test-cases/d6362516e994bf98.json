@@ -1,0 +1,119 @@
+{
+  "uid" : "d6362516e994bf98",
+  "name" : "run",
+  "fullName" : "run",
+  "historyId" : "5f7c6ac705d75c701af41fd3b8495a39",
+  "time" : {
+    "start" : 1640132538959,
+    "stop" : 1640132549080,
+    "duration" : 10121
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: ('evm emulator error ', {'accounts': [{'account': 'cMWDDbUfnPiZ1R4qRH66qm1a3xuj3zX5PLfF6RERWWF', 'address': '0x9f88598543c04969a8f2e0aaf8dada26c7de1a85', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': False, 'writable': False}, {'account': '27exenrusgWAo31BW4qJqhYqZdrQuP2S4sCcGSahiN6m', 'address': '0xd2ee8addc5b9ba013c0dca683ce677995d7729c7', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': True, 'writable': False}], 'exit_status': 'error', 'result': '', 'solana_accounts': [], 'steps_executed': 1616, 'token_accounts': [], 'used_gas': 49226818})",
+  "statusTrace" : "Error: Returned error: ('evm emulator error ', {'accounts': [{'account': 'cMWDDbUfnPiZ1R4qRH66qm1a3xuj3zX5PLfF6RERWWF', 'address': '0x9f88598543c04969a8f2e0aaf8dada26c7de1a85', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': False, 'writable': False}, {'account': '27exenrusgWAo31BW4qJqhYqZdrQuP2S4sCcGSahiN6m', 'address': '0xd2ee8addc5b9ba013c0dca683ce677995d7729c7', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': True, 'writable': False}], 'exit_status': 'error', 'result': '', 'solana_accounts': [], 'steps_executed': 1616, 'token_accounts': [], 'used_gas': 49226818})\n    at Context.<anonymous> (test/governance/compatibility/GovernorCompatibilityBravo.test.js:56:35)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: GovernorCompatibilityBravo"
+  }, {
+    "name" : "suite",
+    "value" : "nominal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "f2bbd8cec043b750",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/106//#testresult/f2bbd8cec043b750",
+        "status" : "broken",
+        "statusDetails" : "Returned error: ('evm emulator error ', {'accounts': [{'account': 'CSUMKqUVx1mbB9wrbXJV2HDSAbqbVp9zYMmmdZR1Azsq', 'address': '0x6a7b95b8d7e6c649c5374d35a1ec7fcf9089cd4b', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': False, 'writable': False}, {'account': '7LrkhS9FcuqYoJQyj4W9hBipgv8M761hQUMVG2kcR2gi', 'address': '0x4b6f5b08943de231ff45b50e0818a246e6314d76', 'code_size': None, 'code_size_current': None, 'contract': None, 'new': True, 'writable': False}], 'exit_status': 'error', 'result': '', 'solana_accounts': [], 'steps_executed': 1616, 'token_accounts': [], 'used_gas': 49226818})",
+        "time" : {
+          "start" : 1640123307142,
+          "stop" : 1640123320320,
+          "duration" : 13178
+        }
+      }, {
+        "uid" : "3e31cea1786bcd5f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/102//#testresult/3e31cea1786bcd5f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1640106047087,
+          "stop" : 1640106050459,
+          "duration" : 3372
+        }
+      }, {
+        "uid" : "e67cf3dd549d279",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/e67cf3dd549d279",
+        "status" : "broken",
+        "statusDetails" : "Returned error: connection already closed",
+        "time" : {
+          "start" : 1639993263900,
+          "stop" : 1639993264874,
+          "duration" : 974
+        }
+      }, {
+        "uid" : "55d8a9b9fcf0e02f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/55d8a9b9fcf0e02f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x4",
+        "time" : {
+          "start" : 1639909924962,
+          "stop" : 1639909928248,
+          "duration" : 3286
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d6362516e994bf98.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,101 @@
+{
+  "uid" : "b4351f767c9d7248",
+  "name" : "exist",
+  "fullName" : "exist",
+  "historyId" : "2f42725163e9b66db85aa4719c1b607a",
+  "time" : {
+    "start" : 1640125013284,
+    "stop" : 1640125290772,
+    "duration" : 277488
+  },
+  "status" : "broken",
+  "statusMessage" : "Failed to check for transaction receipt:\n{\n  \"data\": {\n    \"stack\": \"FetchError: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443\\n    at ClientRequest.<anonymous> (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/node-fetch/lib/index.js:1483:11)\\n    at ClientRequest.emit (node:events:390:28)\\n    at TLSSocket.socketErrorListener (node:_http_client:447:9)\\n    at TLSSocket.emit (node:events:390:28)\\n    at emitErrorNT (node:internal/streams/destroy:157:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:122:3)\\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)\",\n    \"name\": \"FetchError\"\n  }\n}",
+  "statusTrace" : "Error: Failed to check for transaction receipt:\n    at Context.<anonymous> (test/token/ERC1155/extensions/ERC1155Supply.test.js:35:26)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1155Supply"
+  }, {
+    "name" : "suite",
+    "value" : "after mint"
+  }, {
+    "name" : "subSuite",
+    "value" : "single"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f6c4cfc72c269f9d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/106//#testresult/f6c4cfc72c269f9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640117276831,
+          "stop" : 1640117291834,
+          "duration" : 15003
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b4351f767c9d7248.json",
+  "parameterValues" : [ ]
+}

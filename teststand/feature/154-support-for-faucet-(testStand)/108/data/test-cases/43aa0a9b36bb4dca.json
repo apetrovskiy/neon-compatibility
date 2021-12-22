@@ -1,0 +1,89 @@
+{
+  "uid" : "43aa0a9b36bb4dca",
+  "name" : "requires a non-null beneficiary",
+  "fullName" : "requires a non-null beneficiary",
+  "historyId" : "11185ed06b90f6a06f1003aaddcdb220",
+  "time" : {
+    "start" : 1640127397278,
+    "stop" : 1640127442799,
+    "duration" : 45521
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: RefundEscrow"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "c634333d824ee1e8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/102//#testresult/c634333d824ee1e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640106045631,
+          "stop" : 1640106047682,
+          "duration" : 2051
+        }
+      }, {
+        "uid" : "a2373bf800c34c09",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/a2373bf800c34c09",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: connection already closed' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1639993270242,
+          "stop" : 1639993271230,
+          "duration" : 988
+        }
+      }, {
+        "uid" : "fdc69c2ceae00674",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/83//#testresult/fdc69c2ceae00674",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: connection already closed' to equal 'RefundEscrow: beneficiary is the zero address'",
+        "time" : {
+          "start" : 1639909928904,
+          "stop" : 1639909929686,
+          "duration" : 782
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "43aa0a9b36bb4dca.json",
+  "parameterValues" : [ ]
+}

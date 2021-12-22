@@ -1,0 +1,268 @@
+{
+  "uid" : "ec79a60fd2d6784c",
+  "name" : "test_transfer_to_self",
+  "fullName" : "tests.brownie.token.tests.test_transfer#test_transfer_to_self",
+  "historyId" : "cce1f431a8610d0d4bb26f30bb566f26",
+  "time" : {
+    "start" : 1640125132309,
+    "stop" : 1640125132309,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x41d329921d3ed8caf1790ee6ca86dd78abe4ca03505b99adcb083dbd7540819d",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\naccounts = <brownie.network.account.Accounts object at 0x7fb840121370>\n\n    @pytest.fixture(scope=\"module\")\n    def token(brownie_project, accounts):\n>       return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n\ntests/brownie/token/tests/conftest.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:758: in _make_transaction\n    receipt = self._await_confirmation(receipt, required_confs, gas_strategy, gas_iter)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <LocalAccount '0x1A01BC0daAb8cec19175570Bb6254055f56CD691'>\nreceipt = <Transaction '\u001B[0;2;37m0x41d329921d3ed8caf1790ee6ca86dd78abe4ca03505b99adcb083dbd7540819d\u001B[0;m'>\nrequired_confs = 1, gas_strategy = None, gas_iter = None\n\n    def _await_confirmation(\n        self,\n        receipt: TransactionReceipt,\n        required_confs: int,\n        gas_strategy: Optional[GasABC],\n        gas_iter: Optional[Iterator],\n    ) -> TransactionReceipt:\n        # add to TxHistory before waiting for confirmation, this way the tx\n        # object is available if the user exits blocking via keyboard interrupt\n        history._add_tx(receipt)\n    \n        if gas_strategy is not None:\n            gas_strategy.run(receipt, gas_iter)  # type: ignore\n    \n        if required_confs == 0:\n            # set 0-conf tx's as silent to hide the confirmation output\n            receipt._silent = True\n            return receipt\n    \n        try:\n            receipt._confirmed.wait()\n        except KeyboardInterrupt as exc:\n            # set related transactions as silent\n            receipt._silent = True\n            for receipt in history.filter(\n                sender=self, nonce=receipt.nonce, key=lambda k: k.status != -2\n            ):\n                receipt._silent = True\n            raise exc.with_traceback(None)\n    \n        if receipt.status != -2:\n            return receipt\n    \n        # if transaction was dropped (status -2), find and return the tx that confirmed\n        replacements = history.filter(\n            sender=self, nonce=receipt.nonce, key=lambda k: k.status != -2\n        )\n        while True:\n            if not replacements:\n>               raise TransactionError(f\"Tx dropped without known replacement: {receipt.txid}\")\nE               brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x41d329921d3ed8caf1790ee6ca86dd78abe4ca03505b99adcb083dbd7540819d\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:800: TransactionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1640125080177,
+      "stop" : 1640125080177,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1640125081916,
+      "stop" : 1640125096520,
+      "duration" : 14604
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1640125101925,
+      "stop" : 1640125101925,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1640125101925,
+      "stop" : 1640125102243,
+      "duration" : 318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1640125128221,
+      "stop" : 1640125131781,
+      "duration" : 3560
+    },
+    "status" : "broken",
+    "statusMessage" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x41d329921d3ed8caf1790ee6ca86dd78abe4ca03505b99adcb083dbd7540819d\n",
+    "statusTrace" : "  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"/home/runner/work/neon-compatibility/neon-compatibility/tests/brownie/token/tests/conftest.py\", line 49, in token\n    return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py\", line 600, in __call__\n    return tx[\"from\"].deploy(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 508, in deploy\n    receipt, exc = self._make_transaction(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 758, in _make_transaction\n    receipt = self._await_confirmation(receipt, required_confs, gas_strategy, gas_iter)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 800, in _await_confirmation\n    raise TransactionError(f\"Tx dropped without known replacement: {receipt.txid}\")\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1640125419641,
+      "stop" : 1640125419641,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transfer"
+  }, {
+    "name" : "host",
+    "value" : "fv-az275-364"
+  }, {
+    "name" : "thread",
+    "value" : "3900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transfer"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 10,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "5be24a49fc089b46",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/106//#testresult/5be24a49fc089b46",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x1057e740aa11beb934d9f65378609414d59c628a7d4e8cb28f33634581f1bf06",
+        "time" : {
+          "start" : 1640117336040,
+          "stop" : 1640117336040,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "dc56e1e59d82a43b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/105//#testresult/dc56e1e59d82a43b",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x55ff43fc522bc2aac4e9d444b938d0ac64dae949f0e98df0aa913d12b23dd2b0",
+        "time" : {
+          "start" : 1640116042692,
+          "stop" : 1640116045904,
+          "duration" : 3212
+        }
+      }, {
+        "uid" : "faa3e29fc9ea1755",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/104//#testresult/faa3e29fc9ea1755",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x4b7643887050a76369aa3f29bc9328e399e683ade07e68d5ca50091b715556ab",
+        "time" : {
+          "start" : 1640112914773,
+          "stop" : 1640112914773,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "68eab1d631b1f8d9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/102//#testresult/68eab1d631b1f8d9",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x3108943f0bdc23f3285d8cfc7f201e313105164061381aeb5668a56153e3ac6e",
+        "time" : {
+          "start" : 1640106135908,
+          "stop" : 1640106135908,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "69a91e26ba0432ff",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/101//#testresult/69a91e26ba0432ff",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x5a9008e8bfd605e0365dec33cab760b0f65dd2c11bf17d6f7c8187ed45c9b39f",
+        "time" : {
+          "start" : 1640104666701,
+          "stop" : 1640104666701,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "b9070eb3728b6284",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/99//#testresult/b9070eb3728b6284",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640101891810,
+          "stop" : 1640101894050,
+          "duration" : 2240
+        }
+      }, {
+        "uid" : "c128dc91aafba555",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/97//#testresult/c128dc91aafba555",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x3ea173b797f8524ab6807105d8afbeaba88723276a7ad5f2350a2176abb11de6",
+        "time" : {
+          "start" : 1640099731973,
+          "stop" : 1640099734036,
+          "duration" : 2063
+        }
+      }, {
+        "uid" : "7cdd7854dd13505b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/95//#testresult/7cdd7854dd13505b",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x8a80bc908f5c8da689c130111a89a77953e1660d1a2c51f3c46a0d7c41ed916d",
+        "time" : {
+          "start" : 1640097647140,
+          "stop" : 1640097647140,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "41c4189475aaea06",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/93//#testresult/41c4189475aaea06",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.TransactionError: Tx dropped without known replacement: 0x6c1df837a01dbc378f8a39764212f5373bea739612641a99d92faaa183a2c6aa",
+        "time" : {
+          "start" : 1640013394704,
+          "stop" : 1640013401562,
+          "duration" : 6858
+        }
+      }, {
+        "uid" : "ff06989840bf3f0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/teststand/feature/154-support-for-faucet-(testStand)/89//#testresult/ff06989840bf3f0",
+        "status" : "broken",
+        "statusDetails" : "ValueError: connection already closed",
+        "time" : {
+          "start" : 1639993303254,
+          "stop" : 1639993303254,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ec79a60fd2d6784c.json",
+  "parameterValues" : [ ]
+}
