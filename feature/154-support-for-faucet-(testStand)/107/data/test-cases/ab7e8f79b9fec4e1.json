@@ -1,0 +1,99 @@
+{
+  "uid" : "ab7e8f79b9fec4e1",
+  "name" : "reverts when attempting to set as implementer in the registry",
+  "fullName" : "reverts when attempting to set as implementer in the registry",
+  "historyId" : "3f5c4e875f8a4eb5d567549aea81c8c4",
+  "time" : {
+    "start" : 1640125502276,
+    "stop" : 1640125509007,
+    "duration" : 6731
+  },
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n    at expectException (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at expectRevert (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n    at Context.<anonymous> (test/utils/introspection/ERC1820Implementer.test.js:28:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1820Implementer"
+  }, {
+    "name" : "suite",
+    "value" : "with no registered interfaces"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "113cdac9848054a8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/113cdac9848054a8",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1639993855030,
+          "stop" : 1639993862287,
+          "duration" : 7257
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ab7e8f79b9fec4e1.json",
+  "parameterValues" : [ ]
+}

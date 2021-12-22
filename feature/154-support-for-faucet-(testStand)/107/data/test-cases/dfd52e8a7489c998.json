@@ -1,0 +1,109 @@
+{
+  "uid" : "dfd52e8a7489c998",
+  "name" : "does not emit AuthorizedOperator events for default operators",
+  "fullName" : "does not emit AuthorizedOperator events for default operators",
+  "historyId" : "7cdc55f6e3431bc93c8cd40b38f7426e",
+  "time" : {
+    "start" : 1640125789210,
+    "stop" : 1640125793094,
+    "duration" : 3884
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: execution reverted",
+  "statusTrace" : "Error: Returned error: execution reverted\n    at Context.<anonymous> (test/token/ERC777/ERC777.test.js:40:36)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC777"
+  }, {
+    "name" : "suite",
+    "value" : "with default operators"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "bda81d5c5e366910",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/100//#testresult/bda81d5c5e366910",
+        "status" : "broken",
+        "statusDetails" : "Returned error: execution reverted",
+        "time" : {
+          "start" : 1640106443903,
+          "stop" : 1640106447676,
+          "duration" : 3773
+        }
+      }, {
+        "uid" : "9c35e0330476d558",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/9c35e0330476d558",
+        "status" : "broken",
+        "statusDetails" : "Returned error: execution reverted",
+        "time" : {
+          "start" : 1640005674538,
+          "stop" : 1640005678549,
+          "duration" : 4011
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dfd52e8a7489c998.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,149 @@
+{
+  "uid" : "809aeaecee6d4d75",
+  "name" : "sends 0 wei",
+  "fullName" : "sends 0 wei",
+  "historyId" : "bf7b26c006787b40e822258f47163036",
+  "time" : {
+    "start" : 1640124984181,
+    "stop" : 1640125123642,
+    "duration" : 139461
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443\n    at Object.ErrorResponse (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/node_modules/web3-core-helpers/lib/errors.js:28:19)\n    at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/web3-core-requestmanager/lib/index.js:302:36\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Address"
+  }, {
+    "name" : "suite",
+    "value" : "sendValue"
+  }, {
+    "name" : "subSuite",
+    "value" : "when sender contract has no funds"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "3e3e19a7373a14c6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/100//#testresult/3e3e19a7373a14c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640104499277,
+          "stop" : 1640104511108,
+          "duration" : 11831
+        }
+      }, {
+        "uid" : "b069644c439cbc3f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/92//#testresult/b069644c439cbc3f",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1640013234106,
+          "stop" : 1640013380994,
+          "duration" : 146888
+        }
+      }, {
+        "uid" : "b08e1d090fdb536d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/b08e1d090fdb536d",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1640004685028,
+          "stop" : 1640004824871,
+          "duration" : 139843
+        }
+      }, {
+        "uid" : "150b38bf4f95337d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/150b38bf4f95337d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639993289350,
+          "stop" : 1639993299069,
+          "duration" : 9719
+        }
+      }, {
+        "uid" : "64ffcc2cf86e91f1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/82//#testresult/64ffcc2cf86e91f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639909838179,
+          "stop" : 1639909848610,
+          "duration" : 10431
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "809aeaecee6d4d75.json",
+  "parameterValues" : [ ]
+}

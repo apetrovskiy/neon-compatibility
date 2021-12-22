@@ -1,0 +1,99 @@
+{
+  "uid" : "c69242be9f05d546",
+  "name" : "reverts with a snapshot id of 0",
+  "fullName" : "reverts with a snapshot id of 0",
+  "historyId" : "ea7d18a6583a5e2ccff2f7fc22313297",
+  "time" : {
+    "start" : 1640124990845,
+    "stop" : 1640125254672,
+    "duration" : 263827
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443\n    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Snapshot.test.js:15:45)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC20Snapshot"
+  }, {
+    "name" : "suite",
+    "value" : "totalSupplyAt"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f3c5ae4d59d5081c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/100//#testresult/f3c5ae4d59d5081c",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1640104509243,
+          "stop" : 1640104893289,
+          "duration" : 384046
+        }
+      }, {
+        "uid" : "d7c733799c86f0e8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/d7c733799c86f0e8",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443' to equal 'ERC20Snapshot: id is 0'",
+        "time" : {
+          "start" : 1640004692905,
+          "stop" : 1640005082928,
+          "duration" : 390023
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c69242be9f05d546.json",
+  "parameterValues" : [ ]
+}

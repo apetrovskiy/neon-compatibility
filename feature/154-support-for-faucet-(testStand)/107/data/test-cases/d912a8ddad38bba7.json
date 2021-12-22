@@ -1,0 +1,99 @@
+{
+  "uid" : "d912a8ddad38bba7",
+  "name" : "can record an async payment correctly",
+  "fullName" : "can record an async payment correctly",
+  "historyId" : "213f4159249db451311ba6e91f6e32d5",
+  "time" : {
+    "start" : 1640131090098,
+    "stop" : 1640131094033,
+    "duration" : 3935
+  },
+  "status" : "broken",
+  "statusMessage" : "Transaction: 0xb76df54ea5b6f7c360c12e8d2929f32d3ee2a97129a2c8e42d7b8a46eff03d95 exited with an error (status 0). \n     Please check that the transaction:\n     - satisfies all conditions set by Solidity `require` statements.\n     - does not trigger a Solidity `revert` statement.\n",
+  "statusTrace" : "StatusError: Transaction: 0xb76df54ea5b6f7c360c12e8d2929f32d3ee2a97129a2c8e42d7b8a46eff03d95 exited with an error (status 0). \n    at Context.<anonymous> (test/security/PullPayment.test.js:13:46)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: PullPayment"
+  }, {
+    "name" : "suite",
+    "value" : "payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "37b4b9beb4ef1dfd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/92//#testresult/37b4b9beb4ef1dfd",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0xe666b5b9df4a5352d7331877f0e51472e98f584040ba830343a299fdbb85eb01 exited with an error (status 0). \n     Please check that the transaction:\n     - satisfies all conditions set by Solidity `require` statements.\n     - does not trigger a Solidity `revert` statement.\n",
+        "time" : {
+          "start" : 1640019815264,
+          "stop" : 1640019819229,
+          "duration" : 3965
+        }
+      }, {
+        "uid" : "c1f9214174e6217",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/c1f9214174e6217",
+        "status" : "broken",
+        "statusDetails" : "Transaction: 0xefed42ffe3445701011e8ef7c03ab2720a809ce6727f152caef040a6d61fd355 exited with an error (status 0). \n     Please check that the transaction:\n     - satisfies all conditions set by Solidity `require` statements.\n     - does not trigger a Solidity `revert` statement.\n",
+        "time" : {
+          "start" : 1640011891650,
+          "stop" : 1640011895917,
+          "duration" : 4267
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d912a8ddad38bba7.json",
+  "parameterValues" : [ ]
+}

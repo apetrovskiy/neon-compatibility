@@ -1,0 +1,122 @@
+{
+  "uid" : "7d600ed1b6d46284",
+  "name" : "reverts",
+  "fullName" : "reverts",
+  "historyId" : "183e93b958f446801cf920f20b67cbdf",
+  "time" : {
+    "start" : 1640126189098,
+    "stop" : 1640126195801,
+    "duration" : 6703
+  },
+  "status" : "failed",
+  "statusMessage" : "Expected an exception but none was received",
+  "statusTrace" : "AssertionError: Expected an exception but none was received\n    at expectException (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:25:10)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at Context.<anonymous> (test/proxy/Clones.behaviour.js:45:11)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Clones"
+  }, {
+    "name" : "suite",
+    "value" : "cloneDeterministic"
+  }, {
+    "name" : "subSuite",
+    "value" : "initialization without parameters > non payable > when sending some balance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "db55ca53b19b600f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/92//#testresult/db55ca53b19b600f",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1640014587921,
+          "stop" : 1640014682447,
+          "duration" : 94526
+        }
+      }, {
+        "uid" : "31a21dae254cd29f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/90//#testresult/31a21dae254cd29f",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1640006443984,
+          "stop" : 1640006449770,
+          "duration" : 5786
+        }
+      }, {
+        "uid" : "a4e9b17d6996c21b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/88//#testresult/a4e9b17d6996c21b",
+        "status" : "failed",
+        "statusDetails" : "Expected an exception but none was received",
+        "time" : {
+          "start" : 1639994452303,
+          "stop" : 1639994459391,
+          "duration" : 7088
+        }
+      }, {
+        "uid" : "f3c22668a11ff39f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/feature/154-support-for-faucet-(testStand)/82//#testresult/f3c22668a11ff39f",
+        "status" : "failed",
+        "statusDetails" : "Wrong kind of exception received: expected 'Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443' to equal 'revert'",
+        "time" : {
+          "start" : 1639912101562,
+          "stop" : 1639912232635,
+          "duration" : 131073
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7d600ed1b6d46284.json",
+  "parameterValues" : [ ]
+}
