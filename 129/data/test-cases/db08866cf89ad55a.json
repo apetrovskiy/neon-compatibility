@@ -1,0 +1,102 @@
+{
+  "uid" : "db08866cf89ad55a",
+  "name" : "reverts with a snapshot id of 0",
+  "fullName" : "reverts with a snapshot id of 0",
+  "historyId" : "b449b10dad5f7622758e7a28c8c4701a",
+  "time" : {
+    "start" : 1640201796531,
+    "stop" : 1640201820560,
+    "duration" : 24029
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC20Snapshot"
+  }, {
+    "name" : "suite",
+    "value" : "balanceOfAt"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "8d04cfe41a039013",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/125//#testresult/8d04cfe41a039013",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640196637357,
+          "stop" : 1640196642718,
+          "duration" : 5361
+        }
+      }, {
+        "uid" : "90317b03e640058e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/90317b03e640058e",
+        "status" : "broken",
+        "statusDetails" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+        "time" : {
+          "start" : 1640195565973,
+          "stop" : 1640195695708,
+          "duration" : 129735
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "db08866cf89ad55a.json",
+  "parameterValues" : [ ]
+}

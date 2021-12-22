@@ -1,0 +1,120 @@
+{
+  "uid" : "70bcb7890f2ca44a",
+  "name" : "allows to transfer when unpaused",
+  "fullName" : "allows to transfer when unpaused",
+  "historyId" : "7876faac642b9ed48f3b926ea8dbbd13",
+  "time" : {
+    "start" : 1640201446740,
+    "stop" : 1640201601421,
+    "duration" : 154681
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443\n    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Pausable.test.js:22:26)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC20Pausable"
+  }, {
+    "name" : "suite",
+    "value" : "pausable token"
+  }, {
+    "name" : "subSuite",
+    "value" : "transfer"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9451588f011ab685",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/125//#testresult/9451588f011ab685",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640196109581,
+          "stop" : 1640196120221,
+          "duration" : 10640
+        }
+      }, {
+        "uid" : "1f1f4311f5e568e2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/1f1f4311f5e568e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640195210294,
+          "stop" : 1640195243640,
+          "duration" : 33346
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "70bcb7890f2ca44a.json",
+  "parameterValues" : [ ]
+}

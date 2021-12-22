@@ -1,0 +1,100 @@
+{
+  "uid" : "755dc5b490d8a7aa",
+  "name" : "initializer has not run",
+  "fullName" : "initializer has not run",
+  "historyId" : "f88329df9025989bca8a2133e77ad51c",
+  "time" : {
+    "start" : 1640200594380,
+    "stop" : 1640200755664,
+    "duration" : 161284
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443\n    at Context.<anonymous> (test/proxy/utils/Initializable.test.js:11:50)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Initializable"
+  }, {
+    "name" : "suite",
+    "value" : "basic testing without inheritance"
+  }, {
+    "name" : "subSuite",
+    "value" : "before initialize"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "e3915e763f6174d4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/125//#testresult/e3915e763f6174d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640195134316,
+          "stop" : 1640195181353,
+          "duration" : 47037
+        }
+      }, {
+        "uid" : "8132c73e1a145409",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/8132c73e1a145409",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640194429946,
+          "stop" : 1640194465728,
+          "duration" : 35782
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "755dc5b490d8a7aa.json",
+  "parameterValues" : [ ]
+}

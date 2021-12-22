@@ -1,0 +1,112 @@
+{
+  "uid" : "67d9fb1a0fc1d515",
+  "name" : "has a name",
+  "fullName" : "has a name",
+  "historyId" : "a0588a314bb62b345d07399a2430e545",
+  "time" : {
+    "start" : 1640201454532,
+    "stop" : 1640201601541,
+    "duration" : 147009
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443\n    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Wrapper.test.js:20:44)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC20"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cd5dd529dc822e4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640201288986,
+        "stop" : 1640201293801,
+        "duration" : 4815
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "6084af8e90f34e3b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/125//#testresult/6084af8e90f34e3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640196122614,
+          "stop" : 1640196209993,
+          "duration" : 87379
+        }
+      }, {
+        "uid" : "19bca48ad2ded03f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/19bca48ad2ded03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640195281744,
+          "stop" : 1640195365115,
+          "duration" : 83371
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "67d9fb1a0fc1d515.json",
+  "parameterValues" : [ ]
+}
