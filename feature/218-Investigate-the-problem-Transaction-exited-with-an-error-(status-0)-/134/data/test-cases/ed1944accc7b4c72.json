@@ -1,0 +1,91 @@
+{
+  "uid" : "ed1944accc7b4c72",
+  "name" : "reverts when trying to transfer when paused",
+  "fullName" : "reverts when trying to transfer when paused",
+  "historyId" : "4e33059998569661f7818a617ca8db2e",
+  "time" : {
+    "start" : 1640266531100,
+    "stop" : 1640266693672,
+    "duration" : 162572
+  },
+  "status" : "failed",
+  "statusMessage" : "Wrong kind of exception received: expected 'Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443' to equal 'ERC20Pausable: token transfer while paused'",
+  "statusTrace" : "AssertionError: Wrong kind of exception received: expected 'Returned error: request to https://proxy.teststand2.neontest.xyz/solana failed, reason: connect ETIMEDOUT 157.90.236.85:443' to equal 'ERC20Pausable: token transfer while paused'\n    at expectException (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:20:30)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at expectRevert (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@openzeppelin/test-helpers/src/expectRevert.js:75:3)\n    at Context.<anonymous> (test/token/ERC20/extensions/ERC20Pausable.test.js:41:9)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC20Pausable"
+  }, {
+    "name" : "suite",
+    "value" : "pausable token"
+  }, {
+    "name" : "subSuite",
+    "value" : "transfer"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ed1944accc7b4c72.json",
+  "parameterValues" : [ ]
+}
