@@ -1,0 +1,79 @@
+{
+  "uid" : "9f2b61769e9942ba",
+  "name" : "reverts on withdrawals",
+  "fullName" : "reverts on withdrawals",
+  "historyId" : "c8f8ce29b54c77115e0e1daf73547b73",
+  "time" : {
+    "start" : 1640317478834,
+    "stop" : 1640317489183,
+    "duration" : 10349
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://release-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', '-vvv', 'emulate', '0a1829fdbf341d759139e47bc54f3e67347707e4', 'a15390bae0cb80c543cd98a67c28548aafd39f5e', 'f340fa010000000000000000000000003f5fe616d463fd2caceba4538a5f569d157646b0', '0x13f306a2409fc0000']' returned non-zero exit status 1.",
+  "statusTrace" : "Error: Returned error: Command '['neon-cli', '--commitment=recent', '--url', 'http://release-solana:8899', '--evm_loader=53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io', '-vvv', 'emulate', '0a1829fdbf341d759139e47bc54f3e67347707e4', 'a15390bae0cb80c543cd98a67c28548aafd39f5e', 'f340fa010000000000000000000000003f5fe616d463fd2caceba4538a5f569d157646b0', '0x13f306a2409fc0000']' returned non-zero exit status 1.\n    at Context.<anonymous> (test/utils/escrow/ConditionalEscrow.test.js:29:25)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ConditionalEscrow"
+  }, {
+    "name" : "suite",
+    "value" : "when withdrawal is disallowed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "neon-cli error",
+      "messageRegex" : ".*'neon-cli'.* returned non-zero exit status 1.",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9f2b61769e9942ba.json",
+  "parameterValues" : [ ]
+}

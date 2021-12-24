@@ -1,0 +1,71 @@
+{
+  "uid" : "31ae00fece56594",
+  "name" : "reverts when input arrays don't match up",
+  "fullName" : "reverts when input arrays don't match up",
+  "historyId" : "6f3c3585a6a75b418577f75ac3aa82f1",
+  "time" : {
+    "start" : 1640315711589,
+    "stop" : 1640315862505,
+    "duration" : 150916
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443\n    at Context.<anonymous> (test/token/ERC1155/ERC1155.test.js:15:39)\n    at processImmediate (node:internal/timers:464:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: ERC1155"
+  }, {
+    "name" : "suite",
+    "value" : "like an ERC1155"
+  }, {
+    "name" : "subSuite",
+    "value" : "balanceOfBatch"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "31ae00fece56594.json",
+  "parameterValues" : [ ]
+}

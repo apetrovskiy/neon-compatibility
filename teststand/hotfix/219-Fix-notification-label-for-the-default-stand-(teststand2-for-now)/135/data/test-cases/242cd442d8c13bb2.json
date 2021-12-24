@@ -1,0 +1,68 @@
+{
+  "uid" : "242cd442d8c13bb2",
+  "name" : "returns the transaction data when called from an EOA",
+  "fullName" : "returns the transaction data when called from an EOA",
+  "historyId" : "15b6435a1dc43e4cc43c7c9dcf35dcc1",
+  "time" : {
+    "start" : 1640316893906,
+    "stop" : 1640317039426,
+    "duration" : 145520
+  },
+  "status" : "broken",
+  "statusMessage" : "Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443",
+  "statusTrace" : "Error: Returned error: request to https://proxy.teststand.neontest.xyz/solana failed, reason: connect ETIMEDOUT 116.203.137.18:443\n    at Context.<anonymous> (test/utils/Context.test.js:13:46)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Contract: Context"
+  }, {
+    "name" : "suite",
+    "value" : "msgData"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "242cd442d8c13bb2.json",
+  "parameterValues" : [ ]
+}
