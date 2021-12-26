@@ -1,0 +1,217 @@
+{
+  "uid" : "23a0afa9bf89f6a0",
+  "name" : "test_insufficient_approval",
+  "fullName" : "tests.brownie.token.tests.test_transferFrom#test_insufficient_approval",
+  "historyId" : "0ae63a08126a8f0616f222dcfe6ba70d",
+  "time" : {
+    "start" : 1640401942972,
+    "stop" : 1640401943283,
+    "duration" : 311
+  },
+  "status" : "broken",
+  "statusMessage" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+  "statusTrace" : "accounts = <brownie.network.account.Accounts object at 0x7f31b2c8e070>\ntoken = <Token Contract '0x58aC482A394338DCde6aB4C51dc66AEA614e9722'>\n\n    def test_insufficient_approval(accounts, token):\n        balance = token.balanceOf(accounts[0])\n    \n>       token.approve(accounts[1], balance - 1, {'from': accounts[0]})\n\ntests/brownie/token/tests/test_transferFrom.py:117: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:1693: in __call__\n    return self.transact(*args)\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:1576: in transact\n    data=self.encode_input(*args),\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:1611: in encode_input\n    data = format_input(self.abi, args)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nabi = {'inputs': [{'internalType': 'address', 'name': '_spender', 'type': 'address'}, {'internalType': 'uint256', 'name': '_...e': 'approve', 'outputs': [{'internalType': 'bool', 'name': '', 'type': 'bool'}], 'stateMutability': 'nonpayable', ...}\ninputs = (<LocalAccount '0x26C6f23CA1aCdF746EBd7040f03e7E937559A658'>, -1)\n\n    def format_input(abi: Dict, inputs: Union[List, Tuple]) -> List:\n        # Format contract inputs based on ABI types\n        if len(inputs) and not len(abi[\"inputs\"]):\n            raise TypeError(f\"{abi['name']} requires no arguments\")\n        abi_types = _get_abi_types(abi[\"inputs\"])\n        try:\n            return _format_tuple(abi_types, inputs)\n        except Exception as e:\n>           raise type(e)(f\"{abi['name']} {e}\") from None\nE           OverflowError: approve '-1' - -1 is outside allowable range for uint256\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/convert/normalize.py:20: OverflowError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1640401797056,
+      "stop" : 1640401797056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1640401798442,
+      "stop" : 1640401818843,
+      "duration" : 20401
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1640401823682,
+      "stop" : 1640401824012,
+      "duration" : 330
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1640401823682,
+      "stop" : 1640401823682,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1640401877408,
+      "stop" : 1640401881777,
+      "duration" : 4369
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1640402155830,
+      "stop" : 1640402155830,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transferFrom"
+  }, {
+    "name" : "host",
+    "value" : "fv-az173-662"
+  }, {
+    "name" : "thread",
+    "value" : "3749-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transferFrom"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "e9fcf6f83bd25bb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/132//#testresult/e9fcf6f83bd25bb",
+        "status" : "broken",
+        "statusDetails" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+        "time" : {
+          "start" : 1640218754194,
+          "stop" : 1640218754366,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "640aca381b3e96a3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/129//#testresult/640aca381b3e96a3",
+        "status" : "broken",
+        "statusDetails" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+        "time" : {
+          "start" : 1640200351081,
+          "stop" : 1640200351300,
+          "duration" : 219
+        }
+      }, {
+        "uid" : "57c5892cde805de",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/125//#testresult/57c5892cde805de",
+        "status" : "broken",
+        "statusDetails" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+        "time" : {
+          "start" : 1640195022028,
+          "stop" : 1640195022170,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "d097406fb2e1a9ce",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/121//#testresult/d097406fb2e1a9ce",
+        "status" : "broken",
+        "statusDetails" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+        "time" : {
+          "start" : 1640194171653,
+          "stop" : 1640194171860,
+          "duration" : 207
+        }
+      }, {
+        "uid" : "a43587c2a59757fc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/120//#testresult/a43587c2a59757fc",
+        "status" : "broken",
+        "statusDetails" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+        "time" : {
+          "start" : 1640194149627,
+          "stop" : 1640194149830,
+          "duration" : 203
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "23a0afa9bf89f6a0.json",
+  "parameterValues" : [ ]
+}
