@@ -1,0 +1,369 @@
+{
+  "uid" : "376552e0ca357775",
+  "name" : "test_no_approval",
+  "fullName" : "tests.brownie.token.tests.test_transferFrom#test_no_approval",
+  "historyId" : "7358eb8feac902966a7253222a21510a",
+  "time" : {
+    "start" : 1642464828402,
+    "stop" : 1642464828402,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: there is no unique or exclusion constraint matching the ON CONFLICT specification",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\naccounts = <brownie.network.account.Accounts object at 0x7fe020700d60>\n\n    @pytest.fixture(scope=\"module\")\n    def token(brownie_project, accounts):\n>       return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n\ntests/brownie/token/tests/conftest.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:725: in _make_transaction\n    raise VirtualMachineError(e) from None\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'there is no unique or exclusion constraint matching the ON CONFLICT specification\\n'}))\nexc = {'code': -32000, 'message': 'there is no unique or exclusion constraint matching the ON CONFLICT specification\\n'}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: there is no unique or exclusion constraint matching the ON CONFLICT specification\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1642464809458,
+      "stop" : 1642464809458,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1642464810321,
+      "stop" : 1642464823962,
+      "duration" : 13641
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1642464824730,
+      "stop" : 1642464825011,
+      "duration" : 281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1642464824730,
+      "stop" : 1642464824730,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1642464827175,
+      "stop" : 1642464827503,
+      "duration" : 328
+    },
+    "status" : "broken",
+    "statusMessage" : "ValueError: there is no unique or exclusion constraint matching the ON CONFLICT specification\n\n",
+    "statusTrace" : "  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"/home/runner/work/neon-compatibility/neon-compatibility/tests/brownie/token/tests/conftest.py\", line 49, in token\n    return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py\", line 600, in __call__\n    return tx[\"from\"].deploy(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 508, in deploy\n    receipt, exc = self._make_transaction(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 725, in _make_transaction\n    raise VirtualMachineError(e) from None\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py\", line 85, in __init__\n    raise ValueError(exc[\"message\"]) from None\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1642464859552,
+      "stop" : 1642464859552,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transferFrom"
+  }, {
+    "name" : "host",
+    "value" : "fv-az132-324"
+  }, {
+    "name" : "thread",
+    "value" : "3756-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transferFrom"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 25,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 30
+      },
+      "items" : [ {
+        "uid" : "483b565eade76b2c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/190//#testresult/483b565eade76b2c",
+        "status" : "broken",
+        "statusDetails" : "web3.exceptions.BlockNotFound: Block with id: 'latest' not found.",
+        "time" : {
+          "start" : 1642378419498,
+          "stop" : 1642378419498,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bb9f5cab93e832d8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/188//#testresult/bb9f5cab93e832d8",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1642292124394,
+          "stop" : 1642292125886,
+          "duration" : 1492
+        }
+      }, {
+        "uid" : "c08db537745251ac",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/187//#testresult/c08db537745251ac",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1642216252248,
+          "stop" : 1642216253413,
+          "duration" : 1165
+        }
+      }, {
+        "uid" : "792343e1e1817b2b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/184//#testresult/792343e1e1817b2b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1642119338810,
+          "stop" : 1642119340270,
+          "duration" : 1460
+        }
+      }, {
+        "uid" : "6fabdb017c8f8938",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/182//#testresult/6fabdb017c8f8938",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1642032987247,
+          "stop" : 1642032988619,
+          "duration" : 1372
+        }
+      }, {
+        "uid" : "4191107bd37451d8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/181//#testresult/4191107bd37451d8",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.ReadTimeout: HTTPConnectionPool(host='proxy.night.stand.neontest.xyz', port=80): Read timed out. (read timeout=30)",
+        "time" : {
+          "start" : 1641957688790,
+          "stop" : 1641957688790,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "329e72d85b5f50e3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/179//#testresult/329e72d85b5f50e3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641870657831,
+          "stop" : 1641870659691,
+          "duration" : 1860
+        }
+      }, {
+        "uid" : "348b79166dcf9d92",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/177//#testresult/348b79166dcf9d92",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641784275403,
+          "stop" : 1641784276883,
+          "duration" : 1480
+        }
+      }, {
+        "uid" : "6a260ae3d8df79a9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/174//#testresult/6a260ae3d8df79a9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641687393855,
+          "stop" : 1641687395280,
+          "duration" : 1425
+        }
+      }, {
+        "uid" : "97a485158291bd4a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/172//#testresult/97a485158291bd4a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641601016192,
+          "stop" : 1641601018288,
+          "duration" : 2096
+        }
+      }, {
+        "uid" : "2d226e21955b43be",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/170//#testresult/2d226e21955b43be",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641514518491,
+          "stop" : 1641514519916,
+          "duration" : 1425
+        }
+      }, {
+        "uid" : "3489572ee171a522",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/168//#testresult/3489572ee171a522",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641428187432,
+          "stop" : 1641428189536,
+          "duration" : 2104
+        }
+      }, {
+        "uid" : "ce2bf404608f134b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/167//#testresult/ce2bf404608f134b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641352331314,
+          "stop" : 1641352333442,
+          "duration" : 2128
+        }
+      }, {
+        "uid" : "7de63257d0187733",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/165//#testresult/7de63257d0187733",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641265831732,
+          "stop" : 1641265833658,
+          "duration" : 1926
+        }
+      }, {
+        "uid" : "21674f155487b902",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/163//#testresult/21674f155487b902",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641179402140,
+          "stop" : 1641179403991,
+          "duration" : 1851
+        }
+      }, {
+        "uid" : "74e70e7e56adf511",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/161//#testresult/74e70e7e56adf511",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641093069335,
+          "stop" : 1641093071441,
+          "duration" : 2106
+        }
+      }, {
+        "uid" : "87cbaf89612c3f4a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/159//#testresult/87cbaf89612c3f4a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1641006879895,
+          "stop" : 1641006882077,
+          "duration" : 2182
+        }
+      }, {
+        "uid" : "d9c1792fc6cf435d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/156//#testresult/d9c1792fc6cf435d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1640909691463,
+          "stop" : 1640909693245,
+          "duration" : 1782
+        }
+      }, {
+        "uid" : "7c5f53f26f64ae99",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/154//#testresult/7c5f53f26f64ae99",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1640823318506,
+          "stop" : 1640823320579,
+          "duration" : 2073
+        }
+      }, {
+        "uid" : "5aded4a53414a0a1",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/153//#testresult/5aded4a53414a0a1",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Transaction did not revert",
+        "time" : {
+          "start" : 1640747432304,
+          "stop" : 1640747434344,
+          "duration" : 2040
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "376552e0ca357775.json",
+  "parameterValues" : [ ]
+}
