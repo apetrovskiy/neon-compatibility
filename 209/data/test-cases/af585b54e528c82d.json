@@ -1,0 +1,350 @@
+{
+  "uid" : "af585b54e528c82d",
+  "name" : "test_transfer_to_self",
+  "fullName" : "tests.brownie.token.tests.test_transferFrom#test_transfer_to_self",
+  "historyId" : "cbe44005f28bf185c2f8b32284f6ab41",
+  "time" : {
+    "start" : 1643166680809,
+    "stop" : 1643166712684,
+    "duration" : 31875
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument",
+  "statusTrace" : "accounts = <brownie.network.account.Accounts object at 0x7ff7f9a434f0>\ntoken = <Token Contract '0xe0902E8874b228E3581BC15d58C715E5205E855B'>\n\n    def test_transfer_to_self(accounts, token):\n        sender_balance = token.balanceOf(accounts[0])\n        amount = sender_balance // 4\n    \n>       token.approve(accounts[0], sender_balance, {'from': accounts[0]})\n\ntests/brownie/token/tests/test_transferFrom.py:143: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:1693: in __call__\n    return self.transact(*args)\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:1566: in transact\n    return tx[\"from\"].transfer(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:642: in transfer\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32002, 'message': 'Verifying nonce before send transaction: Error processing ...valid program argument', 'data': {'logs': ['/src/entrypoint.rs Invalid Ethereum transaction nonce: acc 34, trx 33']}}))\nexc = {'code': -32002, 'data': {'logs': ['/src/entrypoint.rs Invalid Ethereum transaction nonce: acc 34, trx 33']}, 'message': 'Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument'}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n                raise ValueError(exc[\"message\"]) from None\n    \n            self.message: str = exc[\"message\"].rstrip(\".\")\n    \n            if isinstance(exc[\"data\"], str):\n                # handle parity exceptions - this logic probably is not perfect\n                if \"0x08c379a0\" in exc[\"data\"]:\n                    revert_type, err_msg = [i.strip() for i in exc[\"data\"].split(\"0x08c379a0\", 1)]\n                    err_msg = eth_abi.decode_abi([\"string\"], HexBytes(err_msg))\n                    err_msg = f\"{revert_type} '{err_msg}'\"\n                elif exc[\"data\"].endswith(\"0x\"):\n                    err_msg = exc[\"data\"][:-2].strip()\n                else:\n                    err_msg = exc[\"data\"]\n                raise ValueError(f\"{self.message}: {err_msg}\") from None\n    \n            try:\n                txid, data = next((k, v) for k, v in exc[\"data\"].items() if k.startswith(\"0x\"))\n            except StopIteration:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:104: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1643166455412,
+      "stop" : 1643166455412,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1643166456684,
+      "stop" : 1643166470919,
+      "duration" : 14235
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1643166474725,
+      "stop" : 1643166474725,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1643166474725,
+      "stop" : 1643166474963,
+      "duration" : 238
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1643166522162,
+      "stop" : 1643166525023,
+      "duration" : 2861
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1643166902811,
+      "stop" : 1643166902811,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transferFrom"
+  }, {
+    "name" : "host",
+    "value" : "fv-az132-61"
+  }, {
+    "name" : "thread",
+    "value" : "3556-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transferFrom"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 29,
+        "unknown" : 0,
+        "total" : 35
+      },
+      "items" : [ {
+        "uid" : "9f3d9b6a07c0147e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/198//#testresult/9f3d9b6a07c0147e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642724049011,
+          "stop" : 1642724053109,
+          "duration" : 4098
+        }
+      }, {
+        "uid" : "ed302435131cfe8b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/197//#testresult/ed302435131cfe8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642648158910,
+          "stop" : 1642648161595,
+          "duration" : 2685
+        }
+      }, {
+        "uid" : "d8226cdd64728bf0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/194//#testresult/d8226cdd64728bf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642551339266,
+          "stop" : 1642551343361,
+          "duration" : 4095
+        }
+      }, {
+        "uid" : "566c628d03a80ce5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/195//#testresult/566c628d03a80ce5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642561832058,
+          "stop" : 1642561836530,
+          "duration" : 4472
+        }
+      }, {
+        "uid" : "778801a5c07639a7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/192//#testresult/778801a5c07639a7",
+        "status" : "broken",
+        "statusDetails" : "ValueError: there is no unique or exclusion constraint matching the ON CONFLICT specification",
+        "time" : {
+          "start" : 1642464828525,
+          "stop" : 1642464828525,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "da3d475ad8c7ad9f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/190//#testresult/da3d475ad8c7ad9f",
+        "status" : "broken",
+        "statusDetails" : "web3.exceptions.BlockNotFound: Block with id: 'latest' not found.",
+        "time" : {
+          "start" : 1642378419748,
+          "stop" : 1642378419748,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "29191294aee8d527",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/188//#testresult/29191294aee8d527",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642292129559,
+          "stop" : 1642292132232,
+          "duration" : 2673
+        }
+      }, {
+        "uid" : "964d11ba7b236356",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/187//#testresult/964d11ba7b236356",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642216257216,
+          "stop" : 1642216259994,
+          "duration" : 2778
+        }
+      }, {
+        "uid" : "e76d5377111bb78a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/184//#testresult/e76d5377111bb78a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642119344296,
+          "stop" : 1642119347225,
+          "duration" : 2929
+        }
+      }, {
+        "uid" : "75af7cb3dcfac1ff",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/182//#testresult/75af7cb3dcfac1ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642032992449,
+          "stop" : 1642032995974,
+          "duration" : 3525
+        }
+      }, {
+        "uid" : "f067e1c0820aed8b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/181//#testresult/f067e1c0820aed8b",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.ReadTimeout: HTTPConnectionPool(host='proxy.night.stand.neontest.xyz', port=80): Read timed out. (read timeout=30)",
+        "time" : {
+          "start" : 1641957689513,
+          "stop" : 1641957689513,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "11b0718a6bdf6962",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/179//#testresult/11b0718a6bdf6962",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641870664706,
+          "stop" : 1641870668380,
+          "duration" : 3674
+        }
+      }, {
+        "uid" : "654f910052061f9a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/177//#testresult/654f910052061f9a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641784280660,
+          "stop" : 1641784283775,
+          "duration" : 3115
+        }
+      }, {
+        "uid" : "90cf0d18ed63dd9f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/174//#testresult/90cf0d18ed63dd9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641687399352,
+          "stop" : 1641687402196,
+          "duration" : 2844
+        }
+      }, {
+        "uid" : "9101fe6c76670481",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/172//#testresult/9101fe6c76670481",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641601023657,
+          "stop" : 1641601028186,
+          "duration" : 4529
+        }
+      }, {
+        "uid" : "ccc3c38714b1266a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/170//#testresult/ccc3c38714b1266a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641514524101,
+          "stop" : 1641514527237,
+          "duration" : 3136
+        }
+      }, {
+        "uid" : "c56d58d69aa407f6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/168//#testresult/c56d58d69aa407f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641428195135,
+          "stop" : 1641428199351,
+          "duration" : 4216
+        }
+      }, {
+        "uid" : "2b5600933d15e5d7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/167//#testresult/2b5600933d15e5d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641352339153,
+          "stop" : 1641352343268,
+          "duration" : 4115
+        }
+      }, {
+        "uid" : "4a6f8fa9c8f20695",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/165//#testresult/4a6f8fa9c8f20695",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641265838561,
+          "stop" : 1641265842296,
+          "duration" : 3735
+        }
+      }, {
+        "uid" : "d0e652946cb75725",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/163//#testresult/d0e652946cb75725",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641179409048,
+          "stop" : 1641179412825,
+          "duration" : 3777
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "af585b54e528c82d.json",
+  "parameterValues" : [ ]
+}

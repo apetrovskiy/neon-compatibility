@@ -1,0 +1,401 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "60041a9b3833e083",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166394591,
+          "stop" : 1643166395151,
+          "duration" : 560
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "35987ddb192cd0da",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166397489,
+          "stop" : 1643166399224,
+          "duration" : 1735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "e1b827c3b520b701",
+        "parentUid" : "d16f1466503f4b60ca19ee1f0ecd4151",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166399225,
+          "stop" : 1643166400621,
+          "duration" : 1396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d16f1466503f4b60ca19ee1f0ecd4151"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "f4187a632698caf6",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166400631,
+          "stop" : 1643166401286,
+          "duration" : 655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "52e87522e851e71b",
+        "parentUid" : "3968152f951f2b9fd20b360280d38897",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166401293,
+          "stop" : 1643166401615,
+          "duration" : 322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "ff0fcfbf66253dfa",
+        "parentUid" : "3968152f951f2b9fd20b360280d38897",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166401617,
+          "stop" : 1643166401938,
+          "duration" : 321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3968152f951f2b9fd20b360280d38897"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "5e3c7575dc2c103f",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166403052,
+          "stop" : 1643166403058,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "method eth_accounts is not supported",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "ae9ea0979e2b1607",
+        "parentUid" : "636761ada1984e92a869ad9291b93257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166408379,
+          "stop" : 1643166409111,
+          "duration" : 732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636761ada1984e92a869ad9291b93257"
+    }, {
+      "name" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+      "children" : [ {
+        "name" : "test_returns_true",
+        "uid" : "301d0df222832ae4",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166492914,
+          "stop" : 1643166494917,
+          "duration" : 2003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "283d07c221874ef3",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166508161,
+          "stop" : 1643166510376,
+          "duration" : 2215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "3730a349328408ba",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166552684,
+          "stop" : 1643166556540,
+          "duration" : 3856
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2194a5af9dcca5dde8f0fbd1ed56700"
+    }, {
+      "name" : "ValueError: Gas estimation failed: 'execution reverted: Insufficient balance'. This transaction will likely revert. If you wish to broadcast, you must set the gas limit manually.",
+      "children" : [ {
+        "name" : "test_insufficient_balance",
+        "uid" : "4f282fed911d6968",
+        "parentUid" : "5f4213889cfcdff121652c3e5acdd001",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166519336,
+          "stop" : 1643166520070,
+          "duration" : 734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f4213889cfcdff121652c3e5acdd001"
+    }, {
+      "name" : "ValueError: Verifying nonce before send transaction: Error processing Instruction 1: invalid program argument",
+      "children" : [ {
+        "name" : "test_insufficient_balance",
+        "uid" : "f96eb6a95918ed64",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166585443,
+          "stop" : 1643166616900,
+          "duration" : 31457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_no_approval",
+        "uid" : "d5a4ae9c0a235a19",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166617445,
+          "stop" : 1643166648968,
+          "duration" : 31523
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoked_approval",
+        "uid" : "8de9fb4f278e2645",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166649041,
+          "stop" : 1643166680740,
+          "duration" : 31699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self",
+        "uid" : "af585b54e528c82d",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166680809,
+          "stop" : 1643166712684,
+          "duration" : 31875
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self_no_approval",
+        "uid" : "b55409c373cfa0fb",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166712823,
+          "stop" : 1643166744876,
+          "duration" : 32053
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_event_fires",
+        "uid" : "9f1e9cbfeec2372d",
+        "parentUid" : "d73af458cfde34491c3f08276259c0e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166744945,
+          "stop" : 1643166777140,
+          "duration" : 32195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d73af458cfde34491c3f08276259c0e1"
+    }, {
+      "name" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+      "children" : [ {
+        "name" : "test_insufficient_approval",
+        "uid" : "d6b015cd75566531",
+        "parentUid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643166616978,
+          "stop" : 1643166617326,
+          "duration" : 348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ERC20Test.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compiling ./contracts/SelfDestructTest.sol\n  > Compiling @openzeppelin/contracts/access/Ownable.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/ERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/IERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\n  > Compiling @openzeppelin/contracts/utils/Context.sol\n  > Compilation warnings encountered:\n  \n      Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n  --> project:/contracts/SelfDestructTest.sol\n  \n  ,Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.\n   --> project:/contracts/SelfDestructTest.sol:5:1:\n    |\n  5 | contract SelfDestructTest is Ownable{\n    | ^ (Relevant source part starts here and spans across multiple lines).\n  Note: The payable fallback function is defined here.\n    --> project:/contracts/SelfDestructTest.sol:20:5:\n     |\n  20 |     fallback() external payable {}\n     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  \n  ,Warning: Function state mutability can be restricted to pure\n    --> project:/contracts/SelfDestructTest.sol:12:5:\n     |\n  12 |     function staticData() public view returns(string memory) {\n     |     ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/issues/364/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  Error: There was a timeout while attempting to connect to the network at undefined.\n         Check to see that your provider is valid.\n         If you have a slow internet connection, try configuring a longer timeout in your Truffle config. Use the networks[networkName].networkCheckTimeout property to do this.\n      at Timeout._onTimeout (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/provider/index.js:57:1)\n      at listOnTimeout (node:internal/timers:557:17)\n      at processTimers (node:internal/timers:500:7)\n  \nassert 1 == 0\n +  where 1 = CompletedProcess(args='cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3', returnc...dex.js:57:1)\\n    at listOnTimeout (node:internal/timers:557:17)\\n    at processTimers (node:internal/timers:500:7)\\n').returncode",
+      "children" : [ {
+        "name" : "test_issue_364_self_destruct_contract",
+        "uid" : "5eb75430dd10b3ee",
+        "parentUid" : "2f2ecfd6590aaa22ef6e5a29d91ec70c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643166887191,
+          "stop" : 1643166902804,
+          "duration" : 15613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2f2ecfd6590aaa22ef6e5a29d91ec70c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
