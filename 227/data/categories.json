@@ -1,0 +1,464 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "aa59cb181d69f081",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943993895,
+          "stop" : 1643943994308,
+          "duration" : 413
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "14f4123075a2db07",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943995511,
+          "stop" : 1643943996478,
+          "duration" : 967
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "ef98c61a189bddc8",
+        "parentUid" : "d16f1466503f4b60ca19ee1f0ecd4151",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943996478,
+          "stop" : 1643943997170,
+          "duration" : 692
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d16f1466503f4b60ca19ee1f0ecd4151"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "9f6cb15f93083acd",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943997179,
+          "stop" : 1643943997599,
+          "duration" : 420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32000, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32000}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "e6bc5c518d007fba",
+        "parentUid" : "3968152f951f2b9fd20b360280d38897",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943997605,
+          "stop" : 1643943997807,
+          "duration" : 202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "e3f58187699090c2",
+        "parentUid" : "3968152f951f2b9fd20b360280d38897",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943997809,
+          "stop" : 1643943997993,
+          "duration" : 184
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3968152f951f2b9fd20b360280d38897"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "516745693f3d0bec",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643943998413,
+          "stop" : 1643943998419,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "method eth_accounts is not supported",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "3dabbac0e0a3d2e9",
+        "parentUid" : "636761ada1984e92a869ad9291b93257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944003367,
+          "stop" : 1643944003820,
+          "duration" : 453
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636761ada1984e92a869ad9291b93257"
+    }, {
+      "name" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+      "children" : [ {
+        "name" : "test_returns_true",
+        "uid" : "841b60530937535a",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944169405,
+          "stop" : 1643944171663,
+          "duration" : 2258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "67cb6762b278f738",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944183824,
+          "stop" : 1643944185829,
+          "duration" : 2005
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "c1624505409a8f7e",
+        "parentUid" : "f2194a5af9dcca5dde8f0fbd1ed56700",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944227755,
+          "stop" : 1643944236145,
+          "duration" : 8390
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2194a5af9dcca5dde8f0fbd1ed56700"
+    }, {
+      "name" : "ValueError: Gas estimation failed: 'execution reverted: Insufficient balance'. This transaction will likely revert. If you wish to broadcast, you must set the gas limit manually.",
+      "children" : [ {
+        "name" : "test_insufficient_balance",
+        "uid" : "c3e382ccfb329200",
+        "parentUid" : "5f4213889cfcdff121652c3e5acdd001",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944193334,
+          "stop" : 1643944193908,
+          "duration" : 574
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_insufficient_balance",
+        "uid" : "57b0b4febbd4c9dc",
+        "parentUid" : "5f4213889cfcdff121652c3e5acdd001",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944247960,
+          "stop" : 1643944250380,
+          "duration" : 2420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f4213889cfcdff121652c3e5acdd001"
+    }, {
+      "name" : "OverflowError: approve '-1' - -1 is outside allowable range for uint256",
+      "children" : [ {
+        "name" : "test_insufficient_approval",
+        "uid" : "fa1906df3c54bf46",
+        "parentUid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643944250462,
+          "stop" : 1643944250661,
+          "duration" : 199
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3076f8d9ffd7bab937e7bd2d28ebd8a0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Transaction did not revert",
+      "children" : [ {
+        "name" : "test_no_approval",
+        "uid" : "e26f962951b3ee45",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944250770,
+          "stop" : 1643944252992,
+          "duration" : 2222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoked_approval",
+        "uid" : "a5ab7b54e03ef125",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944253007,
+          "stop" : 1643944259236,
+          "duration" : 6229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self_no_approval",
+        "uid" : "fd60eb9b0c121c84",
+        "parentUid" : "90f888e015672ae267836a9e2c59904f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944264085,
+          "stop" : 1643944266174,
+          "duration" : 2089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90f888e015672ae267836a9e2c59904f"
+    }, {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...ttempt #1.\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.13.2\n    /home/runner/work/neon-compatibility/neon-compatibility\n    - Fetching solc version list from solc-bin. Attempt #1\n    ✔ Downloading compiler. Attempt #1.",
+      "children" : [ {
+        "name" : "test_contracts[input_data0]",
+        "uid" : "e591fcfbfadccc7d",
+        "parentUid" : "25e486078bd77bd493aeea358afb592d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944270289,
+          "stop" : 1643944290806,
+          "duration" : 20517
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/Ownable.test.js', test_files=['access/Ownable.test.js'], contracts=['access/Ownable.sol', 'mocks/OwnableMock.sol', 'mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      } ],
+      "uid" : "25e486078bd77bd493aeea358afb592d"
+    }, {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...patibility\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.13.2\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_contracts[input_data1]",
+        "uid" : "a164bd6920494be0",
+        "parentUid" : "9974f50dac59d4d7606097a39db47316",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944290828,
+          "stop" : 1643944310261,
+          "duration" : 19433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControl.test.js', test_files=['access/AccessControl.test.js', 'access/AccessControl.behavior.js'], contracts=['mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data2]",
+        "uid" : "1103690087212084",
+        "parentUid" : "9974f50dac59d4d7606097a39db47316",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944310283,
+          "stop" : 1643944329749,
+          "duration" : 19466
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControlEnumerable.test.js', test_files=['access/AccessControlEnumerable.test.js', 'access/AccessControl.behavior.js'], contracts=['utils/Strings.sol', 'utils/introspection/ERC165.sol', 'mocks/AccessControlEnumerableMock.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data3]",
+        "uid" : "44e0df3f4fbf5fe7",
+        "parentUid" : "9974f50dac59d4d7606097a39db47316",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944329773,
+          "stop" : 1643944349498,
+          "duration" : 19725
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='finance/PaymentSplitter.test.js', test_files=['finance/PaymentSplitter.test.js'], contracts=['finance/PaymentSplitter.sol', 'utils/Address.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='3_deploy_contracts.js')" ]
+      } ],
+      "uid" : "9974f50dac59d4d7606097a39db47316"
+    }, {
+      "name" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" could not deploy due to insufficient funds\n       * Account:  0x5CE8EA25febc2Db8f18E2b7ab67495b82293aC8A\n       * Balance:  0 wei\n       * Message:  Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction\n    {\n      \"accounts\": null,\n      \"err\": {\n        \"InstructionError\": [\n          0,\n          \"InsufficientFunds\"\n        ]\n      },\n      \"logs\": [\n        \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\",\n        \"Program log: program/src/storage_account.rs:76\",\n        \"Program log: program/src/token.rs:330 : there is no enough funds to start executing the transaction; gas_limit = 3000000; gas_price = 1000000000; gas_used_and_paid = 0; user_balance = 0;\",\n        \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 42925 of 500000 compute units\",\n        \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: insufficient funds for instruction\"\n      ]\n    }\n       * Try:\n          + Using an adequately funded account\n          + If you are using a local Geth node, verify that your node is synced.\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.13.2\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_truffle_migration",
+        "uid" : "68066b5a02ae4f0e",
+        "parentUid" : "7073ac6ff433a88b8af1e1c6cb68a3e7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944349521,
+          "stop" : 1643944367257,
+          "duration" : 17736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7073ac6ff433a88b8af1e1c6cb68a3e7"
+    }, {
+      "name" : "AssertionError: \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ERC20Test.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compiling ./contracts/SelfDestructTest.sol\n  > Compiling @openzeppelin/contracts/access/Ownable.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/ERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/IERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\n  > Compiling @openzeppelin/contracts/utils/Context.sol\n  > Compilation warnings encountered:\n  \n      Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n  --> project:/contracts/SelfDestructTest.sol\n  \n  ,Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.\n   --> project:/contracts/SelfDestructTest.sol:5:1:\n    |\n  5 | contract SelfDestructTest is Ownable{\n    | ^ (Relevant source part starts here and spans across multiple lines).\n  Note: The payable fallback function is defined here.\n    --> project:/contracts/SelfDestructTest.sol:20:5:\n     |\n  20 |     fallback() external payable {}\n     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  \n  ,Warning: Function state mutability can be restricted to pure\n    --> project:/contracts/SelfDestructTest.sol:12:5:\n     |\n  12 |     function staticData() public view returns(string memory) {\n     |     ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/issues/364/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      111\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  3_selfDestructTest.js\n  =====================\n  \n     Deploying 'SelfDestructTest'\n     ----------------------------\n  \n  Error:  *** Deployment Failed ***\n  \n  \"SelfDestructTest\" could not deploy due to insufficient funds\n     * Account:  0xF862E9517695fa032959E3211b715f106b55c21F\n     * Balance:  0 wei\n     * Message:  Transaction simulation failed: Error processing Instruction 0: insufficient funds for instruction\n  {\n    \"accounts\": null,\n    \"err\": {\n      \"InstructionError\": [\n        0,\n        \"InsufficientFunds\"\n      ]\n    },\n    \"logs\": [\n      \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io invoke [1]\",\n      \"Program log: program/src/storage_account.rs:76\",\n      \"Program log: program/src/token.rs:330 : there is no enough funds to start executing the transaction; gas_limit = 3000000; gas_price = 1000000000; gas_used_and_paid = 0; user_balance = 0;\",\n      \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io consumed 43661 of 500000 compute units\",\n      \"Program 53DfF883gyixYNXnM7s5xhdeyV8mVk9T4i2hGV9vG9io failed: insufficient funds for instruction\"\n    ]\n  }\n     * Try:\n        + Using an adequately funded account\n        + If you are using a local Geth node, verify that your node is synced.\n  \n      at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n      at module.exports (/home/runner/work/neon-compatibility/neon-compatibility/issues/364/migrations/3_selfDestructTest.js:6:5)\n      at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:75:1)\n      at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n      at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n      at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n      at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n      at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:253:1)\n      at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n      at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n  Truffle v5.4.14 (core: 5.4.14)\n  Node v16.13.2\n  \nassert 1 == 0\n +  where 1 = CompletedProcess(args='cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3', returnc...uffle/build/webpack:/packages/core/lib/command.js:183:1)\\nTruffle v5.4.14 (core: 5.4.14)\\nNode v16.13.2\\n', stderr=b'').returncode",
+      "children" : [ {
+        "name" : "test_issue_364_self_destruct_contract",
+        "uid" : "12b5c4c8177ebb80",
+        "parentUid" : "332c3d39f8506b3062ae8239455c5f2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643944410976,
+          "stop" : 1643944428846,
+          "duration" : 17870
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "332c3d39f8506b3062ae8239455c5f2c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
