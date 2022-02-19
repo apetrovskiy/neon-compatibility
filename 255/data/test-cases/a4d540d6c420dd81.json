@@ -1,0 +1,369 @@
+{
+  "uid" : "a4d540d6c420dd81",
+  "name" : "test_returns_true",
+  "fullName" : "tests.brownie.token.tests.test_transfer#test_returns_true",
+  "historyId" : "f88955ea8db917ca8c4bcbf081df7eef",
+  "time" : {
+    "start" : 1645153701256,
+    "stop" : 1645153701256,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: The account balance is less than required: Account 65db69edaae6a158adda718fafa7c8f80b47f9ef; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\naccounts = <brownie.network.account.Accounts object at 0x7fee674e3370>\n\n    @pytest.fixture(scope=\"module\")\n    def token(brownie_project, accounts):\n>       return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n\ntests/brownie/token/tests/conftest.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'The account balance is less than required: Account 65db69e...0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000; '}))\nexc = {'code': -32000, 'message': 'The account balance is less than required: Account 65db69edaae6a158adda718fafa7c8f80b47f9...= 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000; '}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: The account balance is less than required: Account 65db69edaae6a158adda718fafa7c8f80b47f9ef; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1645153681064,
+      "stop" : 1645153681064,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1645153682587,
+      "stop" : 1645153696699,
+      "duration" : 14112
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1645153698131,
+      "stop" : 1645153698398,
+      "duration" : 267
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1645153698131,
+      "stop" : 1645153698131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1645153700154,
+      "stop" : 1645153701042,
+      "duration" : 888
+    },
+    "status" : "broken",
+    "statusMessage" : "ValueError: The account balance is less than required: Account 65db69edaae6a158adda718fafa7c8f80b47f9ef; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000; \n",
+    "statusTrace" : "  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"/home/runner/work/neon-compatibility/neon-compatibility/tests/brownie/token/tests/conftest.py\", line 49, in token\n    return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py\", line 600, in __call__\n    return tx[\"from\"].deploy(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 508, in deploy\n    receipt, exc = self._make_transaction(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 743, in _make_transaction\n    exc = VirtualMachineError(e)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py\", line 85, in __init__\n    raise ValueError(exc[\"message\"]) from None\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1645153845962,
+      "stop" : 1645153845962,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_transfer"
+  }, {
+    "name" : "host",
+    "value" : "fv-az269-832"
+  }, {
+    "name" : "thread",
+    "value" : "3602-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_transfer"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 57,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 57
+      },
+      "items" : [ {
+        "uid" : "98326702bf05305",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/252//#testresult/98326702bf05305",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account ef6c174cdda972fa6b88b67895b6019fbffb4d92; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+        "time" : {
+          "start" : 1645056822209,
+          "stop" : 1645056822209,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "815115cac2fc50b5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/251//#testresult/815115cac2fc50b5",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account bbf217f945b11deb71e2a6e9b8e2596cffc381dd; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+        "time" : {
+          "start" : 1644980969658,
+          "stop" : 1644980969658,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "5b02e6d2fe229b1b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/249//#testresult/5b02e6d2fe229b1b",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644894652438,
+          "stop" : 1644894654784,
+          "duration" : 2346
+        }
+      }, {
+        "uid" : "4b489aa59c36b5a2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/246//#testresult/4b489aa59c36b5a2",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644797759068,
+          "stop" : 1644797760637,
+          "duration" : 1569
+        }
+      }, {
+        "uid" : "47d561b65776fe71",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/245//#testresult/47d561b65776fe71",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644721778290,
+          "stop" : 1644721780917,
+          "duration" : 2627
+        }
+      }, {
+        "uid" : "b9873aab5f94ad4d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/242//#testresult/b9873aab5f94ad4d",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644624926789,
+          "stop" : 1644624929199,
+          "duration" : 2410
+        }
+      }, {
+        "uid" : "bdc6ec130884ebb4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/241//#testresult/bdc6ec130884ebb4",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644548921289,
+          "stop" : 1644548922970,
+          "duration" : 1681
+        }
+      }, {
+        "uid" : "1f4d757846298cfd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/238//#testresult/1f4d757846298cfd",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644452123390,
+          "stop" : 1644452125862,
+          "duration" : 2472
+        }
+      }, {
+        "uid" : "8e145f72b102e9ef",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/237//#testresult/8e145f72b102e9ef",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644376136638,
+          "stop" : 1644376138287,
+          "duration" : 1649
+        }
+      }, {
+        "uid" : "7ba409d7f5b97f43",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/234//#testresult/7ba409d7f5b97f43",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644279335675,
+          "stop" : 1644279338189,
+          "duration" : 2514
+        }
+      }, {
+        "uid" : "24f0965394c19b81",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/233//#testresult/24f0965394c19b81",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644203399958,
+          "stop" : 1644203401546,
+          "duration" : 1588
+        }
+      }, {
+        "uid" : "1df476d3489b9b84",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/231//#testresult/1df476d3489b9b84",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644116950503,
+          "stop" : 1644116952602,
+          "duration" : 2099
+        }
+      }, {
+        "uid" : "9203065a1cb85659",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/228//#testresult/9203065a1cb85659",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1644020039093,
+          "stop" : 1644020040739,
+          "duration" : 1646
+        }
+      }, {
+        "uid" : "67cb6762b278f738",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/227//#testresult/67cb6762b278f738",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643944183824,
+          "stop" : 1643944185829,
+          "duration" : 2005
+        }
+      }, {
+        "uid" : "4a04da8cc5741f6b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/225//#testresult/4a04da8cc5741f6b",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643857726191,
+          "stop" : 1643857728217,
+          "duration" : 2026
+        }
+      }, {
+        "uid" : "64d0d848543fe923",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/223//#testresult/64d0d848543fe923",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643771324478,
+          "stop" : 1643771325755,
+          "duration" : 1277
+        }
+      }, {
+        "uid" : "4de6adda0932f28b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/220//#testresult/4de6adda0932f28b",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643674484654,
+          "stop" : 1643674486800,
+          "duration" : 2146
+        }
+      }, {
+        "uid" : "966193f00b7475b6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/218//#testresult/966193f00b7475b6",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643588103139,
+          "stop" : 1643588105224,
+          "duration" : 2085
+        }
+      }, {
+        "uid" : "44f276aa4e308ed8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/215//#testresult/44f276aa4e308ed8",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643425776195,
+          "stop" : 1643425777776,
+          "duration" : 1581
+        }
+      }, {
+        "uid" : "faa3ce83e5c505ad",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/213//#testresult/faa3ce83e5c505ad",
+        "status" : "broken",
+        "statusDetails" : "brownie.exceptions.RPCRequestError: method debug_traceTransaction is not supported",
+        "time" : {
+          "start" : 1643339438988,
+          "stop" : 1643339440989,
+          "duration" : 2001
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a4d540d6c420dd81.json",
+  "parameterValues" : [ ]
+}
