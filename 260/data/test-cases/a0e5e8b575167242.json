@@ -1,0 +1,354 @@
+{
+  "uid" : "a0e5e8b575167242",
+  "name" : "test_only_affects_target",
+  "fullName" : "tests.brownie.token.tests.test_approve#test_only_affects_target",
+  "historyId" : "35e636b401a70496879a6cd10541a94f",
+  "time" : {
+    "start" : 1645402518454,
+    "stop" : 1645402518454,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: The account balance is less than required: Account 1f3cba58f9d17ced385d60196e5e7b87dca5abf7; balance = 0; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000;",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\naccounts = <brownie.network.account.Accounts object at 0x7f2a07578370>\n\n    @pytest.fixture(scope=\"module\")\n    def token(brownie_project, accounts):\n>       return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n\ntests/brownie/token/tests/conftest.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'The account balance is less than required: Account 1f3cba5...gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000; '}))\nexc = {'code': -32000, 'message': 'The account balance is less than required: Account 1f3cba58f9d17ced385d60196e5e7b87dca5ab...; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000; '}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: The account balance is less than required: Account 1f3cba58f9d17ced385d60196e5e7b87dca5abf7; balance = 0; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000;\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1645402499175,
+      "stop" : 1645402499175,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1645402500087,
+      "stop" : 1645402515906,
+      "duration" : 15819
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1645402516910,
+      "stop" : 1645402516910,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1645402516910,
+      "stop" : 1645402517198,
+      "duration" : 288
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1645402517198,
+      "stop" : 1645402517812,
+      "duration" : 614
+    },
+    "status" : "broken",
+    "statusMessage" : "ValueError: The account balance is less than required: Account 1f3cba58f9d17ced385d60196e5e7b87dca5abf7; balance = 0; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000; \n",
+    "statusTrace" : "  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"/home/runner/work/neon-compatibility/neon-compatibility/tests/brownie/token/tests/conftest.py\", line 49, in token\n    return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py\", line 600, in __call__\n    return tx[\"from\"].deploy(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 508, in deploy\n    receipt, exc = self._make_transaction(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 743, in _make_transaction\n    exc = VirtualMachineError(e)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py\", line 85, in __init__\n    raise ValueError(exc[\"message\"]) from None\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1645402650780,
+      "stop" : 1645402650780,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_approve"
+  }, {
+    "name" : "host",
+    "value" : "fv-az193-499"
+  }, {
+    "name" : "thread",
+    "value" : "3804-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_approve"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 9,
+        "skipped" : 0,
+        "passed" : 51,
+        "unknown" : 0,
+        "total" : 60
+      },
+      "items" : [ {
+        "uid" : "33253b06709d64a0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/258//#testresult/33253b06709d64a0",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account afd62c144b8459d13c8fb26b78c9fa680b1bd19e; balance = 0; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000;",
+        "time" : {
+          "start" : 1645316265412,
+          "stop" : 1645316265412,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "8b6b6965f54e95b9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/257//#testresult/8b6b6965f54e95b9",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 996fa8605779170235c15a0db8cd1c7994b500a9; balance = 0; gasPrice = 1000000000; gasLimit = 6721975; fee = 6721975000000000; value = 0; required_balance = 6721975000000000;",
+        "time" : {
+          "start" : 1645240116592,
+          "stop" : 1645240116592,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "7d88452d0ccfd576",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/255//#testresult/7d88452d0ccfd576",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 65db69edaae6a158adda718fafa7c8f80b47f9ef; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+        "time" : {
+          "start" : 1645153699940,
+          "stop" : 1645153699940,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bc3004c4b1270c5a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/252//#testresult/bc3004c4b1270c5a",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account ef6c174cdda972fa6b88b67895b6019fbffb4d92; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+        "time" : {
+          "start" : 1645056821120,
+          "stop" : 1645056821120,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "80739b31eeaf1f73",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/251//#testresult/80739b31eeaf1f73",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account bbf217f945b11deb71e2a6e9b8e2596cffc381dd; balance = 0; gasPrice = 1000000000; gasLimit = 220853; fee = 220853000000000; value = 0; required_balance = 220853000000000;",
+        "time" : {
+          "start" : 1644980968251,
+          "stop" : 1644980968251,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "723e1a9771b6451a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/249//#testresult/723e1a9771b6451a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644894633965,
+          "stop" : 1644894636519,
+          "duration" : 2554
+        }
+      }, {
+        "uid" : "98cb550f6ae62025",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/246//#testresult/98cb550f6ae62025",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644797745535,
+          "stop" : 1644797747186,
+          "duration" : 1651
+        }
+      }, {
+        "uid" : "7fefcf75d8a355c0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/245//#testresult/7fefcf75d8a355c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644721763251,
+          "stop" : 1644721764965,
+          "duration" : 1714
+        }
+      }, {
+        "uid" : "c4b5305c5973866a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/242//#testresult/c4b5305c5973866a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644624909488,
+          "stop" : 1644624911580,
+          "duration" : 2092
+        }
+      }, {
+        "uid" : "f0f84fad5419e8d6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/241//#testresult/f0f84fad5419e8d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644548907804,
+          "stop" : 1644548909382,
+          "duration" : 1578
+        }
+      }, {
+        "uid" : "42ed1cfc837acd1b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/238//#testresult/42ed1cfc837acd1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644452105210,
+          "stop" : 1644452107672,
+          "duration" : 2462
+        }
+      }, {
+        "uid" : "2136c3048327c3b3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/237//#testresult/2136c3048327c3b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644376122492,
+          "stop" : 1644376124180,
+          "duration" : 1688
+        }
+      }, {
+        "uid" : "f4c7285ba416dac2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/234//#testresult/f4c7285ba416dac2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644279317285,
+          "stop" : 1644279319870,
+          "duration" : 2585
+        }
+      }, {
+        "uid" : "771b31a421336e45",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/233//#testresult/771b31a421336e45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644203388869,
+          "stop" : 1644203390056,
+          "duration" : 1187
+        }
+      }, {
+        "uid" : "56509f009587e0f7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/231//#testresult/56509f009587e0f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644116932956,
+          "stop" : 1644116934951,
+          "duration" : 1995
+        }
+      }, {
+        "uid" : "b9eed883a04042c6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/228//#testresult/b9eed883a04042c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644020025522,
+          "stop" : 1644020027130,
+          "duration" : 1608
+        }
+      }, {
+        "uid" : "332a977cf42b2e76",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/227//#testresult/332a977cf42b2e76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643944167371,
+          "stop" : 1643944169403,
+          "duration" : 2032
+        }
+      }, {
+        "uid" : "80ff1c3003eb4157",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/225//#testresult/80ff1c3003eb4157",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643857710508,
+          "stop" : 1643857712687,
+          "duration" : 2179
+        }
+      }, {
+        "uid" : "b06a798bcaff7eb8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/223//#testresult/b06a798bcaff7eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643771313152,
+          "stop" : 1643771314425,
+          "duration" : 1273
+        }
+      }, {
+        "uid" : "9b3cdf0b71e6fab",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/220//#testresult/9b3cdf0b71e6fab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643674468666,
+          "stop" : 1643674470667,
+          "duration" : 2001
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a0e5e8b575167242.json",
+  "parameterValues" : [ ]
+}
