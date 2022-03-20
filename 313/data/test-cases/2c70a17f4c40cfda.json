@@ -1,0 +1,337 @@
+{
+  "uid" : "2c70a17f4c40cfda",
+  "name" : "test_brownie_deploy",
+  "fullName" : "tests.brownie.test_brownie#test_brownie_deploy",
+  "historyId" : "6e83a925951bfd8b9c39b6ea82974dc9",
+  "time" : {
+    "start" : 1647659340036,
+    "stop" : 1647659341179,
+    "duration" : 1143
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f593e; balance = 0; gasPrice = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000;",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\n\n    def test_brownie_deploy(brownie_project):\n>       deployed_contract = brownie_project.Token.deploy(\n            \"Test deploy\", \"TST\", 10, 10000000, {\"from\": accounts[0]}\n        )\n\ntests/brownie/test_brownie.py:13: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'The account balance is less than required: Account 8e13a23... = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000; '}))\nexc = {'code': -32000, 'message': 'The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f59...ce = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000; '}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f593e; balance = 0; gasPrice = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000;\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1647659320834,
+      "stop" : 1647659320834,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1647659322161,
+      "stop" : 1647659340035,
+      "duration" : 17874
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f593e; balance = 0; gasPrice = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000;",
+    "statusTrace" : "brownie_project = <Project 'TokenProject'>\n\n    def test_brownie_deploy(brownie_project):\n>       deployed_contract = brownie_project.Token.deploy(\n            \"Test deploy\", \"TST\", 10, 10000000, {\"from\": accounts[0]}\n        )\n\ntests/brownie/test_brownie.py:13: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'The account balance is less than required: Account 8e13a23... = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000; '}))\nexc = {'code': -32000, 'message': 'The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f59...ce = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000; '}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: The account balance is less than required: Account 8e13a236bcf6312d4dbda57f3661096d071f593e; balance = 0; gasPrice = 434568000000; gasLimit = 6721975; fee = 2921155231800000000; value = 0; required_balance = 2921155231800000000;\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eda3804e987b2b4e",
+      "name" : "log",
+      "source" : "eda3804e987b2b4e.txt",
+      "type" : "text/plain",
+      "size" : 287
+    }, {
+      "uid" : "90533091d857370e",
+      "name" : "stdout",
+      "source" : "90533091d857370e.txt",
+      "type" : "text/plain",
+      "size" : 250
+    }, {
+      "uid" : "4ef7afe2923c2fb6",
+      "name" : "stderr",
+      "source" : "4ef7afe2923c2fb6.txt",
+      "type" : "text/plain",
+      "size" : 9949
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie"
+  }, {
+    "name" : "suite",
+    "value" : "test_brownie"
+  }, {
+    "name" : "host",
+    "value" : "fv-az173-832"
+  }, {
+    "name" : "thread",
+    "value" : "3600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.test_brownie"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 35,
+        "skipped" : 0,
+        "passed" : 51,
+        "unknown" : 0,
+        "total" : 86
+      },
+      "items" : [ {
+        "uid" : "39f218c0f4a79790",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/311//#testresult/39f218c0f4a79790",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 4ef0ee23b10f1db0735757ef6248c191d5a056e6; balance = 0; gasPrice = 413966400000; gasLimit = 6721975; fee = 2782671791640000000; value = 0; required_balance = 2782671791640000000;",
+        "time" : {
+          "start" : 1647573074257,
+          "stop" : 1647573075401,
+          "duration" : 1144
+        }
+      }, {
+        "uid" : "b80cff330b1e05b9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/309//#testresult/b80cff330b1e05b9",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 7329cd6f27d701583887d7364673e7920289028f; balance = 0; gasPrice = 424713216000; gasLimit = 6721975; fee = 2854911620121600000; value = 0; required_balance = 2854911620121600000;",
+        "time" : {
+          "start" : 1647486602294,
+          "stop" : 1647486603176,
+          "duration" : 882
+        }
+      }, {
+        "uid" : "e81020c15c6c1f3e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/307//#testresult/e81020c15c6c1f3e",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 2d6156e15c97c16fdcbc57b2d0f323c130c1664c; balance = 0; gasPrice = 405064800000; gasLimit = 6721975; fee = 2722835458980000000; value = 0; required_balance = 2722835458980000000;",
+        "time" : {
+          "start" : 1647400364210,
+          "stop" : 1647400365535,
+          "duration" : 1325
+        }
+      }, {
+        "uid" : "86240bfc5d59ce97",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/304//#testresult/86240bfc5d59ce97",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 2c63997a09f0ff10fc6b185a57167755f3f95dd5; balance = 0; gasPrice = 388152000000; gasLimit = 6721975; fee = 2609148040200000000; value = 0; required_balance = 2609148040200000000;",
+        "time" : {
+          "start" : 1647303469075,
+          "stop" : 1647303471178,
+          "duration" : 2103
+        }
+      }, {
+        "uid" : "3783096b84f304ad",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/303//#testresult/3783096b84f304ad",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account d9f81e9bd045896b5d2963aeff6bb0312fc950fe; balance = 0; gasPrice = 378711758400; gasLimit = 6721975; fee = 2545690972170840000; value = 0; required_balance = 2545690972170840000;",
+        "time" : {
+          "start" : 1647227318296,
+          "stop" : 1647227319383,
+          "duration" : 1087
+        }
+      }, {
+        "uid" : "6dcc6918ba037907",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/301//#testresult/6dcc6918ba037907",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 6ac198026f26b1f2f8f173e5bfafc883ecaf1ca9; balance = 0; gasPrice = 392899200000; gasLimit = 6721975; fee = 2641058599920000000; value = 0; required_balance = 2641058599920000000;",
+        "time" : {
+          "start" : 1647140896409,
+          "stop" : 1647140897503,
+          "duration" : 1094
+        }
+      }, {
+        "uid" : "1e502dd749f818ca",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/299//#testresult/1e502dd749f818ca",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 4052860bc40336e4e5c7c2147d1c3b953d20479b; balance = 0; gasPrice = 394358400000; gasLimit = 6721975; fee = 2650867305840000000; value = 0; required_balance = 2650867305840000000;",
+        "time" : {
+          "start" : 1647054547197,
+          "stop" : 1647054548597,
+          "duration" : 1400
+        }
+      }, {
+        "uid" : "ecd13580b89d312a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/296//#testresult/ecd13580b89d312a",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 57128745aede3290cc44d246954c8c2f27cdbfb5; balance = 0; gasPrice = 398023200000; gasLimit = 6721975; fee = 2675501999820000000; value = 0; required_balance = 2675501999820000000;",
+        "time" : {
+          "start" : 1646957866254,
+          "stop" : 1646957867475,
+          "duration" : 1221
+        }
+      }, {
+        "uid" : "a2c3c7c99336b7a5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/295//#testresult/a2c3c7c99336b7a5",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 155742db48c5d6dee7efedf85531a52167a300b1; balance = 0; gasPrice = 411360000000; gasLimit = 6721975; fee = 2765151636000000000; value = 0; required_balance = 2765151636000000000;",
+        "time" : {
+          "start" : 1646882068072,
+          "stop" : 1646882075532,
+          "duration" : 7460
+        }
+      }, {
+        "uid" : "cc46ee75c284bcdc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/293//#testresult/cc46ee75c284bcdc",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 40bc100685b86f8fb9b46b6b80c33c159e44c281; balance = 0; gasPrice = 405888000000; gasLimit = 6721975; fee = 2728368988800000000; value = 0; required_balance = 2728368988800000000;",
+        "time" : {
+          "start" : 1646795435170,
+          "stop" : 1646795436553,
+          "duration" : 1383
+        }
+      }, {
+        "uid" : "657e97ef598752c8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/290//#testresult/657e97ef598752c8",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 0b60b1e7f52e68be4909e7a461226327b7beac75; balance = 0; gasPrice = 398041600000; gasLimit = 6721975; fee = 2675625684160000000; value = 0; required_balance = 2675625684160000000;",
+        "time" : {
+          "start" : 1646698583725,
+          "stop" : 1646698584737,
+          "duration" : 1012
+        }
+      }, {
+        "uid" : "8d7bda31bfc470b3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/288//#testresult/8d7bda31bfc470b3",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account a0cdd9fde1f9cfcd06692b3f9242b3742e5b58be; balance = 0; gasPrice = 554664000000; gasLimit = 6721975; fee = 3728437541400000000; value = 0; required_balance = 3728437541400000000;",
+        "time" : {
+          "start" : 1646612161988,
+          "stop" : 1646612163177,
+          "duration" : 1189
+        }
+      }, {
+        "uid" : "fc26255787fda38b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/287//#testresult/fc26255787fda38b",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: http://proxy.night.stand.neontest.xyz/solana",
+        "time" : {
+          "start" : 1646536172632,
+          "stop" : 1646536173106,
+          "duration" : 474
+        }
+      }, {
+        "uid" : "3e266f7ace5045ee",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/285//#testresult/3e266f7ace5045ee",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 206b82134c5feee484222b73ff30a17e89b74802; balance = 0; gasPrice = 574464000000; gasLimit = 6721975; fee = 3861532646400000000; value = 0; required_balance = 3861532646400000000;",
+        "time" : {
+          "start" : 1646449705997,
+          "stop" : 1646449707176,
+          "duration" : 1179
+        }
+      }, {
+        "uid" : "4117823405f975ec",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/282//#testresult/4117823405f975ec",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account b2aaaa19d1ad1d382d322a1348ca068a8259820d; balance = 0; gasPrice = 625317000000; gasLimit = 6721975; fee = 4203365241075000000; value = 0; required_balance = 4203365241075000000;",
+        "time" : {
+          "start" : 1646353078710,
+          "stop" : 1646353079961,
+          "duration" : 1251
+        }
+      }, {
+        "uid" : "d16ac1870f4df0ff",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/281//#testresult/d16ac1870f4df0ff",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account ca498b52145920300b23c1654f029536d41b5f6b; balance = 0; gasPrice = 650806200000; gasLimit = 6721975; fee = 4374703006245000000; value = 0; required_balance = 4374703006245000000;",
+        "time" : {
+          "start" : 1646277024922,
+          "stop" : 1646277026358,
+          "duration" : 1436
+        }
+      }, {
+        "uid" : "9b3094f06f4d7839",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/278//#testresult/9b3094f06f4d7839",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account e59e5eb89cfa731e90c225b9dd5e9c98bf2e6d07; balance = 0; gasPrice = 645169800000; gasLimit = 6721975; fee = 4336815266355000000; value = 0; required_balance = 4336815266355000000;",
+        "time" : {
+          "start" : 1646180866549,
+          "stop" : 1646180867560,
+          "duration" : 1011
+        }
+      }, {
+        "uid" : "7ae7c4fdf57171b7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/277//#testresult/7ae7c4fdf57171b7",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 52baa3221957e5537720d4895fd5c4047ade30fb; balance = 0; gasPrice = 637487400000; gasLimit = 6721975; fee = 4285174365615000000; value = 0; required_balance = 4285174365615000000;",
+        "time" : {
+          "start" : 1646104267401,
+          "stop" : 1646104268899,
+          "duration" : 1498
+        }
+      }, {
+        "uid" : "c231b20b50dabb16",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/274//#testresult/c231b20b50dabb16",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 8da2cf6ad90a6fa12bdb3d473a1fd95385eba763; balance = 0; gasPrice = 565059000000; gasLimit = 6721975; fee = 3798312471525000000; value = 0; required_balance = 3798312471525000000;",
+        "time" : {
+          "start" : 1646007512777,
+          "stop" : 1646007515094,
+          "duration" : 2317
+        }
+      }, {
+        "uid" : "7a786c9711b64106",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/272//#testresult/7a786c9711b64106",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The account balance is less than required: Account 35ffcc6924fe492cbf9e1ac2ef693711b86d5658; balance = 0; gasPrice = 596979900000; gasLimit = 6721975; fee = 4012883963302500000; value = 0; required_balance = 4012883963302500000;",
+        "time" : {
+          "start" : 1645921042047,
+          "stop" : 1645921043505,
+          "duration" : 1458
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2c70a17f4c40cfda.json",
+  "parameterValues" : [ ]
+}
