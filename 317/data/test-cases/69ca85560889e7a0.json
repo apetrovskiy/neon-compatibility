@@ -1,0 +1,375 @@
+{
+  "uid" : "69ca85560889e7a0",
+  "name" : "test_truffle_migration",
+  "fullName" : "tests.truffle.test_truffle#test_truffle_migration",
+  "historyId" : "e63c5a1b531c2472845045a6f65cedaf",
+  "time" : {
+    "start" : 1647832708885,
+    "stop" : 1647832728773,
+    "duration" : 19888
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<385884400000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+  "statusTrace" : "@allure.feature(FEATURE)\n    def test_truffle_migration():\n        # truffle migrate --network neonlabs\n        cmd_res = run_command_line(\n            f\"{Subfolder.CD_METACOIN} {RunCommand.TRUFFLE} \" +\n            f\"migrate --network {NETWORK_NAME} {CD_BACK}\")\n        actual_result = cmd_res.stdout.decode() + cmd_res.stderr.decode()\n        assert cmd_res.returncode == 0, actual_result\n        assert TruffleBasedError.ERROR_NO_ATTRIBUTE_ETH_ACCOUNTS \\\n            not in actual_result\n        assert TruffleError.ERROR_COULD_NOT_CONNECT not in actual_result\n        assert TruffleError.ERROR_NOT_AUTHORIZED not in actual_result\n        assert TruffleError.ERROR_TIMEOUT not in actual_result\n        assert TruffleError.ERROR_CANNOT_READ_PROPERTIES not in actual_result\n>       assert TruffleError.ERROR_DEPLOYMENT_FAILED not in actual_result\nE       assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\nE         'Error:  *** Deployment Failed ***' is contained here:\nE           --------\nE           \nE           Error:  *** Deployment Failed ***\nE           \nE           \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<385884400000).\nE           \nE               at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\nE               at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE               at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\nE               at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\nE               at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\nE               at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\nE               at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\nE               at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\nE               at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\nE               at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\nE               at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\nE           Truffle v5.4.14 (core: 5.4.14)\nE           Node v16.14.0\nE           /home/runner/work/neon-compatibility/neon-compatibility\n\ntests/truffle/test_truffle.py:36: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "prepare_truffle_config",
+    "time" : {
+      "start" : 1647832708872,
+      "stop" : 1647832708884,
+      "duration" : 12
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Preset variables",
+      "time" : {
+        "start" : 1647832708872,
+        "stop" : 1647832708884,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Clean up folder \"'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'\"",
+      "time" : {
+        "start" : 1647832708884,
+        "stop" : 1647832708884,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "folder",
+        "value" : "'/home/runner/work/neon-compatibility/neon-compatibility/Metacoin/build/contracts'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<385884400000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+    "statusTrace" : "@allure.feature(FEATURE)\n    def test_truffle_migration():\n        # truffle migrate --network neonlabs\n        cmd_res = run_command_line(\n            f\"{Subfolder.CD_METACOIN} {RunCommand.TRUFFLE} \" +\n            f\"migrate --network {NETWORK_NAME} {CD_BACK}\")\n        actual_result = cmd_res.stdout.decode() + cmd_res.stderr.decode()\n        assert cmd_res.returncode == 0, actual_result\n        assert TruffleBasedError.ERROR_NO_ATTRIBUTE_ETH_ACCOUNTS \\\n            not in actual_result\n        assert TruffleError.ERROR_COULD_NOT_CONNECT not in actual_result\n        assert TruffleError.ERROR_NOT_AUTHORIZED not in actual_result\n        assert TruffleError.ERROR_TIMEOUT not in actual_result\n        assert TruffleError.ERROR_CANNOT_READ_PROPERTIES not in actual_result\n>       assert TruffleError.ERROR_DEPLOYMENT_FAILED not in actual_result\nE       assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\nE         'Error:  *** Deployment Failed ***' is contained here:\nE           --------\nE           \nE           Error:  *** Deployment Failed ***\nE           \nE           \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<385884400000).\nE           \nE               at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\nE               at processTicksAndRejections (node:internal/process/task_queues:96:5)\nE               at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\nE               at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\nE               at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\nE               at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\nE               at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\nE               at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\nE               at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\nE               at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\nE               at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\nE           Truffle v5.4.14 (core: 5.4.14)\nE           Node v16.14.0\nE           /home/runner/work/neon-compatibility/neon-compatibility\n\ntests/truffle/test_truffle.py:36: AssertionError",
+    "steps" : [ {
+      "name" : "Run command: \"'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'\"",
+      "time" : {
+        "start" : 1647832708885,
+        "stop" : 1647832728771,
+        "duration" : 19886
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "command",
+        "value" : "'cd Metacoin; pwd; ../node_modules/.bin/truffle migrate --network neonlabs ; cd \"/home/runner/work/neon-compatibility/neon-compatibility\"; pwd;'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "442e2a162b2bd8e5",
+      "name" : "stdout",
+      "source" : "442e2a162b2bd8e5.txt",
+      "type" : "text/plain",
+      "size" : 3379
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "prepare_truffle_config::0",
+    "time" : {
+      "start" : 1647832728778,
+      "stop" : 1647832728778,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Truffle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.truffle"
+  }, {
+    "name" : "suite",
+    "value" : "test_truffle"
+  }, {
+    "name" : "host",
+    "value" : "fv-az453-564"
+  }, {
+    "name" : "thread",
+    "value" : "3819-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.truffle.test_truffle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 78,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 88
+      },
+      "items" : [ {
+        "uid" : "930219b69e5676a7",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/315//#testresult/930219b69e5676a7",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<399634400000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647745913737,
+          "stop" : 1647745934343,
+          "duration" : 20606
+        }
+      }, {
+        "uid" : "7767c2ff0f7df640",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/313//#testresult/7767c2ff0f7df640",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<398006400000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647659421046,
+          "stop" : 1647659437189,
+          "duration" : 16143
+        }
+      }, {
+        "uid" : "6e36b7d12f7a520c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/311//#testresult/6e36b7d12f7a520c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<379297164400).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647573154870,
+          "stop" : 1647573171056,
+          "duration" : 16186
+        }
+      }, {
+        "uid" : "d63b86240e29b759",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/309//#testresult/d63b86240e29b759",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<389108011600).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647486690779,
+          "stop" : 1647486709694,
+          "duration" : 18915
+        }
+      }, {
+        "uid" : "95e236ad8bdc5352",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/307//#testresult/95e236ad8bdc5352",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<366621200000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647400459216,
+          "stop" : 1647400478070,
+          "duration" : 18854
+        }
+      }, {
+        "uid" : "2d5b51e44906d48f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/304//#testresult/2d5b51e44906d48f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<355528800000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647303568282,
+          "stop" : 1647303588054,
+          "duration" : 19772
+        }
+      }, {
+        "uid" : "bfb213f3de213d70",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/303//#testresult/bfb213f3de213d70",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<346770617600).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647227398365,
+          "stop" : 1647227414350,
+          "duration" : 15985
+        }
+      }, {
+        "uid" : "4355b7d9b0c75885",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/301//#testresult/4355b7d9b0c75885",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<360335800000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647140976163,
+          "stop" : 1647140992189,
+          "duration" : 16026
+        }
+      }, {
+        "uid" : "d53db57630a707a5",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/299//#testresult/d53db57630a707a5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<361662400000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1647054638380,
+          "stop" : 1647054656423,
+          "duration" : 18043
+        }
+      }, {
+        "uid" : "d6753592baa5bcd6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/296//#testresult/d6753592baa5bcd6",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<364922800000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646957946758,
+          "stop" : 1646957962915,
+          "duration" : 16157
+        }
+      }, {
+        "uid" : "e857da599c9a6bfc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/295//#testresult/e857da599c9a6bfc",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<377696000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646882179384,
+          "stop" : 1646882200945,
+          "duration" : 21561
+        }
+      }, {
+        "uid" : "eb87b357b5440d89",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/293//#testresult/eb87b357b5440d89",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<372482000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646795540329,
+          "stop" : 1646795561592,
+          "duration" : 21263
+        }
+      }, {
+        "uid" : "11205bc4d689d504",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/290//#testresult/11205bc4d689d504",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<361878000000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646698664612,
+          "stop" : 1646698681088,
+          "duration" : 16476
+        }
+      }, {
+        "uid" : "ea0caa03371d4d7a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/288//#testresult/ea0caa03371d4d7a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<369120400000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646612243393,
+          "stop" : 1646612259695,
+          "duration" : 16302
+        }
+      }, {
+        "uid" : "e6ae8c77a50b6b03",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/287//#testresult/e6ae8c77a50b6b03",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646536195223,
+          "stop" : 1646536198728,
+          "duration" : 3505
+        }
+      }, {
+        "uid" : "ca6c4d588ba8d3dc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/285//#testresult/ca6c4d588ba8d3dc",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<382947400000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646449787658,
+          "stop" : 1646449804152,
+          "duration" : 16494
+        }
+      }, {
+        "uid" : "18c8b190993d8b15",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/282//#testresult/18c8b190993d8b15",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<417346600000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646353161328,
+          "stop" : 1646353177703,
+          "duration" : 16375
+        }
+      }, {
+        "uid" : "47c352e4e34df3d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/281//#testresult/47c352e4e34df3d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<434368000000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646277104912,
+          "stop" : 1646277119573,
+          "duration" : 14661
+        }
+      }, {
+        "uid" : "1397917d6745f905",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/278//#testresult/1397917d6745f905",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<429726000000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646180957827,
+          "stop" : 1646180977176,
+          "duration" : 19349
+        }
+      }, {
+        "uid" : "c75ad27d027765",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/277//#testresult/c75ad27d027765",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- The transaction gasPrice is less than the minimum allowable value(1000000000<424842000000.0000000).\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.0\n    /home/runner/work/neon-compatibility/neon-compatibility",
+        "time" : {
+          "start" : 1646104343889,
+          "stop" : 1646104358385,
+          "duration" : 14496
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "69ca85560889e7a0.json",
+  "parameterValues" : [ ]
+}
