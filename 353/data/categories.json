@@ -1,0 +1,398 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "bb6a198602c8a0fd",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388040412,
+          "stop" : 1649388040807,
+          "duration" : 395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "6fdf581584735cdc",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388041862,
+          "stop" : 1649388042658,
+          "duration" : 796
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32601, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32601}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "7687deb234b941cb",
+        "parentUid" : "5c503bc8562d123b9e893bbe7b2c32bc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388042659,
+          "stop" : 1649388043248,
+          "duration" : 589
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c503bc8562d123b9e893bbe7b2c32bc"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "5308f431bc4dbaf3",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388043256,
+          "stop" : 1649388043647,
+          "duration" : 391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32601, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32601}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "263356f659e339a2",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388043651,
+          "stop" : 1649388043837,
+          "duration" : 186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "3105ad6e37b882b5",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388043839,
+          "stop" : 1649388044051,
+          "duration" : 212
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ddb23607905c343c240749da400d56d"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "c278f3dba4ad5530",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388044496,
+          "stop" : 1649388044502,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "method eth_accounts is not supported",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "71304b4cb5630543",
+        "parentUid" : "636761ada1984e92a869ad9291b93257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388048695,
+          "stop" : 1649388049138,
+          "duration" : 443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636761ada1984e92a869ad9291b93257"
+    }, {
+      "name" : "ValueError: insufficient funds for gas * price + value: address 0xa6d4e94235f0e3ad5d66076be48adddc618e9e20 have 0 want 3943809620400000000",
+      "children" : [ {
+        "name" : "test_brownie_deploy",
+        "uid" : "f5aa797dcf7a4a91",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388246719,
+          "stop" : 1649388247710,
+          "duration" : 991
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_initial_approval_is_zero[0]",
+        "uid" : "aa2b5b9eecb4b2d8",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388247974,
+          "stop" : 1649388247974,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[1]",
+        "uid" : "32268d36fa3095f3",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249014,
+          "stop" : 1649388249014,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[2]",
+        "uid" : "61cc3585e97668f8",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249084,
+          "stop" : 1649388249084,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[3]",
+        "uid" : "153dcb014b3bf17c",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249154,
+          "stop" : 1649388249154,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[4]",
+        "uid" : "88bbbbcd3733681b",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249281,
+          "stop" : 1649388249281,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "test_approve",
+        "uid" : "219f818c6a4da763",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249349,
+          "stop" : 1649388249349,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_modify_approve",
+        "uid" : "89d5d347b6b768c3",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249418,
+          "stop" : 1649388249418,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoke_approve",
+        "uid" : "74d67e7e03e1de6b",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249549,
+          "stop" : 1649388249549,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_approve_self",
+        "uid" : "3b47e9c8d4bac5ea",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249617,
+          "stop" : 1649388249617,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_only_affects_target",
+        "uid" : "df37e4b65d99940e",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249685,
+          "stop" : 1649388249685,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "f97d583874407c6",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249753,
+          "stop" : 1649388249753,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_approval_event_fires",
+        "uid" : "366751c17c05bd24",
+        "parentUid" : "84d074a2e8472d0310d63f437fc2b9a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649388249879,
+          "stop" : 1649388249879,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84d074a2e8472d0310d63f437fc2b9a2"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
