@@ -1,0 +1,256 @@
+{
+  "uid" : "2a42beaceb8f42af",
+  "name" : "Should return the new greeting once it's changed",
+  "fullName" : "Should return the new greeting once it's changed",
+  "historyId" : "2c311adb6e26ea339140e68e04c1139e",
+  "time" : {
+    "start" : 1649636097155,
+    "stop" : 1649636097753,
+    "duration" : 598
+  },
+  "status" : "broken",
+  "statusMessage" : "method eth_accounts is not supported",
+  "statusTrace" : "ProviderError: method eth_accounts is not supported\n    at HttpProvider.request (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/http.ts:49:19)\n    at GanacheGasMultiplierProvider.request (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/hardhat/src/internal/core/providers/gas-providers.ts:310:34)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at EthersProviderWrapper.send (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)\n    at Object.getSigners (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/helpers.ts:23:20)\n    at getContractFactoryByAbiAndBytecode (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/@nomiclabs/hardhat-ethers/src/internal/helpers.ts:250:21)\n    at Context.<anonymous> (test/sample-test.js:6:21)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Hardhat advanced: Greeter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 115,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 115
+      },
+      "items" : [ {
+        "uid" : "aabddff7fde3cb79",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/357//#testresult/aabddff7fde3cb79",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649560675758,
+          "stop" : 1649560676220,
+          "duration" : 462
+        }
+      }, {
+        "uid" : "303bbcba2ebff11c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/355//#testresult/303bbcba2ebff11c",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649474001398,
+          "stop" : 1649474001852,
+          "duration" : 454
+        }
+      }, {
+        "uid" : "71304b4cb5630543",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/353//#testresult/71304b4cb5630543",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649388048695,
+          "stop" : 1649388049138,
+          "duration" : 443
+        }
+      }, {
+        "uid" : "e6f01b1b8f52b512",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/350//#testresult/e6f01b1b8f52b512",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649290634129,
+          "stop" : 1649290634604,
+          "duration" : 475
+        }
+      }, {
+        "uid" : "6ab618061c1ca1fc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/349//#testresult/6ab618061c1ca1fc",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649215030911,
+          "stop" : 1649215031362,
+          "duration" : 451
+        }
+      }, {
+        "uid" : "e3e9e5baa532808a",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/346//#testresult/e3e9e5baa532808a",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649117660583,
+          "stop" : 1649117661231,
+          "duration" : 648
+        }
+      }, {
+        "uid" : "59ef8b5bfd77778e",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/344//#testresult/59ef8b5bfd77778e",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1649031314933,
+          "stop" : 1649031315683,
+          "duration" : 750
+        }
+      }, {
+        "uid" : "4404af40d5ce7138",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/342//#testresult/4404af40d5ce7138",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648944919667,
+          "stop" : 1648944920392,
+          "duration" : 725
+        }
+      }, {
+        "uid" : "a91ef9d61c6697f4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/341//#testresult/a91ef9d61c6697f4",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648869448495,
+          "stop" : 1648869448977,
+          "duration" : 482
+        }
+      }, {
+        "uid" : "b793a2ff5da80a59",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/338//#testresult/b793a2ff5da80a59",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648772345695,
+          "stop" : 1648772346444,
+          "duration" : 749
+        }
+      }, {
+        "uid" : "71ae749d9b4ea2eb",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/336//#testresult/71ae749d9b4ea2eb",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648685697135,
+          "stop" : 1648685697647,
+          "duration" : 512
+        }
+      }, {
+        "uid" : "39b9e3b5e17d2233",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/335//#testresult/39b9e3b5e17d2233",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648610357422,
+          "stop" : 1648610358183,
+          "duration" : 761
+        }
+      }, {
+        "uid" : "143316df6628a2d4",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/332//#testresult/143316df6628a2d4",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648512990836,
+          "stop" : 1648512991519,
+          "duration" : 683
+        }
+      }, {
+        "uid" : "61d4b499aae00778",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/331//#testresult/61d4b499aae00778",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648437582533,
+          "stop" : 1648437583321,
+          "duration" : 788
+        }
+      }, {
+        "uid" : "9d81bad57becf42",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/328//#testresult/9d81bad57becf42",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648340201420,
+          "stop" : 1648340202218,
+          "duration" : 798
+        }
+      }, {
+        "uid" : "d7eb8f93c503e1a6",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/326//#testresult/d7eb8f93c503e1a6",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648253723818,
+          "stop" : 1648253724606,
+          "duration" : 788
+        }
+      }, {
+        "uid" : "ca67dc3f4d647de9",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/325//#testresult/ca67dc3f4d647de9",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648177823510,
+          "stop" : 1648177824008,
+          "duration" : 498
+        }
+      }, {
+        "uid" : "8e16f86350a34039",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/322//#testresult/8e16f86350a34039",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648080879412,
+          "stop" : 1648080880183,
+          "duration" : 771
+        }
+      }, {
+        "uid" : "e431a33b9a58f84d",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/321//#testresult/e431a33b9a58f84d",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1648005380009,
+          "stop" : 1648005380628,
+          "duration" : 619
+        }
+      }, {
+        "uid" : "636b01ebed100a68",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/319//#testresult/636b01ebed100a68",
+        "status" : "broken",
+        "statusDetails" : "method eth_accounts is not supported",
+        "time" : {
+          "start" : 1647918848987,
+          "stop" : 1647918849466,
+          "duration" : 479
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2a42beaceb8f42af.json",
+  "parameterValues" : [ ]
+}
