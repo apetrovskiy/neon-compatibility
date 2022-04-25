@@ -1,0 +1,173 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "82a4f69beb67b2bf",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770182920,
+          "stop" : 1650770183317,
+          "duration" : 397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "c759b2c6001de814",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770184411,
+          "stop" : 1650770185208,
+          "duration" : 797
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "provided ENS name resolves to null (argument=\"tx.to\", value=\"ricmoo.firefly.eth\", code=INVALID_ARGUMENT, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "18521062fbcec3d5",
+        "parentUid" : "a84db27a603b95faa88ded5ac73acc8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770185209,
+          "stop" : 1650770185820,
+          "duration" : 611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a84db27a603b95faa88ded5ac73acc8c"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "1410f1dceba97175",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770185828,
+          "stop" : 1650770186218,
+          "duration" : 390
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32601, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32601}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "ca71bbb5ddc4a52a",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770186224,
+          "stop" : 1650770186413,
+          "duration" : 189
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "62735c287018b1ce",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770186416,
+          "stop" : 1650770186606,
+          "duration" : 190
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ddb23607905c343c240749da400d56d"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "3c8a9fbe07673cd0",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770187053,
+          "stop" : 1650770187059,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "method eth_accounts is not supported",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "b9e175c83a371fda",
+        "parentUid" : "636761ada1984e92a869ad9291b93257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650770192040,
+          "stop" : 1650770192500,
+          "duration" : 460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636761ada1984e92a869ad9291b93257"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
