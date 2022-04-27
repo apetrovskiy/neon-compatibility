@@ -1,0 +1,372 @@
+{
+  "uid" : "d06f0578c58b1a7f",
+  "name" : "test_initial_approval_is_zero[1]",
+  "fullName" : "tests.brownie.token.tests.test_approve#test_initial_approval_is_zero",
+  "historyId" : "ef6bb165912f8f1bbcdec75a57b32c85",
+  "time" : {
+    "start" : 1650944116452,
+    "stop" : 1650944116452,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: insufficient funds for gas * price + value: address 0xabfd592368779aed12ce8b3727f4cdaacc650846 have 0 want 3257083566289800000",
+  "statusTrace" : "brownie_project = <Project 'TokenProject'>\naccounts = <brownie.network.account.Accounts object at 0x7f1f0ef1f0a0>\n\n    @pytest.fixture(scope=\"module\")\n    def token(brownie_project, accounts):\n>       return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n\ntests/brownie/token/tests/conftest.py:49: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py:600: in __call__\n    return tx[\"from\"].deploy(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:508: in deploy\n    receipt, exc = self._make_transaction(\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py:743: in _make_transaction\n    exc = VirtualMachineError(e)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = VirtualMachineError(ValueError({'code': -32000, 'message': 'insufficient funds for gas * price + value: address 0xabfd592368779aed12ce8b3727f4cdaacc650846 have 0 want 3257083566289800000'}))\nexc = {'code': -32000, 'message': 'insufficient funds for gas * price + value: address 0xabfd592368779aed12ce8b3727f4cdaacc650846 have 0 want 3257083566289800000'}\n\n    def __init__(self, exc: ValueError) -> None:\n        try:\n            exc = exc.args[0]\n        except Exception:\n            pass\n    \n        if isinstance(exc, dict) and \"message\" in exc:\n            if \"data\" not in exc:\n>               raise ValueError(exc[\"message\"]) from None\nE               ValueError: insufficient funds for gas * price + value: address 0xabfd592368779aed12ce8b3727f4cdaacc650846 have 0 want 3257083566289800000\n\n../../../.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py:85: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "configure_neon_network",
+    "time" : {
+      "start" : 1650944097976,
+      "stop" : 1650944097976,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "brownie_project",
+    "time" : {
+      "start" : 1650944099574,
+      "stop" : 1650944112837,
+      "duration" : 13263
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "accounts",
+    "time" : {
+      "start" : 1650944115145,
+      "stop" : 1650944115457,
+      "duration" : 312
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_env",
+    "time" : {
+      "start" : 1650944115145,
+      "stop" : 1650944115145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1650944115457,
+      "stop" : 1650944116389,
+      "duration" : 932
+    },
+    "status" : "broken",
+    "statusMessage" : "ValueError: insufficient funds for gas * price + value: address 0xabfd592368779aed12ce8b3727f4cdaacc650846 have 0 want 3257083566289800000\n",
+    "statusTrace" : "  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"/home/runner/work/neon-compatibility/neon-compatibility/tests/brownie/token/tests/conftest.py\", line 49, in token\n    return brownie_project.Token.deploy(\"Test Token\", \"TST\", 18, 1e21, {'from': accounts[0]})\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/contract.py\", line 600, in __call__\n    return tx[\"from\"].deploy(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 508, in deploy\n    receipt, exc = self._make_transaction(\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/network/account.py\", line 743, in _make_transaction\n    exc = VirtualMachineError(e)\n  File \"/home/runner/.local/share/virtualenvs/neon-compatibility-g882AfFF/lib/python3.8/site-packages/brownie/exceptions.py\", line 85, in __init__\n    raise ValueError(exc[\"message\"]) from None\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "accounts::0",
+    "time" : {
+      "start" : 1650944280195,
+      "stop" : 1650944280195,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Brownie"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.brownie.token.tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_approve"
+  }, {
+    "name" : "host",
+    "value" : "fv-az447-602"
+  }, {
+    "name" : "thread",
+    "value" : "3679-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.brownie.token.tests.test_approve"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "idx",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 72,
+        "skipped" : 0,
+        "passed" : 51,
+        "unknown" : 0,
+        "total" : 123
+      },
+      "items" : [ {
+        "uid" : "e7ec10193e32d3c0",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/387//#testresult/e7ec10193e32d3c0",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x9b32b66cd80021595cd6c5ab45f416d15b7e3146 have 0 want 3156370581000000000",
+        "time" : {
+          "start" : 1650857444764,
+          "stop" : 1650857444764,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "7df2ff2cf185227b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/382//#testresult/7df2ff2cf185227b",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x0736220dfadbf58fd6b2fbdc4018ced2d2dbb909 have 0 want 3251161560090600000",
+        "time" : {
+          "start" : 1650673056190,
+          "stop" : 1650673056190,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4523b3072d01d00b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/380//#testresult/4523b3072d01d00b",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x04ed956eb67d56797a69e6004b2dd4c947e530ac have 0 want 3297048073800000000",
+        "time" : {
+          "start" : 1650586915219,
+          "stop" : 1650586915219,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "5c9718fa89103d66",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/378//#testresult/5c9718fa89103d66",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x7e66015bd488b1c206676f5377b6466357c27b1b have 0 want 3416672663554800000",
+        "time" : {
+          "start" : 1650500462545,
+          "stop" : 1650500462545,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "d90da386c4a2decf",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/376//#testresult/d90da386c4a2decf",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x2581f6fccdc55c44ee1ce96e602323d2388e395f have 0 want 3520413764142600000",
+        "time" : {
+          "start" : 1650413979714,
+          "stop" : 1650413979714,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "373113db1733b6aa",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/375//#testresult/373113db1733b6aa",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xacdbc5ccad974225dc403edb7b46882a26bd609b have 0 want 3256071075527400000",
+        "time" : {
+          "start" : 1650339503639,
+          "stop" : 1650339503639,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "858c3b05b2f99bbd",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/373//#testresult/858c3b05b2f99bbd",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xb64e47a494c7ff5ea9aad99c867a2f8d74cd8c24 have 0 want 3256071075527400000",
+        "time" : {
+          "start" : 1650252594035,
+          "stop" : 1650252594035,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f7b6f69ce3430805",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/371//#testresult/f7b6f69ce3430805",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x46db0e4a846473dcfbb91fcf2c4f235f2491d2ca have 0 want 3275563619959800000",
+        "time" : {
+          "start" : 1650165633407,
+          "stop" : 1650165633407,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ba7885f165b0bfae",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/369//#testresult/ba7885f165b0bfae",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xc081e3364d1204710015febe7347e7671c7d177d have 0 want 3261295502049000000",
+        "time" : {
+          "start" : 1650079127866,
+          "stop" : 1650079127866,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "20c3c28b1772a9fe",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/367//#testresult/20c3c28b1772a9fe",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xb778c97b9bd2913dc232e0c1884c14540af4bc8b have 0 want 3269132625813600000",
+        "time" : {
+          "start" : 1649993842824,
+          "stop" : 1649993842824,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f6cd83958919edf8",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/364//#testresult/f6cd83958919edf8",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x5cb31e64acd9eaec0c7a412b3a0b148d1b2c1e2e have 0 want 3380622604078200000",
+        "time" : {
+          "start" : 1649895518517,
+          "stop" : 1649895518517,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "d683426fca017bc",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/363//#testresult/d683426fca017bc",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x1387c1fbc4e33386a1f5b69e6a897cd448b1a649 have 0 want 3386771436601800000",
+        "time" : {
+          "start" : 1649820228572,
+          "stop" : 1649820228572,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ba7921a1c26900b2",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/360//#testresult/ba7921a1c26900b2",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x7f6b2a7336c6e52f137d5de4d7da3315437fb072 have 0 want 3222888933240600000",
+        "time" : {
+          "start" : 1649722634743,
+          "stop" : 1649722634743,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e020ad615df8ea53",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/358//#testresult/e020ad615df8ea53",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x28e17865a8fccee7d0a6a818bb0260e037c050d1 have 0 want 3565173889945200000",
+        "time" : {
+          "start" : 1649636232688,
+          "stop" : 1649636232688,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "edf6b3d3e39cca3c",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/357//#testresult/edf6b3d3e39cca3c",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xec38b2c3c7fad42776010bd1ec7b53cc63a0455f have 0 want 3668774151712800000",
+        "time" : {
+          "start" : 1649560823234,
+          "stop" : 1649560823234,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f97ad997ac78c40f",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/355//#testresult/f97ad997ac78c40f",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x0db5c84df714f7c74a9dd53277402662de5abcb4 have 0 want 3542379296289600000",
+        "time" : {
+          "start" : 1649474136769,
+          "stop" : 1649474136769,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "32268d36fa3095f3",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/353//#testresult/32268d36fa3095f3",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xa6d4e94235f0e3ad5d66076be48adddc618e9e20 have 0 want 3943809620400000000",
+        "time" : {
+          "start" : 1649388249014,
+          "stop" : 1649388249014,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f2e810bfe8c60f22",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/350//#testresult/f2e810bfe8c60f22",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xcaee3f0ee8a608f7841475e5c8db84ca34ba0a7d have 0 want 3667100057283000000",
+        "time" : {
+          "start" : 1649290774509,
+          "stop" : 1649290774509,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "c04454e1e3cba87b",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/349//#testresult/c04454e1e3cba87b",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0xcb22d0f633c27cd7fcd885e47119eceedf92e612 have 0 want 4004468884127400000",
+        "time" : {
+          "start" : 1649215243606,
+          "stop" : 1649215243606,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "c7caa7c9bcb17ded",
+        "reportUrl" : "https://apetrovskiy.github.io/neon-compatibility/346//#testresult/c7caa7c9bcb17ded",
+        "status" : "broken",
+        "statusDetails" : "ValueError: insufficient funds for gas * price + value: address 0x9f39a08369d05c0472ab3af464b591c3913a32fc have 0 want 4254691069402800000",
+        "time" : {
+          "start" : 1649117817356,
+          "stop" : 1649117817356,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d06f0578c58b1a7f.json",
+  "parameterValues" : [ "1" ]
+}
