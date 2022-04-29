@@ -1,0 +1,962 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Request failed with status code 404",
+      "children" : [ {
+        "name" : "shouldCreateAcccountWithEthersJs",
+        "uid" : "3b7f70bf74e2e26",
+        "parentUid" : "e535f801f4238f93df2991342f7e48e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105170680,
+          "stop" : 1651105171308,
+          "duration" : 628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e535f801f4238f93df2991342f7e48e9"
+    }, {
+      "name" : "ENS name not configured (operation=\"resolveName(\\\"ethers.eth\\\")\", code=UNSUPPORTED_OPERATION, version=providers/5.4.5)",
+      "children" : [ {
+        "name" : "testQueryingBlockchain",
+        "uid" : "d2b8e1a52218600a",
+        "parentUid" : "e7b99caf229df3f4350c94d3cb9e2152",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105173909,
+          "stop" : 1651105175369,
+          "duration" : 1460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7b99caf229df3f4350c94d3cb9e2152"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 45, \\\"error\\\": {\\\"code\\\": -32601, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32601}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":45,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testWritingToTheBlockchain",
+        "uid" : "c5c9cacc579c71aa",
+        "parentUid" : "5c503bc8562d123b9e893bbe7b2c32bc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105175370,
+          "stop" : 1651105176382,
+          "duration" : 1012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c503bc8562d123b9e893bbe7b2c32bc"
+    }, {
+      "name" : "resolver or addr is not configured for ENS name (argument=\"name\", value=\"dai.tokens.ethers.eth\", code=INVALID_ARGUMENT, version=contracts/5.4.1)",
+      "children" : [ {
+        "name" : "testReadOnlyMethods",
+        "uid" : "c7de491fbe8410db",
+        "parentUid" : "f691d142a21ba4d36298b566fe753fd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105176393,
+          "stop" : 1651105177121,
+          "duration" : 728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f691d142a21ba4d36298b566fe753fd0"
+    }, {
+      "name" : "processing response error (body=\"{\\\"jsonrpc\\\": \\\"2.0\\\", \\\"id\\\": 42, \\\"error\\\": {\\\"code\\\": -32601, \\\"message\\\": \\\"method eth_accounts is not supported\\\"}}\", error={\"code\":-32601}, requestBody=\"{\\\"method\\\":\\\"eth_accounts\\\",\\\"params\\\":[],\\\"id\\\":42,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"http://proxy.night.stand.neontest.xyz/solana\", code=SERVER_ERROR, version=web/5.4.0)",
+      "children" : [ {
+        "name" : "testQueryHistoricEvents",
+        "uid" : "5478b2ffd43266fc",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105177129,
+          "stop" : 1651105177454,
+          "duration" : 325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigningMessages",
+        "uid" : "140fd6f29377abbc",
+        "parentUid" : "8ddb23607905c343c240749da400d56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105177456,
+          "stop" : 1651105177852,
+          "duration" : 396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ddb23607905c343c240749da400d56d"
+    }, {
+      "name" : "ethjs_provider_http_1.HttpProvider is not a constructor",
+      "children" : [ {
+        "name" : "test01",
+        "uid" : "520fd7df58b2ff9b",
+        "parentUid" : "426a702f588cd18af2cb78ab4240139d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105178580,
+          "stop" : 1651105178587,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "426a702f588cd18af2cb78ab4240139d"
+    }, {
+      "name" : "method eth_accounts is not supported",
+      "children" : [ {
+        "name" : "Should return the new greeting once it's changed",
+        "uid" : "95bf62374090dd41",
+        "parentUid" : "636761ada1984e92a869ad9291b93257",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105183925,
+          "stop" : 1651105184667,
+          "duration" : 742
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636761ada1984e92a869ad9291b93257"
+    }, {
+      "name" : "ValueError: insufficient funds for gas * price + value: address 0x9f2398941df2ad467cdf610817f8ccb33f264805 have 0 want 3163388322900000000",
+      "children" : [ {
+        "name" : "test_brownie_deploy",
+        "uid" : "ad7286471cb5e6f3",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105358595,
+          "stop" : 1651105360627,
+          "duration" : 2032
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_initial_approval_is_zero[0]",
+        "uid" : "becb82e57a94421c",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105360878,
+          "stop" : 1651105360878,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[1]",
+        "uid" : "fde44b48d883c058",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362180,
+          "stop" : 1651105362180,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[2]",
+        "uid" : "4849a6e3a5bbfffc",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362246,
+          "stop" : 1651105362246,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "2" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[3]",
+        "uid" : "da5f26b397db3d37",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362311,
+          "stop" : 1651105362311,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "3" ]
+      }, {
+        "name" : "test_initial_approval_is_zero[4]",
+        "uid" : "a4577f28665485e0",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362418,
+          "stop" : 1651105362418,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "4" ]
+      }, {
+        "name" : "test_approve",
+        "uid" : "378fcb73f61edf7f",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362483,
+          "stop" : 1651105362483,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_modify_approve",
+        "uid" : "dbfed1f3e8ecd4f",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362547,
+          "stop" : 1651105362547,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoke_approve",
+        "uid" : "380df393452de01a",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362660,
+          "stop" : 1651105362660,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_approve_self",
+        "uid" : "2fd548bf9ab7460b",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362727,
+          "stop" : 1651105362727,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_only_affects_target",
+        "uid" : "465112fd6b29fdfb",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362792,
+          "stop" : 1651105362792,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "f910e63c3bf8762c",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362853,
+          "stop" : 1651105362853,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_approval_event_fires",
+        "uid" : "f6e01f99720477be",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105362957,
+          "stop" : 1651105362957,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sender_balance_decreases",
+        "uid" : "536248a0a5d0c959",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105363016,
+          "stop" : 1651105363016,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_receiver_balance_increases",
+        "uid" : "6dc066f92380a178",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105363994,
+          "stop" : 1651105363994,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_total_supply_not_affected",
+        "uid" : "5775588d1f342264",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364106,
+          "stop" : 1651105364106,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "d8e093f37e6a36f5",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364174,
+          "stop" : 1651105364174,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_full_balance",
+        "uid" : "e251fa1d73785b04",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364239,
+          "stop" : 1651105364239,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_zero_tokens",
+        "uid" : "fcabee71e7b20218",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364304,
+          "stop" : 1651105364304,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self",
+        "uid" : "8bc21fc6ea4e72e6",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364413,
+          "stop" : 1651105364413,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_insufficient_balance",
+        "uid" : "c33af38393bce5c8",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364478,
+          "stop" : 1651105364478,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_event_fires",
+        "uid" : "3b8a1184bc4a7cf4",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364543,
+          "stop" : 1651105364543,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sender_balance_decreases",
+        "uid" : "8b24af03749b7c29",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105364649,
+          "stop" : 1651105364649,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_receiver_balance_increases",
+        "uid" : "9431bb9830abd81e",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105365626,
+          "stop" : 1651105365626,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_caller_balance_not_affected",
+        "uid" : "ace3ff8083c0262d",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105365691,
+          "stop" : 1651105365691,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_caller_approval_affected",
+        "uid" : "969bdf630b3f310d",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105365756,
+          "stop" : 1651105365756,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_receiver_approval_not_affected",
+        "uid" : "bbae3b0821483bc7",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105365878,
+          "stop" : 1651105365878,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_total_supply_not_affected",
+        "uid" : "e442d970f814bf42",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105365946,
+          "stop" : 1651105365946,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_returns_true",
+        "uid" : "bc597aa9f9d4f97",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366013,
+          "stop" : 1651105366013,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_full_balance",
+        "uid" : "f180a2bb8f9a9cf0",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366129,
+          "stop" : 1651105366129,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_zero_tokens",
+        "uid" : "5e259f2976175b9f",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366197,
+          "stop" : 1651105366197,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_zero_tokens_without_approval",
+        "uid" : "6591880bf8df58da",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366265,
+          "stop" : 1651105366265,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_insufficient_balance",
+        "uid" : "71f902e27b3cf5a7",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366331,
+          "stop" : 1651105366331,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_insufficient_approval",
+        "uid" : "5ee20563112fdd7a",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366443,
+          "stop" : 1651105366443,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_no_approval",
+        "uid" : "284470ac76210806",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366514,
+          "stop" : 1651105366514,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_revoked_approval",
+        "uid" : "8d2e96ecab24e5c4",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366577,
+          "stop" : 1651105366577,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self",
+        "uid" : "9478a3eff3ab6837",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366686,
+          "stop" : 1651105366686,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_to_self_no_approval",
+        "uid" : "8db54b74608865fb",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366749,
+          "stop" : 1651105366749,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_transfer_event_fires",
+        "uid" : "65b6639f5f7b3b23",
+        "parentUid" : "4ad3a102ba75ace7964a0c0cf226ab9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651105366809,
+          "stop" : 1651105366809,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ad3a102ba75ace7964a0c0cf226ab9b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...ttempt #1.\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.2\n    /home/runner/work/neon-compatibility/neon-compatibility\n    - Fetching solc version list from solc-bin. Attempt #1\n    ✔ Downloading compiler. Attempt #1.",
+      "children" : [ {
+        "name" : "test_contracts[input_data0]",
+        "uid" : "567853b7e96829c8",
+        "parentUid" : "2c9df46194f5a66e9fedd7f1768327bc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105366893,
+          "stop" : 1651105389698,
+          "duration" : 22805
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/Ownable.test.js', test_files=['access/Ownable.test.js'], contracts=['access/Ownable.sol', 'mocks/OwnableMock.sol', 'mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      } ],
+      "uid" : "2c9df46194f5a66e9fedd7f1768327bc"
+    }, {
+      "name" : "AssertionError: assert 'Error: Coul... any sources' not in '/home/runne...patibility\\n'\n  'Error: Could not f...ns from any sources' is contained here:\n           ^\n    \n    Error: Could not find artifacts for Migrations from any sources\n        at Resolver.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/resolver/dist/lib/resolver.js:61:1)\n        at Object.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:172:1)\n        at ResolverIntercept.require (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/ResolverIntercept.js:22:1)\n        at /home/runner/work/neon-compatibility/neon-compatibility/OpenZeppelin/migrations/1_initial_migration.js:1:30\n        at Script.runInContext (node:vm:139:12)\n        at Script.runInNewContext (node:vm:144:17)\n        at Object.file (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/require/require.js:94:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:44:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.runAll (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:114:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:79:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/testing/Test.js:109:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/test/index.js:177:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.2\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_contracts[input_data1]",
+        "uid" : "37789e85a3728554",
+        "parentUid" : "e1fff942ab04d30780c4e523615ab0ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105389723,
+          "stop" : 1651105411356,
+          "duration" : 21633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControl.test.js', test_files=['access/AccessControl.test.js', 'access/AccessControl.behavior.js'], contracts=['mocks/AccessControlMock.sol', 'mocks/AccessControlEnumerableMock.sol', 'access/AccessControlEnumerable.sol', 'access/IAccessControlEnumerable.sol', 'utils/structs/EnumerableSet.sol', 'access/AccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data2]",
+        "uid" : "654954587886a206",
+        "parentUid" : "e1fff942ab04d30780c4e523615ab0ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105411436,
+          "stop" : 1651105433294,
+          "duration" : 21858
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='access/AccessControlEnumerable.test.js', test_files=['access/AccessControlEnumerable.test.js', 'access/AccessControl.behavior.js'], contracts=['utils/Strings.sol', 'utils/introspection/ERC165.sol', 'mocks/AccessControlEnumerableMock.sol'], migration_script='2_deploy_contracts.js')" ]
+      }, {
+        "name" : "test_contracts[input_data3]",
+        "uid" : "581bd83eb247f778",
+        "parentUid" : "e1fff942ab04d30780c4e523615ab0ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105433320,
+          "stop" : 1651105455228,
+          "duration" : 21908
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "InputData(test_file='finance/PaymentSplitter.test.js', test_files=['finance/PaymentSplitter.test.js'], contracts=['finance/PaymentSplitter.sol', 'utils/Address.sol', 'utils/Context.sol', 'access/IAccessControl.sol', 'utils/Strings.sol', 'utils/introspection/ERC165.sol', 'interfaces/IERC165.sol', 'utils/introspection/IERC165.sol'], migration_script='3_deploy_contracts.js')" ]
+      } ],
+      "uid" : "e1fff942ab04d30780c4e523615ab0ab"
+    }, {
+      "name" : "AssertionError: assert 'Error:  ***...t Failed ***' not in '/home/runne...patibility\\n'\n  'Error:  *** Deployment Failed ***' is contained here:\n    --------\n    \n    Error:  *** Deployment Failed ***\n    \n    \"Migrations\" -- transaction underpriced: have 1000000000 want 431552847000.\n    \n        at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n        at processTicksAndRejections (node:internal/process/task_queues:96:5)\n        at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:70:1)\n        at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n        at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n        at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n        at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:87:1)\n        at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:258:1)\n        at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n        at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n    Truffle v5.4.14 (core: 5.4.14)\n    Node v16.14.2\n    /home/runner/work/neon-compatibility/neon-compatibility",
+      "children" : [ {
+        "name" : "test_truffle_migration",
+        "uid" : "a5e713fd17faac62",
+        "parentUid" : "46ffb4525e3c1f714fcf2b4c16bd6f14",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105455253,
+          "stop" : 1651105474802,
+          "duration" : 19549
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "46ffb4525e3c1f714fcf2b4c16bd6f14"
+    }, {
+      "name" : "AssertionError: \n  Compiling your contracts...\n  ===========================\n  > Compiling ./contracts/ERC20Test.sol\n  > Compiling ./contracts/Migrations.sol\n  > Compiling ./contracts/SelfDestructTest.sol\n  > Compiling @openzeppelin/contracts/access/Ownable.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/ERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/IERC20.sol\n  > Compiling @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\n  > Compiling @openzeppelin/contracts/utils/Context.sol\n  > Compilation warnings encountered:\n  \n      Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n  --> project:/contracts/SelfDestructTest.sol\n  \n  ,Warning: This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.\n   --> project:/contracts/SelfDestructTest.sol:5:1:\n    |\n  5 | contract SelfDestructTest is Ownable{\n    | ^ (Relevant source part starts here and spans across multiple lines).\n  Note: The payable fallback function is defined here.\n    --> project:/contracts/SelfDestructTest.sol:20:5:\n     |\n  20 |     fallback() external payable {}\n     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  \n  ,Warning: Function state mutability can be restricted to pure\n    --> project:/contracts/SelfDestructTest.sol:12:5:\n     |\n  12 |     function staticData() public view returns(string memory) {\n     |     ^ (Relevant source part starts here and spans across multiple lines).\n  \n  \n  > Artifacts written to /home/runner/work/neon-compatibility/neon-compatibility/issues/364/build/contracts\n  > Compiled successfully using:\n     - solc: 0.8.4+commit.c7e474f2.Emscripten.clang\n  \n  \n  \n  Starting migrations...\n  ======================\n  > Network name:    'neonlabs'\n  > Network id:      111\n  > Block gas limit: 6721975 (0x6691b7)\n  \n  \n  3_selfDestructTest.js\n  =====================\n  \n     Deploying 'SelfDestructTest'\n     ----------------------------\n  \n  Error:  *** Deployment Failed ***\n  \n  \"SelfDestructTest\" -- transaction underpriced: have 1000000000 want 431706407000.\n  \n      at /home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:365:1\n      at processTicksAndRejections (node:internal/process/task_queues:96:5)\n      at module.exports (/home/runner/work/neon-compatibility/neon-compatibility/issues/364/migrations/3_selfDestructTest.js:6:5)\n      at Migration._deploy (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:75:1)\n      at Migration._load (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:56:1)\n      at Migration.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:217:1)\n      at Object.runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:150:1)\n      at Object.runFrom (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/migrate/index.js:110:1)\n      at runMigrations (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:253:1)\n      at Object.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate.js:223:1)\n      at Command.run (/home/runner/work/neon-compatibility/neon-compatibility/node_modules/truffle/build/webpack:/packages/core/lib/command.js:183:1)\n  Truffle v5.4.14 (core: 5.4.14)\n  Node v16.14.2\n  \nassert 1 == 0\n +  where 1 = CompletedProcess(args='cd issues/364; ../../node_modules/.bin/truffle --network neonlabs migrate -f 3 --to 3', returnc...uffle/build/webpack:/packages/core/lib/command.js:183:1)\\nTruffle v5.4.14 (core: 5.4.14)\\nNode v16.14.2\\n', stderr=b'').returncode",
+      "children" : [ {
+        "name" : "test_issue_364_self_destruct_contract",
+        "uid" : "921d4df66eff17dd",
+        "parentUid" : "45943cfcc36312917fb12485e45e2803",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651105521181,
+          "stop" : 1651105540688,
+          "duration" : 19507
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "45943cfcc36312917fb12485e45e2803"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
